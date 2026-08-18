@@ -1,0 +1,41 @@
+{
+  "name": "@alwkala/tidyfactor-styler",
+  "version": "1.0.0",
+  "description": "Production-stage visual design and in-codebase UI engineering suite with Arabic & RTL precision for the TidyFactor Ecosystem",
+  "main": "SKILL.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alwkala/tidyfactor-styler.git"
+  },
+  "keywords": [
+    "tidyfactor",
+    "tidyfactor-styler",
+    "production-design",
+    "ui-engineering",
+    "design-system",
+    "arabic-ui",
+    "rtl",
+    "tailwind",
+    "nextjs",
+    "php",
+    "agentic-ai",
+    "antigravity",
+    "claude-skill",
+    "anti-slop"
+  ],
+  "author": "Alwkala <hello@alwkala.com> (https://alwkala.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alwkala/tidyfactor-styler/issues"
+  },
+  "homepage": "https://alwkala.com",
+  "dependencies": {},
+  "files": [
+    "SKILL.md",
+    "references/",
+    "scripts/",
+    "LICENSE",
+    "README.md",
+    "README.ar.md"
+  ]
+}
