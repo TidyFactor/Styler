@@ -1,11 +1,11 @@
 {
   "name": "@alwkala/tidyfactor-styler",
   "version": "1.0.0",
-  "description": "Production-stage visual design and in-codebase UI engineering suite with Arabic & RTL precision for the TidyFactor Ecosystem",
+  "description": "TidyFactor Styler \u2014 Production Framework Styler, Section Redesign & RTL Polish Engine",
   "main": "SKILL.md",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alwkala/tidyfactor-styler.git"
+    "url": "git+https://github.com/TidyFactor/Styler.git"
   },
   "keywords": [
     "tidyfactor",
@@ -23,12 +23,12 @@
     "claude-skill",
     "anti-slop"
   ],
-  "author": "Alwkala <hello@alwkala.com> (https://alwkala.com)",
-  "license": "MIT",
+  "author": "TidyFactor & Alwkala <hello@tidyfactor.com> (https://alwkala.com)",
+  "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/alwkala/tidyfactor-styler/issues"
+    "url": "https://github.com/TidyFactor/Styler/issues"
   },
-  "homepage": "https://alwkala.com",
+  "homepage": "https://tidyfactor.com",
   "dependencies": {},
   "files": [
     "SKILL.md",
