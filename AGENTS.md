@@ -1,0 +1,8 @@
+# AGENTS.md — TidyFactor Styler Workspace Rules
+
+This skill is the Single Source of Truth for production styling, section redesign, and RTL polish across existing codebases.
+
+## Key Rules
+1. Maintain SSOT at `c:\wamp64\www\TidyFactor\Skills\Skills-LAB\tidyfactor-styler\`.
+2. Follow SemVer versioning and update `CHANGELOG.md` upon any modification.
+3. Auto-sync release build outputs using `node tools/build-skill.js`.

@@ -1,0 +1,13 @@
+{
+  "name": "TidyFactor Styler",
+  "version": "1.0.0",
+  "publisher": "TidyFactor Ecosystem",
+  "partner": "Alwkala Digital Agency (https://alwkala.com)",
+  "contact": {
+    "website": "https://tidyfactor.com",
+    "email": "hello@tidyfactor.com",
+    "whatsapp": "+201016656899",
+    "location": "Cairo, Egypt"
+  },
+  "license": "Apache-2.0"
+}

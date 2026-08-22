@@ -32,10 +32,13 @@
   "dependencies": {},
   "files": [
     "SKILL.md",
-    "references/",
-    "scripts/",
-    "LICENSE",
+    "references",
+    "scripts",
     "README.md",
-    "README.ar.md"
-  ]
+    "README.ar.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
