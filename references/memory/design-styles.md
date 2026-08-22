@@ -11,6 +11,10 @@ Geometric shapes as structural elements, primary-plus-black palettes, function-f
 ## Brutalism (web)
 Raw, deliberately "undesigned" HTML elements, harsh contrast, visible grid lines, monospace accents. Fits: developer tools, portfolios, anti-polish brands. Avoid: mistaking actual unstyled defaults for the aesthetic — it's a considered choice.
 
+## Neo-Brutalism
+Hard black drop shadows (`shadow-[4px_4px_0px_#000]`), thick borders (`border-2 border-black`), tactile push buttons with active offset (`active:translate-x-0.5 active:translate-y-0.5 active:shadow-none`), saturated pastel/neon stickers (`#FFE600`, `#00F0FF`, `#00FF66`, `#FF4D6D`), and bold Arabic/Latin typography (Cairo 900 + Space Grotesk + Fira Code). Fits: mission control dashboards, developer platforms, bold modern SaaS, Web NOC telemetry.
+- **Dark Mode Contrast Guardrail (WCAG AA)**: Colored accent sticker cards (`bg-neo-yellow`, `bg-neo-green`, `bg-neo-cyan`, `bg-neo-coral`) must retain explicit `text-black font-black` and MUST NOT be overridden by global dark card background rules (`html.dark .neo-card`). Use explicit specificity (`!bg-neo-yellow !text-black`) or `:not([class*="bg-neo-"])` selectors so colored cards remain high-contrast (21:1) in both modes.
+
 ## Editorial / Broadsheet
 Hairline rules, dense multi-column text, serif display, byline/dateline conventions from print journalism. Fits: publications, long-form, thought-leadership. Avoid: applying this density to a page with nothing to say at that density.
 

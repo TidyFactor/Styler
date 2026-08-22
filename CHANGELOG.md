@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.1] - 2026-08-23
+
+### Fixed
+- **License Badge Consistency**: Corrected badge in `README.md` and `README.ar.md` to `Apache-2.0`, resolving legal conflict with `package.json`, `brand.json`, and `LICENSE`.
+- **Portability in AGENTS.md**: Removed machine-specific Windows absolute path; replaced with relative repository root reference (`tidyfactor-styler/`).
+- **Packaging Exclusions**: Updated `tools/build-skill.js` to strictly filter out `__pycache__`, `*.pyc`, `.DS_Store`, and temporary build artifacts from staged distributions.
+- **Git Hygiene**: Added `.gitignore` and comprehensive `.gitattributes` to enforce uniform LF line endings and ignore bytecode/build caches.
+
+### Added
+- **One-Page Fold View Quality Guardrail**: Codified `Zero Scroll on Single-View Panels & Hero Stages` and high-density viewport enclosure inside `quality-bar.md`.
+- **Neo-Brutalism Design Movement & Dark Mode Contrast Rule**: Codified tactile push buttons, saturated stickers, and WCAG AA dark-mode specificity guardrails inside `design-styles.md`.
+- **Pre-Release Integrity Validator**: Added `tools/validate_skill.py` checking version synchronization across `.tidyfactor`, `package.json`, `brand.json`, and verifying command/memory links.
+
+---
+
 ## [1.0.0] - 2026-08-22
 
 ### Added

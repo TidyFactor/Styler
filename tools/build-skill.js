@@ -41,6 +41,14 @@ const ROOT_COPIES = [
   "CHANGELOG.md",
 ];
 
+const EXCLUDED_PATTERNS = [
+  /__pycache__/,
+  /\.pyc$/,
+  /\.DS_Store$/,
+  /Thumbs\.db$/,
+  /\.git/,
+];
+
 function log(msg) {
   console.log(`[build-skill] ${msg}`);
 }
@@ -49,11 +57,24 @@ function rmrf(p) {
   if (fs.existsSync(p)) fs.rmSync(p, { recursive: true, force: true });
 }
 
-function copyRecursive(src, dest) {
-  if (!fs.existsSync(src)) {
-    return;
+function shouldExclude(filePath) {
+  return EXCLUDED_PATTERNS.some((pattern) => pattern.test(filePath));
+}
+
+function copyFiltered(src, dest) {
+  if (!fs.existsSync(src)) return;
+  const stat = fs.statSync(src);
+  if (stat.isDirectory()) {
+    if (shouldExclude(src)) return;
+    fs.mkdirSync(dest, { recursive: true });
+    for (const file of fs.readdirSync(src)) {
+      copyFiltered(path.join(src, file), path.join(dest, file));
+    }
+  } else {
+    if (shouldExclude(src)) return;
+    fs.mkdirSync(path.dirname(dest), { recursive: true });
+    fs.copyFileSync(src, dest);
   }
-  fs.cpSync(src, dest, { recursive: true });
 }
 
 function zipArchive(stagePath, outFile, cwdDir) {
@@ -114,22 +135,38 @@ function syncToTargetLocation(targetDir) {
     const src = path.join(ROOT, item);
     const dest = path.join(targetDir, item);
     if (fs.existsSync(src)) {
-      fs.cpSync(src, dest, { recursive: true });
+      copyFiltered(src, dest);
+    }
+  }
+}
+
+function runIntegrityValidation() {
+  log("running release validation checks...");
+  const validatorScript = path.join(ROOT, "tools", "validate_skill.py");
+  if (fs.existsSync(validatorScript)) {
+    const pythonCmd = process.platform === "win32" ? "python" : "python3";
+    const res = spawnSync(pythonCmd, [validatorScript], { stdio: "inherit" });
+    if (res.status !== 0) {
+      throw new Error("Validation checks failed. Build aborted.");
     }
   }
 }
 
 function main() {
   log(`repo root: ${ROOT}`);
+  
+  // 1. Run Pre-Build Validation
+  runIntegrityValidation();
+
   log("cleaning previous build...");
   rmrf(STAGE_DIR);
   fs.mkdirSync(STAGE_DIR, { recursive: true });
 
-  log("staging single-source-of-truth files from repo root...");
+  log("staging single-source-of-truth files from repo root (filtered)...");
   for (const name of ROOT_COPIES) {
     const src = path.join(ROOT, name);
     const dest = path.join(STAGE_DIR, name);
-    copyRecursive(src, dest);
+    copyFiltered(src, dest);
     log(`  + ${name}`);
   }
 
@@ -148,8 +185,10 @@ function main() {
   const skillLabRoot = path.resolve(ROOT, "..");
   if (path.basename(skillLabRoot) === "Skills-LAB") {
     const skillLabTarget = path.join(skillLabRoot, `${SKILL_NAME}.skill`);
+    const skillLabVersionedTarget = path.join(skillLabRoot, `${SKILL_NAME}-v${pkg.version}.skill`);
     fs.copyFileSync(OUT_FILE, skillLabTarget);
-    log(`✓ Updated Skills-LAB root archive → ${SKILL_NAME}.skill`);
+    fs.copyFileSync(OUT_FILE, skillLabVersionedTarget);
+    log(`✓ Updated Skills-LAB root archives → ${SKILL_NAME}.skill & ${SKILL_NAME}-v${pkg.version}.skill`);
   }
 
   // Cross-Agent Synchronization

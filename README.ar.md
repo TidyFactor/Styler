@@ -1,12 +1,12 @@
 <div align="center" dir="rtl">
 
-# 💎 مهارة تايتفكتور ستايلر `TidyFactor Styler v1.0.0`
+# 💎 مهارة تايتفكتور ستايلر `TidyFactor Styler v1.0.1`
 ### حزمة هندسة الواجهات والتصميم الإنتاجي داخل المشاريع القائمة
 
 **المهارة الرسمية المعتمدة لتصميم وهندسة الواجهات الإنتاجية عبر كافة أطر العمل الحديثة ضمن منظومة TidyFactor.**
 
 [![npm version](https://img.shields.io/npm/v/@alwkala/tidyfactor-styler.svg?style=for-the-badge&color=0284C7)](https://www.npmjs.com/package/@alwkala/tidyfactor-styler)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg?style=for-the-badge)](LICENSE)
 [![RTL Ready](https://img.shields.io/badge/RTL-Native%20Arabic-emerald.svg?style=for-the-badge)](#-منظومة-دعم-اللغة-العربية-والاتجاه-rtl-الأصيل)
 [![Anti-Slop Certified](https://img.shields.io/badge/Anti--Slop-Certified-amber.svg?style=for-the-badge)](#-معايير-مكافحة-التصميم-المبتذل-anti-slop-وجودة-المخرجات)
 [![Architect Score](https://img.shields.io/badge/Architect%20Score-8%2F8%20Pass%20(100%25)-green.svg?style=for-the-badge)](#-الترخيص-وحوكمة-المعايير)

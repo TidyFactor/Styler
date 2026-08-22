@@ -1,6 +1,9 @@
 # Quality Bar — Reference for every command, checked before calling anything finished
 
-## Layout — viewport overflow (Hero/Intro/CTA sections)
+## Layout — viewport overflow & One-Page Fold View
+- **Zero Scroll on Single-View Panels & Hero Stages**: A standalone single-page view, mission control dashboard, or dedicated section fold MUST NOT require vertical scrolling on standard desktop viewports (1080p, 1440p, standard laptop resolutions). On narrow/mobile viewports (<768px), graceful linear vertical stacking is expected.
+- **High-Density Scaling & Viewport Enclosure**: Use compact headers/footers, fluid vertical padding (`py-2` to `py-3.5`), multi-column side-by-side metric grids (e.g. 3-column horizontal gauges instead of stacked vertical rows), and space-efficient typography so the entire core UI fits above the fold.
+- **Dynamic Feeds Internal Scroll**: For single-page dashboards containing dynamic tables or log feeds, the outer container must remain fixed (`h-[100dvh] overflow-hidden`) with internal scroll assigned strictly to the feed container (`flex-1 min-h-0 overflow-y-auto`).
 - A Hero, Intro, or CTA section's rendered height must not exceed 100vh without content that actually justifies it (long lists, data tables, galleries) — forcing scroll *inside* a section to see its own content is a defect.
 - Spacing (`padding`, `margin`, `gap`) uses fluid values (`clamp(min, preferred-vw/vh, max)`), not hardcoded fixed px, for anything that scales with viewport.
 - Heading/display type uses `clamp(min, preferred-vw, max)`, tested against how many lines the actual copy wraps to — not a fixed `font-size` assumed to fit.

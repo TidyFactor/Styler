@@ -1,7 +1,7 @@
 {
   "name": "@alwkala/tidyfactor-styler",
-  "version": "1.0.0",
-  "description": "TidyFactor Styler \u2014 Production Framework Styler, Section Redesign & RTL Polish Engine",
+  "version": "1.0.1",
+  "description": "TidyFactor Styler — Production Framework Styler, Section Redesign & RTL Polish Engine",
   "main": "SKILL.md",
   "repository": {
     "type": "git",

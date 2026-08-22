@@ -1,12 +1,12 @@
 <div align="center">
 
-# 💎 TidyFactor Styler `v1.0.0`
+# 💎 TidyFactor Styler `v1.0.1`
 ### Production-Stage Visual Design & In-Codebase UI Engineering Suite
 
 **The official production styling & UI transformation skill for the TidyFactor Ecosystem across all modern web frameworks.**
 
 [![npm version](https://img.shields.io/npm/v/@alwkala/tidyfactor-styler.svg?style=for-the-badge&color=0284C7)](https://www.npmjs.com/package/@alwkala/tidyfactor-styler)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg?style=for-the-badge)](LICENSE)
 [![RTL Ready](https://img.shields.io/badge/RTL-Native%20Arabic-emerald.svg?style=for-the-badge)](README.ar.md)
 [![Anti-Slop Certified](https://img.shields.io/badge/Anti--Slop-Certified-amber.svg?style=for-the-badge)](#-anti-slop-governance--quality-bar)
 [![Architect Score](https://img.shields.io/badge/Architect%20Score-8%2F8%20Pass%20(100%25)-green.svg?style=for-the-badge)](#-license--governance)
