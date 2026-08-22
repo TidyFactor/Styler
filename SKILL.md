@@ -15,7 +15,9 @@ The deliverable is always one of: a new component, a new section, a new page, or
 
 **When this is the right tool vs. others:**
 - Exploring a direction fast, before real content/data exists, as a standalone clickable demo → `tidyfactor-design`.
-- Scaffolding a brand-new project's folder structure and stack from zero → the matching track skill (`tidyfactor-html`, `tidyfactor-php-micro`, `tidyfactor-php-kernel`, `webletz-core-architecture`).
+- Scaffolding a brand-new project's folder structure and stack from zero → the matching track skill (`tidyfactor-html`, `tidyfactor-next`, `tidyfactor-php`).
+- Documenting codebase architecture, API specifications, or generating a Docsify site → `tidyfactor-doc`.
+- Building, auditing, or refactoring skills according to master governance rules → `tidyfactor-skill-architect`.
 - Styling, restyling, or adding to something that **already exists and already ships** → this skill.
 
 ## Commands

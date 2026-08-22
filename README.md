@@ -169,20 +169,26 @@ Copy the `tidyfactor-styler` folder directly into your workspace agent directory
 ```
 TidyFactor Organization (github.com/TidyFactor)
 │
+├── Governance & Architecture
+│   └── Skill-Architect → Governance / "Rule"     (Master Skill Architecture & Quality Governance Engine)
+│
 ├── Design Skills
-│   ├── Cinematic    → Experience / "Wow"     (Apple × Cartier Scroll-Driven Landing Pages)
-│   ├── Design       → Prototype / "Build"    (Code-Native UI Design Engine & Figma Alternative)
-│   └── Styler       → Production / "Ship"    (Framework Styler & RTL Polish Engine)
+│   ├── Cinematic       → Experience / "Wow"      (Apple × Cartier Scroll-Driven Landing Pages)
+│   ├── Design          → Prototype / "Build"     (Code-Native UI Design Engine & Figma Alternative)
+│   └── Styler          → Production / "Ship"     (Framework Styler & RTL Polish Engine)
+│
+├── Documentation & Knowledge
+│   └── Doc             → Knowledge / "Record"   (Codebase Documentation Builder & Docsify Engine)
 │
 ├── Development Skills
-│   ├── HTML         → Content & Static       (Semantic SEO & Static Platform Starter)
-│   ├── HTMX         → Hypermedia             (Server-Driven Micro-Interactions)
-│   ├── JS           → Vanilla SPA            (Framework-Free Reactive ES Modules)
-│   ├── PHP          → Server-Rendered        (Modern PHP 8.x Component UI & Architecture)
-│   └── Next         → Multi-Tenant SaaS      (Next.js 16, React 19, Supabase RLS & Dev-Perf)
+│   ├── Next            → Multi-Tenant SaaS       (Next.js 16, React 19, Supabase RLS & Dev-Perf)
+│   ├── HTML            → Content & Static        (Semantic SEO & Static Platform Starter)
+│   ├── HTMX            → Hypermedia              (Server-Driven Micro-Interactions)
+│   ├── JS              → Vanilla SPA             (Framework-Free Reactive ES Modules)
+│   └── PHP             → Server-Rendered         (Modern PHP 8.x Component UI & Architecture)
 │
 └── Growth Skills
-    └── Marketing    → Growth / Revenue       (Direct Response, Pillar SEO & Content Lifecycles)
+    └── Marketing       → Growth / Revenue        (Direct Response, Pillar SEO & Content Lifecycles)
 ```
 
 ### 💎 Frontend Triad
@@ -199,13 +205,15 @@ TidyFactor Organization (github.com/TidyFactor)
        "Wow"      "Build"   "Ship"
 ```
 
-### 📦 Community Package & Skill Parity
+### 📦 Community Package & Skill Parity (The 11 Official Skills)
 
 | Track | Category | GitHub Repository | Agent Skill | NPM Package |
 | :--- | :--- | :--- | :--- | :--- |
+| **Skill-Architect** | Governance | [`TidyFactor/Skill-Architect`](https://github.com/TidyFactor/Skill-Architect) | `tidyfactor-skill-architect` | [`@alwkala/tidyfactor-skill-architect`](https://www.npmjs.com/package/@alwkala/tidyfactor-skill-architect) |
 | **Cinematic** | Design | [`TidyFactor/Cinematic`](https://github.com/TidyFactor/Cinematic) | `tidyfactor-cinematic` | [`@alwkala/create-cinematic-kit`](https://www.npmjs.com/package/@alwkala/create-cinematic-kit) |
 | **Design** | Design | [`TidyFactor/Design`](https://github.com/TidyFactor/Design) | `tidyfactor-design` | [`@alwkala/tidyfactor-design`](https://www.npmjs.com/package/@alwkala/tidyfactor-design) |
 | **Styler** | Design | [`TidyFactor/Styler`](https://github.com/TidyFactor/Styler) | `tidyfactor-styler` | [`@alwkala/tidyfactor-styler`](https://www.npmjs.com/package/@alwkala/tidyfactor-styler) |
+| **Doc** | Documentation | [`TidyFactor/Doc`](https://github.com/TidyFactor/Doc) | `tidyfactor-doc` | [`@alwkala/tidyfactor-doc`](https://www.npmjs.com/package/@alwkala/tidyfactor-doc) |
 | **Next** | Development | [`TidyFactor/Next`](https://github.com/TidyFactor/Next) | `tidyfactor-next` | [`@alwkala/tidyfactor-next`](https://www.npmjs.com/package/@alwkala/tidyfactor-next) |
 | **HTML** | Development | [`TidyFactor/HTML`](https://github.com/TidyFactor/HTML) | `tidyfactor-html` | [`@alwkala/tidyfactor-html`](https://www.npmjs.com/package/@alwkala/tidyfactor-html) |
 | **HTMX** | Development | [`TidyFactor/HTMX`](https://github.com/TidyFactor/HTMX) | `tidyfactor-htmx` | [`@alwkala/tidyfactor-htmx`](https://www.npmjs.com/package/@alwkala/tidyfactor-htmx) |

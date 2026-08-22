@@ -173,20 +173,26 @@ npx @alwkala/tidyfactor-styler add-skill
 ```text
 منظمة TidyFactor الرسمية (github.com/TidyFactor)
 │
+├── مهارات الحوكمة والجودة (Governance)
+│   └── Skill-Architect ← الحوكمة والمنهجية      (محرك حوكمة وبناء وهندسة المهارات المعتمدة)
+│
 ├── مهارات التصميم (Design Skills)
-│   ├── Cinematic    ← تجربة الإبهار البصري / Experience ("Wow")     (صفحات سينمائية تفاعلية)
-│   ├── Design       ← بناء النماذج الأولية / Prototype ("Build")   (محرك تصميم كودي وبديل Figma)
-│   └── Styler       ← الجاهزية للإنتاج والتنسيق / Production ("Ship")  (محرك التنسيق ودعم RTL)
+│   ├── Cinematic       ← التجربة البصرية المبهرة / Experience (صفحات هبوط سينمائية تفاعلية)
+│   ├── Design          ← النماذج الأولية السريعة / Prototype  (محرك تصميم الواجهات التفاعلي)
+│   └── Styler          ← التصميم الإنتاجي / Production        (مهندس تصميم الواجهات وضبط RTL)
+│
+├── مهارات التوثيق والمعرفة (Documentation)
+│   └── Doc             ← التوثيق والأدلة المعتمدة / Docsify    (محرك بناء وتوليد التوثيق الشامل)
 │
 ├── مهارات التطوير البرمجي (Development Skills)
-│   ├── HTML         ← المواقع الثابتة وسيو المحتوى / Static & SEO   (هياكل خفيفة وسريعة)
-│   ├── HTMX         ← الواجهات التفاعلية الخفيفة / Hypermedia        (تفاعلات بدون جافاسكريبت معقدة)
-│   ├── JS           ← تطبيقات الصفحة الواحدة بدون أطر / Vanilla SPA  (نماذج تفاعلية بـ ES Modules)
-│   ├── PHP          ← المنظومات المخدمية الحديثة / Server-Rendered  (مكونات حديثة وتطبيقات PHP 8)
-│   └── Next         ← منصات الساس متعددة المستأجرين / Multi-Tenant (Next.js 16 + Postgres RLS)
+│   ├── Next            ← منصات الساس متعددة المستأجرين / Multi-Tenant (Next.js 16 + Postgres RLS)
+│   ├── HTML            ← المواقع الثابتة وسيو المحتوى / Static & SEO   (هياكل خفيفة وسريعة)
+│   ├── HTMX            ← الواجهات التفاعلية الخفيفة / Hypermedia        (تفاعلات بدون جافاسكريبت معقدة)
+│   ├── JS              ← تطبيقات الصفحة الواحدة بدون أطر / Vanilla SPA  (نماذج تفاعلية بـ ES Modules)
+│   └── PHP             ← المنظومات المخدمية الحديثة / Server-Rendered  (مكونات حديثة وتطبيقات PHP 8)
 │
 └── مهارات النمو والتسويق (Growth Skills)
-    └── Marketing    ← استراتيجيات النمو والمبيعات / Growth & SEO    (تسويق الاستجابة المباشرة)
+    └── Marketing       ← استراتيجيات النمو والمبيعات / Growth & SEO    (تسويق الاستجابة المباشرة)
 ```
 
 ### 💎 ثلاثي الواجهات الأمامية والتجربة (Frontend Triad)
@@ -203,13 +209,15 @@ npx @alwkala/tidyfactor-styler add-skill
        "Wow"      "Build"   "Ship"
 ```
 
-### 📦 مصفوفة التكامل الشامل للمجتمع (GitHub • Skill • NPM)
+### 📦 مصفوفة التكامل الشامل للمجتمع (المهارات الـ 11 الرسمية)
 
 | المسار البرمجي | الفئة | مستودع GitHub | مهارة الوكيل | حزمة NPM |
 | :--- | :--- | :--- | :--- | :--- |
+| **Skill-Architect** | الحوكمة | [`TidyFactor/Skill-Architect`](https://github.com/TidyFactor/Skill-Architect) | `tidyfactor-skill-architect` | [`@alwkala/tidyfactor-skill-architect`](https://www.npmjs.com/package/@alwkala/tidyfactor-skill-architect) |
 | **Cinematic** | التصميم | [`TidyFactor/Cinematic`](https://github.com/TidyFactor/Cinematic) | `tidyfactor-cinematic` | [`@alwkala/create-cinematic-kit`](https://www.npmjs.com/package/@alwkala/create-cinematic-kit) |
 | **Design** | التصميم | [`TidyFactor/Design`](https://github.com/TidyFactor/Design) | `tidyfactor-design` | [`@alwkala/tidyfactor-design`](https://www.npmjs.com/package/@alwkala/tidyfactor-design) |
 | **Styler** | التصميم | [`TidyFactor/Styler`](https://github.com/TidyFactor/Styler) | `tidyfactor-styler` | [`@alwkala/tidyfactor-styler`](https://www.npmjs.com/package/@alwkala/tidyfactor-styler) |
+| **Doc** | التوثيق | [`TidyFactor/Doc`](https://github.com/TidyFactor/Doc) | `tidyfactor-doc` | [`@alwkala/tidyfactor-doc`](https://www.npmjs.com/package/@alwkala/tidyfactor-doc) |
 | **Next** | التطوير | [`TidyFactor/Next`](https://github.com/TidyFactor/Next) | `tidyfactor-next` | [`@alwkala/tidyfactor-next`](https://www.npmjs.com/package/@alwkala/tidyfactor-next) |
 | **HTML** | التطوير | [`TidyFactor/HTML`](https://github.com/TidyFactor/HTML) | `tidyfactor-html` | [`@alwkala/tidyfactor-html`](https://www.npmjs.com/package/@alwkala/tidyfactor-html) |
 | **HTMX** | التطوير | [`TidyFactor/HTMX`](https://github.com/TidyFactor/HTMX) | `tidyfactor-htmx` | [`@alwkala/tidyfactor-htmx`](https://www.npmjs.com/package/@alwkala/tidyfactor-htmx) |
