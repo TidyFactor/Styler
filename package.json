@@ -29,6 +29,11 @@
     "url": "https://github.com/TidyFactor/Styler/issues"
   },
   "homepage": "https://tidyfactor.com",
+  "scripts": {
+    "validate": "python tools/validate_skill.py",
+    "build": "node tools/build-skill.js",
+    "release": "python ../tools/release_skill.py ."
+  },
   "dependencies": {},
   "files": [
     "SKILL.md",
