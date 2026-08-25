@@ -50,5 +50,17 @@ Reject and revise any generated code that exhibits any of the following 16 AI an
 15. **Un-Isolated Microcopy**: Using English microcopy conventions inside Arabic RTL layouts without bidi isolation.
 16. **Missing Interactive State Matrix**: Shipping default/hover states while omitting `focus-visible`, `active`, `disabled`, or `loading`.
 
+## Pre-Emit Self-Critique System (7 Axes)
+Before outputting code, score the design from 1 to 5 on 7 axes. Any score < 3 triggers an immediate internal revision pass. Stamp the output header with the result:
+`/* Pre-emit critique: P5 H5 E5 S5 R5 V5 D5 */`
+
+1. **Philosophy (`P`)**: Aligned with the project's actual identity and brand voice — not a generic template.
+2. **Hierarchy (`H`)**: Clear visual priority; exactly one primary action per viewport; logical contrast in type and color.
+3. **Execution (`E`)**: Clean, production-grade markup; proper responsive wrapping; fluid values (`clamp()`).
+4. **Specificity (`S`)**: Designed specifically for the target domain (SaaS vs. Editorial vs. Utility) with zero interchangeable generic parts.
+5. **Restraint (`R`)**: Controlled animations, minimal decoration, and purposeful whitespace — avoiding visual clutter.
+6. **Variety (`V`)**: Dynamic visual pacing across sections; avoiding repetitive uniform card stacks.
+7. **Decision Alignment (`D`)**: 100% faithful to the confirmed choices in `.tidyfactor/design-brief.md` or explicit prompt override.
+
 ## Pre-delivery Check
 Before calling any `component`, `section`, `page`, or `redesign` output finished: measure actual rendered height against viewport at mobile and desktop widths, in every shipped language, and confirm against this file's checklist — not just "it looks fine." For `page`/`redesign` specifically, also confirm the Performance & production-readiness items above — a prototype-quality page that merely looks right is not the deliverable this skill exists to produce.

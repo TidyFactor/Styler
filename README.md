@@ -1,7 +1,7 @@
 <div align="center">
 
-# 💎 TidyFactor Styler `v1.0.1`
-### Production-Stage Visual Design & In-Codebase UI Engineering Suite
+# 💎 TidyFactor Styler `v1.1.0`
+### Production-Stage Visual Design, CDL Decision Engine & In-Codebase UI Engineering Suite
 
 **The official production styling & UI transformation skill for the TidyFactor Ecosystem across all modern web frameworks.**
 
@@ -11,7 +11,7 @@
 [![Anti-Slop Certified](https://img.shields.io/badge/Anti--Slop-Certified-amber.svg?style=for-the-badge)](#-anti-slop-governance--quality-bar)
 [![Architect Score](https://img.shields.io/badge/Architect%20Score-8%2F8%20Pass%20(100%25)-green.svg?style=for-the-badge)](#-license--governance)
 
-[✨ Ecosystem Hub](https://alwkala.com) • [⚡ 12 Slash Commands](#-command-registry--architecture) • [🛠️ 7 Production Workflows](#%EF%B8%8F-the-7-production-workflows) • [🌐 Supported Stacks](#-supported-production-stacks) • [🇸🇦 Arabic & RTL Engineering](#-native-arabic--rtl-engineering) • [📖 بالعربية](README.ar.md)
+[✨ Ecosystem Hub](https://alwkala.com) • [⚡ 13 Slash Commands](#-command-registry--architecture) • [🛠️ 8 Production Workflows](#%EF%B8%8F-the-7-production-workflows) • [🌐 Supported Stacks](#-supported-production-stacks) • [🇸🇦 Arabic & RTL Engineering](#-native-arabic--rtl-engineering) • [📖 بالعربية](README.ar.md)
 
 </div>
 

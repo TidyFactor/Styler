@@ -1,6 +1,6 @@
 ---
 name: tidyfactor-styler
-description: TidyFactor Styler — production-design skill working inside existing codebases across all frameworks (React/Next.js, PHP, WordPress, plain HTML/CSS/JS), with expertise in Arabic/RTL UI (logical CSS properties, direction-agnostic layout, letterform-aware typography). Creates or redesigns components, sections, and pages matching target stack conventions. Trigger on "component", "section", "page", "redesign", "typography", "palette", "assets", "layout", "nav-footer", "rtl", "motion", "styles", "styler", "صمم مكون", "تعديل تصميم", "تحسين RTL", "خطوط عربية", "إصلاح الاتجاه", "تصميم صفحة", "تنسيق واجهة", "استخراج الألوان", "هيكل الصفحة", "نمط بصرية".
+description: TidyFactor Styler — production-design skill working inside existing codebases across all frameworks (React/Next.js, PHP, WordPress, plain HTML/CSS/JS), with Contextual Decision Layer (CDL) for pre-flight design elicitation and deep Arabic/RTL UI expertise. Creates or redesigns components, sections, and pages matching target stack conventions. Trigger on "brief", "component", "section", "page", "redesign", "typography", "palette", "assets", "layout", "nav-footer", "rtl", "motion", "styles", "styler", "صمم مكون", "تعديل تصميم", "تحسين RTL", "خطوط عربية", "إصلاح الاتجاه", "تصميم صفحة", "تنسيق واجهة", "استخراج الألوان", "هيكل الصفحة", "نمط بصرية".
 ---
 
 # TidyFactor Styler (Production Design — Any Stack)
@@ -24,9 +24,10 @@ The deliverable is always one of: a new component, a new section, a new page, or
 
 | User intent | Command | What it loads |
 |---|---|---|
-| "Redesign/create this component" | `references/commands/component.md` | `workflows/component-create.md` **or** `workflows/component-redesign.md` + `memory/component-anatomy.md` + `memory/ui-foundations.md` + matching `memory/stacks/*.md` |
-| "Redesign/restyle this section" | `references/commands/section.md` | `workflows/section-create.md` **or** `workflows/section-redesign.md` + `memory/layout-archetypes.md` + `memory/nav-footer-catalog.md` + `memory/component-anatomy.md` + matching `memory/stacks/*.md` |
-| "Build a new production page" | `references/commands/page.md` | `workflows/page-create.md` + `memory/layout-archetypes.md` + `memory/nav-footer-catalog.md` + `memory/component-anatomy.md` + matching `memory/stacks/*.md` |
+| "Establish design brief / project baseline" | `references/commands/brief.md` | `workflows/brief.md` + `memory/decision-points.md` |
+| "Redesign/create this component" | `references/commands/component.md` | `workflows/component-create.md` **or** `workflows/component-redesign.md` + `memory/component-anatomy.md` + `memory/decision-points.md` + matching `memory/stacks/*.md` |
+| "Redesign/restyle this section" | `references/commands/section.md` | `workflows/section-create.md` **or** `workflows/section-redesign.md` + `memory/layout-archetypes.md` + `memory/nav-footer-catalog.md` + `memory/decision-points.md` + matching `memory/stacks/*.md` |
+| "Build a new production page" | `references/commands/page.md` | `workflows/page-create.md` + `memory/layout-archetypes.md` + `memory/nav-footer-catalog.md` + `memory/decision-points.md` + matching `memory/stacks/*.md` |
 | "Redesign this existing page" | `references/commands/redesign.md` | `workflows/page-redesign.md` + `memory/layout-archetypes.md` + `memory/nav-footer-catalog.md` + `memory/quality-bar.md` + matching `memory/stacks/*.md` |
 | "Select layout archetype / macrostructure" | `references/commands/layout.md` | `memory/layout-archetypes.md` + matching `memory/stacks/*.md` |
 | "Select navigation (N1–N9) & footer (Ft1–Ft8)" | `references/commands/nav-footer.md` | `memory/nav-footer-catalog.md` + `memory/typography-arabic.md` + `memory/rtl-css-engineering.md` |

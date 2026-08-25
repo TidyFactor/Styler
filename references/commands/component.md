@@ -9,7 +9,7 @@
    - The component **already exists** in the target project → load `references/workflows/component-redesign.md`.
    - The component **doesn't exist yet** → load `references/workflows/component-create.md`.
    - Unclear which → check the project's component library before assuming; if still unclear, ask.
-2. Load `references/memory/component-anatomy.md` — atomic hierarchy, state matrix, naming discipline. Also load `references/memory/ui-foundations.md` for grid/spacing/accessibility judgment underneath it. If `brand.json` exists at project root, load `references/memory/brand-tokens.md` to ingest colors and typography tokens.
+2. Load `references/memory/component-anatomy.md` — atomic hierarchy, state matrix, naming discipline. Load `references/memory/decision-points.md` to resolve any unresolved decision points (checking `.tidyfactor/design-brief.md` first). If `brand.json` exists at project root, load `references/memory/brand-tokens.md` to ingest colors and typography tokens.
 3. Detect the target stack from what the user has shown/named, then load the matching file:
    - React/Next.js → `references/memory/stacks/react-next.md`
    - PHP Flight/Medoo → `references/memory/stacks/php-flight-medoo.md`

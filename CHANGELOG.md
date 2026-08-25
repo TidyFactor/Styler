@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.1.0] - 2026-08-25
+
+### Added
+- **Contextual Decision Layer (CDL)**: Added `references/memory/decision-points.md` defining a thin arbitration protocol for resolving design ambiguities (D1–D5) before code generation.
+- **Design Brief Command (`/brief`)**: Added `references/commands/brief.md` and `references/workflows/brief.md` for pre-flight design discovery and caching baseline decisions in `.tidyfactor/design-brief.md`.
+- **Single-Round Batching & Priority Overflow**: Codified strict batching (max 3 questions per round) with priority hierarchy (`D1 > D3 > D2 > D4 > D5`) and auto-conservative defaults.
+- **Direct Invocation & Zero-Regression Invariants**: Guaranteed that explicit command calls (`/styles`, `/typography`) never skip, while redesign workflows silently preserve existing baselines.
+- **7-Axis Pre-Emit Self-Critique (`P/H/E/S/R/V/D`)**: Expanded pre-emit critique with Axis 7 (`D` - Decision Alignment) in `quality-bar.md` and across all 7 workflows.
+
+---
+
 ## [1.0.1] - 2026-08-23
 
 ### Fixed

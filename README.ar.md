@@ -1,17 +1,17 @@
 <div align="center" dir="rtl">
 
-# 💎 مهارة تايتفكتور ستايلر `TidyFactor Styler v1.0.1`
-### حزمة هندسة الواجهات والتصميم الإنتاجي داخل المشاريع القائمة
+# 💎 مهارة تايتفكتور ستايلر `TidyFactor Styler v1.1.0`
+### حزمة هندسة الواجهات، وطبقة القرارات السياقية (CDL)، والتصميم الإنتاجي داخل المشاريع القائمة
 
 **المهارة الرسمية المعتمدة لتصميم وهندسة الواجهات الإنتاجية عبر كافة أطر العمل الحديثة ضمن منظومة TidyFactor.**
 
 [![npm version](https://img.shields.io/npm/v/@alwkala/tidyfactor-styler.svg?style=for-the-badge&color=0284C7)](https://www.npmjs.com/package/@alwkala/tidyfactor-styler)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg?style=for-the-badge)](LICENSE)
-[![RTL Ready](https://img.shields.io/badge/RTL-Native%20Arabic-emerald.svg?style=for-the-badge)](#-منظومة-دعم-اللغة-العربية-والاتجاه-rtl-الأصيل)
+[![RTL Ready](https://img.shields.io/badge/RTL-Native%20Arabic-emerald.svg?style=for-the-badge)](README.ar.md)
 [![Anti-Slop Certified](https://img.shields.io/badge/Anti--Slop-Certified-amber.svg?style=for-the-badge)](#-معايير-مكافحة-التصميم-المبتذل-anti-slop-وجودة-المخرجات)
 [![Architect Score](https://img.shields.io/badge/Architect%20Score-8%2F8%20Pass%20(100%25)-green.svg?style=for-the-badge)](#-الترخيص-وحوكمة-المعايير)
 
-[✨ موقع الوكالة](https://alwkala.com) • [⚡ سجل الأوامر الـ 12](#-سجل-أوامر-التصميم-الـ-12-command-registry) • [🛠️ مسارات العمل الـ 7](#%EF%B8%8F-مسارات-العمل-الإنتاجية-الـ-7-production-workflows) • [🌐 أطر العمل المدعومة](#-أطر-العمل-والبيئات-المدعومة) • [🇸🇦 هندسة الـ RTL](#-منظومة-دعم-اللغة-العربية-والاتجاه-rtl-الأصيل) • [📖 English Version](README.md)
+[✨ موقع الوكالة](https://alwkala.com) • [⚡ سجل الأوامر الـ 13](#-سجل-أوامر-التصميم-الـ-12-command-registry) • [🛠️ مسارات العمل الـ 8](#%EF%B8%8F-مسارات-العمل-الإنتاجية-الـ-7-production-workflows) • [🌐 أطر العمل المدعومة](#-أطر-العمل-والبيئات-المدعومة) • [🇸🇦 هندسة الـ RTL](#-منظومة-دعم-اللغة-العربية-والاتجاه-rtl-الأصيل) • [📖 English Version](README.md)
 
 </div>
 

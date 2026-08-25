@@ -6,13 +6,12 @@
 
 ## Dispatch steps
 1. Load `references/workflows/page-create.md`.
-2. Load `references/memory/component-anatomy.md` — a page is organisms arranged into a specific layout; reuse the project's existing components first. Also load `references/memory/ui-foundations.md` (grid, spacing, forms/tables/dashboards patterns if relevant).
+2. Load `references/memory/component-anatomy.md` — a page is organisms arranged into a specific layout; reuse the project's existing components first. Load `references/memory/decision-points.md` to resolve any unresolved decision points (D1-D5, checking `.tidyfactor/design-brief.md` first).
 3. Load `references/memory/layout-archetypes.md` and `references/memory/nav-footer-catalog.md` to select page macrostructure.
 4. If `brand.json` exists at project root, load `references/memory/brand-tokens.md` to ingest colors and typography.
 5. Detect the target stack, load the matching `references/memory/stacks/*.md` file.
 6. If the target stack is a TidyFactor production track (PHP Micro/Kernel, Webletz, tidyfactor-html), read that skill's own SKILL.md constraints before writing the page — its file/routing/module contract wins over any generic assumption here.
 7. If the page is Arabic/bilingual, also load `references/memory/typography-arabic.md` and `references/memory/rtl-css-engineering.md` — an Arabic-first design pass, not an English page mirrored afterward.
-8. If a design direction hasn't been chosen yet for this project, run `references/commands/styles.md` to select and confirm it first — don't default silently.
 
 ## Do not load
 `component.md` / `section.md` workflows directly — building a page composes existing or newly-defined components/sections, but the outcome and validation checklist are page-level, not component-level.

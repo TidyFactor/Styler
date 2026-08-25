@@ -9,7 +9,7 @@
    - The section **already exists** on the target page → load `references/workflows/section-redesign.md`.
    - The section is **being added new** → load `references/workflows/section-create.md`.
    - Unclear which → check the page's current sections before assuming; if still unclear, ask.
-2. Load `references/memory/component-anatomy.md` — a section is usually several organisms arranged together; reuse/extend existing components before inventing new ones. Also load `references/memory/ui-foundations.md` for grid/spacing/hierarchy judgment.
+2. Load `references/memory/component-anatomy.md` — a section is usually several organisms arranged together; reuse/extend existing components before inventing new ones. Load `references/memory/decision-points.md` to resolve any unresolved decision points (checking `.tidyfactor/design-brief.md` first).
 3. If `brand.json` exists at project root, load `references/memory/brand-tokens.md` to ingest colors and typography.
 4. Load `references/memory/layout-archetypes.md` (and `references/memory/nav-footer-catalog.md` if header/footer) to select section macrostructure.
 5. Detect the target stack, load the matching `references/memory/stacks/*.md` file.
