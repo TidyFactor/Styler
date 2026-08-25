@@ -3,25 +3,29 @@
  * bin/add-skill.js — CLI installer wrapper for tidyfactor-styler
  */
 
-const fs = require("fs");
-const path = require("path");
+const fs = require('fs');
+const path = require('path');
 
-const SKILL_NAME = "tidyfactor-styler";
-const SOURCE_DIR = path.resolve(__dirname, "..");
-const HOME = process.env.USERPROFILE || process.env.HOME;
-const GLOBAL_CONFIG_SKILL = path.join(HOME, ".gemini", "config", "skills", SKILL_NAME);
+const targetDir = process.cwd();
+const skillSource = path.resolve(__dirname, '..');
+const agentSkillsDir = path.join(targetDir, '.agents', 'skills', 'tidyfactor-styler');
 
-function log(msg) {
-  console.log(`[${SKILL_NAME}] ${msg}`);
+fs.mkdirSync(agentSkillsDir, { recursive: true });
+
+function copyRecursive(src, dest) {
+  const entries = fs.readdirSync(src, { withFileTypes: true });
+  for (const entry of entries) {
+    const srcPath = path.join(src, entry.name);
+    const destPath = path.join(dest, entry.name);
+    if (['.git', 'node_modules', 'dist'].includes(entry.name)) continue;
+    if (entry.isDirectory()) {
+      fs.mkdirSync(destPath, { recursive: true });
+      copyRecursive(srcPath, destPath);
+    } else {
+      fs.copyFileSync(srcPath, destPath);
+    }
+  }
 }
 
-function syncDirectory(src, dest) {
-  if (!fs.existsSync(src)) return;
-  fs.mkdirSync(dest, { recursive: true });
-  fs.cpSync(src, dest, { recursive: true });
-  log(`✓ Synchronized to: ${dest}`);
-}
-
-log(`Installing/updating ${SKILL_NAME}...`);
-syncDirectory(SOURCE_DIR, GLOBAL_CONFIG_SKILL);
-log(`Successfully registered ${SKILL_NAME}.`);
+copyRecursive(skillSource, agentSkillsDir);
+console.log('✓ Successfully injected tidyfactor-styler skill into .agents/skills/tidyfactor-styler');

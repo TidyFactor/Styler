@@ -1,8 +1,13 @@
 {
   "name": "@alwkala/tidyfactor-styler",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "TidyFactor Styler — Production Framework Styler, Section Redesign & RTL Polish Engine",
   "main": "SKILL.md",
+  "bin": {
+    "tidyfactor-styler": "bin/add-skill.js",
+    "add-skill": "bin/add-skill.js",
+    "add-styler-skill": "bin/add-skill.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TidyFactor/Styler.git"
@@ -39,9 +44,15 @@
     "SKILL.md",
     "references",
     "scripts",
+    "tools",
+    "bin",
+    "brand.json",
+    ".tidyfactor",
+    "AGENTS.md",
     "README.md",
     "README.ar.md",
-    "LICENSE"
+    "LICENSE",
+    "CHANGELOG.md"
   ],
   "publishConfig": {
     "access": "public"

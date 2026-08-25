@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.1.1] - 2026-08-25
+
+### Fixed
+- **CLI Executable & NPX Packaging**: Added `"bin"` mapping (`tidyfactor-styler`, `add-skill`, `add-styler-skill`) and included `"bin"` in the `"files"` whitelist of `package.json`, fixing the `npx @alwkala/tidyfactor-styler add-skill` execution failure (`npm error could not determine executable to run`).
+
+---
+
 ## [1.1.0] - 2026-08-25
 
 ### Added

@@ -1,7 +1,7 @@
 <div align="center">
 
-# 💎 TidyFactor Styler `v1.1.0`
-### Production-Stage Visual Design, CDL Decision Engine & In-Codebase UI Engineering Suite
+# 🎨 TidyFactor Styler `v1.1.1`
+### Production Framework Styler, Surgical RTL Redesign & Contextual Decision Engine
 
 **The official production styling & UI transformation skill for the TidyFactor Ecosystem across all modern web frameworks.**
 
