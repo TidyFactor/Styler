@@ -1,245 +1,338 @@
 <div align="center" dir="rtl">
 
-# 💎 مهارة تايتفكتور ستايلر `TidyFactor Styler v1.1.1`
-### حزمة هندسة الواجهات، وطبقة القرارات السياقية (CDL)، والتصميم الإنتاجي داخل المشاريع القائمة
+# 🎨 مهارة تايتفكتور لتنسيق أطر العمل `TidyFactor Styler v1.1.1`
+### مهارة هندسة الواجهات البرمجية وتنسيق أطر العمل والتحويل الجراحي للـ RTL لوكلاء الذكاء الاصطناعي
 
-**المهارة الرسمية المعتمدة لتصميم وهندسة الواجهات الإنتاجية عبر كافة أطر العمل الحديثة ضمن منظومة TidyFactor.**
+امنح وكلاء البرمجة الذكية (**Google Antigravity و Claude Code و Cursor و OpenAI Codex و Windsurf**) محركاً هندسياً لتنسيق الواجهات يعمل مباشرة داخل مستودع مشروعك الفعلي — دون إنشاء طبقات أنماط مكررة، أو استيراد مكتبات غريبة، أو إحداث فوضى في ملفات الـ CSS.
 
 [![npm version](https://img.shields.io/npm/v/@alwkala/tidyfactor-styler.svg?style=for-the-badge&color=0284C7)](https://www.npmjs.com/package/@alwkala/tidyfactor-styler)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg?style=for-the-badge)](LICENSE)
-[![RTL Ready](https://img.shields.io/badge/RTL-Native%20Arabic-emerald.svg?style=for-the-badge)](README.ar.md)
-[![Anti-Slop Certified](https://img.shields.io/badge/Anti--Slop-Certified-amber.svg?style=for-the-badge)](#-معايير-مكافحة-التصميم-المبتذل-anti-slop-وجودة-المخرجات)
-[![Architect Score](https://img.shields.io/badge/Architect%20Score-8%2F8%20Pass%20(100%25)-green.svg?style=for-the-badge)](#-الترخيص-وحوكمة-المعايير)
+[![RTL Native Arabic](https://img.shields.io/badge/RTL-Native%20Arabic-emerald.svg?style=for-the-badge)](#-هندسة-اللغة-العربية-والتحويل-الجراحي-للـ-rtl)
+[![Anti-Slop Certified](https://img.shields.io/badge/Anti--Slop-Certified-amber.svg?style=for-the-badge)](#-حوكمة-مكافحة-العشوائية-anti-slop-وحاجز-الجودة)
+[![Architect Score](https://img.shields.io/badge/Architect%20Score-8%2F8%20Pass%20(100%25)-green.svg?style=for-the-badge)](#-منهجية-tidyfactor-وحوكمة-الامتثال)
 
-[✨ موقع الوكالة](https://alwkala.com) • [⚡ سجل الأوامر الـ 13](#-سجل-أوامر-التصميم-الـ-12-command-registry) • [🛠️ مسارات العمل الـ 8](#%EF%B8%8F-مسارات-العمل-الإنتاجية-الـ-7-production-workflows) • [🌐 أطر العمل المدعومة](#-أطر-العمل-والبيئات-المدعومة) • [🇸🇦 هندسة الـ RTL](#-منظومة-دعم-اللغة-العربية-والاتجاه-rtl-الأصيل) • [📖 English Version](README.md)
+[🚀 البدء السريع](#-البدء-السريع) • [🎯 لماذا TidyFactor/Styler](#-لماذا-tidyfactorstyler) • [⚡ الأوامر الـ 13](#-معمارية-موجه-الأوامر-الـ-13) • [🛠️ مسارات العمل الـ 8](#%EF%B8%8F-مسارات-العمل-الإنتاجية-الـ-8) • [🌐 أطر العمل المدعومة](#-أطر-العمل-الإنتاجية-المدعومة) • [🇸🇦 هندسة الـ RTL](#-هندسة-اللغة-العربية-والتحويل-الجراحي-للـ-rtl) • [❓ الأسئلة الشائعة](#-الأسئلة-الشائعة-faq) • [📖 English Version](README.md)
+
+<br/><br/>
+
+<p align="center">
+  <img src="assets/demo-hero-dark.png" alt="TidyFactor Styler Production UI Engineering Showcase" width="100%" />
+</p>
 
 </div>
 
 ---
 
-> [!NOTE]
-> **TidyFactor Styler** هي مهارة ذكاء اصطناعي (AI Agent Skill) ومحرك تصميم إنتاجي للوكلاء الأذكياء (*Google Antigravity, Claude Code, Cursor, Codex, Windsurf*) والمطورين، مصممة للعمل **مباشرة داخل مشاريع الكود الحقيقية والقائمة** (*Next.js / React, PHP, WordPress, HTML/CSS*). على عكس أدوات النماذج الأولية المعزولة، لا تخترع هذه المهارة معمارية خاصة بها، بل تلتزم بالكامل بأنماط المشروع، وتمنع تضارب الكلاسات والانحراف البصري (Zero Style Drift).
+## 📚 جدول المحتويات
+
+- [🎯 لماذا TidyFactor/Styler](#-لماذا-tidyfactorstyler)
+- [🚀 البدء السريع](#-البدء-السريع)
+- [🌟 القيمة المضافة: متى تستخدم Styler؟](#-القيمة-المضافة-متى-تستخدم-styler)
+- [⚡ معمارية موجه الأوامر الـ 13](#-معمارية-موجه-الأوامر-الـ-13)
+- [🛠️ مسارات العمل الإنتاجية الـ 8](#%EF%B8%8F-مسارات-العمل-الإنتاجية-الـ-8)
+- [🌐 أطر العمل الإنتاجية المدعومة](#-أطر-العمل-الإنتاجية-المدعومة)
+- [🇸🇦 هندسة اللغة العربية والتحويل الجراحي للـ RTL](#-هندسة-اللغة-العربية-والتحويل-الجراحي-للـ-rtl)
+- [🛡️ حوكمة مكافحة العشوائية (Anti-Slop) وحاجز الجودة](#%EF%B8%8F-حوكمة-مكافحة-العشوائية-anti-slop-وحاجز-الجودة)
+  - [1. مصفوفة النقد الذاتي سداسية المحاور (P, H, E, S, R, V)](#1-مصفوفة-النقد-الذاتي-سداسية-المحاور-p-h-e-s-r-v)
+  - [2. مصفوفة حالات التفاعل الثمانية للمكونات](#2-مصفوفة-حالات-التفاعل-الثمانية-للمكونات)
+- [❓ الأسئلة الشائعة (FAQ)](#-الأسئلة-الشائعة-faq)
+- [🏛️ منظومة تايدي فاكتور الشاملة (TidyFactor Ecosystem)](#%EF%B8%8F-منظومة-تايدي-فاكتور-الشاملة-tidyfactor-ecosystem)
+- [🏛️ منهجية TidyFactor وحوكمة الامتثال](#%EF%B8%8F-منهجية-tidyfactor-وحوكمة-الامتثال)
+- [🤝 المساهمة والتطوير المجتمعي](#-المساهمة-والتطوير-المجتمعي)
+- [👨‍💻 قنوات الدعم والتواصل](#-قنوات-الدعم-والتواصل)
+- [📜 الترخيص](#-الترخيص)
 
 ---
 
-## 🌟 لماذا TidyFactor Styler؟ القيمة المضافة
+## 🎯 لماذا TidyFactor/Styler
 
-```mermaid
-graph TD
-    Intent{"ماذا تريد أن تبني؟"}
-    Intent -->|"نموذج أولي تفاعلي مستقل من الصفر"| D["🎨 tidyfactor-design<br/>(بروتوتايب HTML مستقل بدون أدوات بناء)"]
-    Intent -->|"هيكل مشروع جديد كلياً"| S["🏗️ مسارات معمارية الأنظمة<br/>(tidyfactor-php-micro وغيرها)"]
-    Intent -->|"تطوير وتصميم واجهات داخل مشروع قائم"| ST["💎 tidyfactor-styler<br/>(مكونات وأقسام وصفحات إنتاجية حقيقية)"]
-```
+معظم مخرجات الذكاء الاصطناعي التقليدية في التصميم تولد كود HTML عاماً بتنسيقات عشوائية، أو تفرط في استخدام كلاسات الـ Utility، أو تفرض مكتبات جديدة تتعارض مع مشروعك القائم.
 
-| لمطوري الواجهات (Frontend) | لفرق التطوير والوكالات الرقمية | لوكلاء الذكاء الاصطناعي (AI Agents) |
+**تفرض TidyFactor/Styler مبدأ هندسياً صارماً: "التوافق لا التنافس (Conform, Don't Compete)":** تكتشف المهارة إطار العمل النشط في مشروعك، وتقرأ رموز التصميم الموجودة، وتولد مكونات متطابقة بنيوياً وكأن كبير مهندسي الواجهات في فريقك هو من كتبها.
+
+| البُعد | التوليد التقليدي بالذكاء الاصطناعي | `tidyfactor-styler` |
 |---|---|---|
-| **الانسجام دون منافسة**: تتبنى كلاسات Tailwind وإعدادات المشروع الحالية ولا تنشئ طبقة CSS موازية أو متضاربة. | **مرونة شاملة لكل الـ Stacks**: الانتقال بسلاسة بين Next.js, PHP, WordPress بدون الحاجة لتوجيه يدوي معقد. | **توجيه موفر لسياق الذاكرة**: ملف `SKILL.md` خفيف جداً (~350 Tokens) يمنع حشو الذاكرة ويستدعي الملفات عند الحاجة فقط. |
-| **دقة النطاق المعزول**: تعديل المكون يمس تعريفه واستخداماته فقط دون المساس بالمكونات المجاورة لتفادي الـ Regressions. | **عربية و RTL أصلية**: تحويل فوري للخصائص المنطقية (`ms-*`, `pe-*`, `start-*`) ومعايرة دقيقة لحجم خطوط Cairo و Tajawal. | **مكافحة التصميم المبتذل (Anti-Slop)**: نقد ذاتي قبلي على 6 محاور (P, H, E, S, R, V) يمنع الأنماط المتكررة والتدرجات البنفسجية الرخيصة. |
-| **مصفوفة الحالات الثمانية (8-States)**: ضمان بناء كافة حالات التفاعل (Default, Hover, Active, Focus, Disabled, Loading, Empty, Error). | **مصدر الحقيقة للهوية (SSOT)**: قراءة `brand.json` وربطه المباشر بمتغيرات CSS Tokens داخل إعدادات المشروع. | **قوائم فحص صارمة**: كل مسار عمل ينتهي بقائمة تحقق إجرائية محددة للتأكد من اكتمال العمل قبل تسليمه. |
+| **بيئة التشغيل** | ملفات تجريبية معزولة أو مشاريع فارغة | **المشاريع الفعلية القائمة** (Next.js، PHP، WordPress، HTML) |
+| **التوافق مع الأنماط** | حقن ملفات CSS جديدة أو طبقات Tailwind مكررة | **اعتماد إعدادات Tailwind الحالية** ومتغيرات CSS ونظام التسمية المتبع |
+| **التحكم في النطاق** | تعديلات عشوائية قد تفسد الهيكل العام للصفحة | **تعديل جراحي محكوم النطاق** (المكون يعدل المكون واستخداماته فقط) |
+| **دعم العربية والـ RTL** | عكس عشوائي وتخريب الهوامش الاتجاهية (`mr-*`, `left-*`) | **خصائص CSS المنطقية القياسية** (`ms-*`, `pe-*`, `start-*`) وموازنة الخطوط العربية |
+| **جودة التصميم (Anti-Slop)** | تدرجات بنفسجية مكررة وغياب لحالات التفاعل | **نقد ذاتي سداسي المحاور** + تغطية حتمية لحالات التفاعل الـ 8 |
+| **استهلاك سياق الذكاء الاصطناعي** | نصوص طويلة غير منظمة تستهلك آلاف التوكنز | **موجه أوامر ذكي وخفيف** (~350 توكن عند البداية ويحمل الذاكرة عند الطلب) |
 
 ---
 
-## ⚡ سجل أوامر التصميم الـ 12 (Command Registry)
+## 🚀 البدء السريع
 
-تعتمد المهارة على جدول توجيه دقيق يضم **12 أمراً مخصصاً** ينقلك فوراً للهدف المطلوب:
-
-| الأمر | الغرض ونية الاستخدام | ما يتم تحميله في الذاكرة | الناتج والقيمة العملية |
-|---|---|---|---|
-| `component` | "صمم / أعد تصميم هذا المكون" | `workflows/component-create.md` أو `component-redesign.md` + `component-anatomy.md` + مكدس التقنية | مكون إنتاجي تفاعلي بكافة حالاته الثمانية ومتغيرات CVA. |
-| `section` | "صمم / نسق هذا القسم" | `workflows/section-create.md` أو `section-redesign.md` + `layout-archetypes.md` + `nav-footer-catalog.md` | قسم متناسق بتباعدات إيقاعية واستجابة شاشات مثالية. |
-| `page` | "ابنِ صفحة إنتاجية جديدة" | `workflows/page-create.md` + `layout-archetypes.md` + `nav-footer-catalog.md` + مكدس التقنية | صفحة متكاملة مبنية وفق اتفاقيات وبنية مسارات المشروع. |
-| `redesign` | "أعد تصميم هذه الصفحة القائمة" | `workflows/page-redesign.md` + `layout-archetypes.md` + `nav-footer-catalog.md` + `quality-bar.md` | تجديد بصري وتفاعلي شامل بدون كسر أي وظيفة أو مسار بيانات. |
-| `layout` | "اختر الهيكل الإنشائي للصفحة" | `memory/layout-archetypes.md` + مكدس التقنية | اختيار 1 من 8 هياكل إنشائية كبرى (`editorial`, `interface`, `spatial`, إلخ). |
-| `nav-footer` | "اختر قالب الهيدر والفوتر" | `memory/nav-footer-catalog.md` + `typography-arabic.md` + `rtl-css-engineering.md` | اختيار قوالب N1–N9 للهيدر و Ft1–Ft8 للفوتر مع دعم RTL كامل. |
-| `typography` | "ضبط وتنسيق منظومة الخطوط" | `memory/typography-arabic.md` | تطبيق 7 مسارات تناغم للخطوط العربية واللاتينية (Cairo, Tajawal, El Messiri, Inter). |
-| `palette` | "استخراج لوحة الألوان وفحص التباين" | `memory/brand-tokens.md` + `memory/asset-tooling.md` | توليد درجات ألوان متوافقة مع معايير إمكانية الوصول WCAG 2.1 AA. |
-| `assets` | "تحسين وضغط الصور والأصول" | `memory/asset-tooling.md` + `memory/quality-bar.md` | فحص أبعاد الصور، ضغط الأصول، وتفريغ الخلفيات عبر أدوات بايثون مدمجة. |
-| `rtl` | "فحص وتصحيح الاتجاهات والـ RTL" | `workflows/rtl-audit-fix.md` + `memory/rtl-css-engineering.md` | استبدال الكلاسات المطلقة بخصائص منطقية وتصحيح انعكاس الأيقونات. |
-| `motion` | "إضافة وضبط الحركات والمؤثرات" | `memory/motion-principles.md` | هندسة مؤثرات متناسقة باستخدام Framer Motion أو Alpine مع مراعاة A11y. |
-| `styles` | "تحديد الاتجاه أو النمط البصري" | `memory/design-styles.md` | توجيه الهوية البصرية لنمط محدد (Modern SaaS, Editorial, Swiss, إلخ). |
-
----
-
-## 🛠️ مسارات العمل الإنتاجية الـ 7 (Production Workflows)
-
-كل مهمة تصميمية تتبع مساراً صارماً من خطوة الصفر حتى الفحص النهائي:
-
-1. **`component-create.md`**: قراءة التصميم والمكدس $\rightarrow$ تحديد المتغيرات والحالات $\rightarrow$ التنفيذ البرمجي $\rightarrow$ النقد الذاتي $\rightarrow$ الفحص.
-2. **`component-redesign.md`**: فحص الوضع الحالي $\rightarrow$ تحديد الهدف والأسلوب $\rightarrow$ إعادة البناء بنطاق معزول $\rightarrow$ التحقق من عدم حدوث Regression.
-3. **`section-create.md`**: موائمة الهيكل العام $\rightarrow$ ضبط إيقاع التباعد $\rightarrow$ توزيع المكونات $\rightarrow$ إتقان الاستجابة للموبايل.
-4. **`section-redesign.md`**: عزل نطاق القسم $\rightarrow$ ترقية التسلسل الهرمي $\rightarrow$ تجديد العنصر البصري الجاذب $\rightarrow$ فحص الشاشات.
-5. **`page-create.md`**: اختيار نمط الصفحة $\rightarrow$ ربط الهيدر والفوتر $\rightarrow$ تجميع الأقسام $\rightarrow$ حقن وسوم الـ SEO والميتاداتا.
-6. **`page-redesign.md`**: توحيد الهوية البصرية $\rightarrow$ تحسين مسار التحويل $\rightarrow$ ضبط تناغم الخطوط $\rightarrow$ تدقيق ميزانية الأداء.
-7. **`rtl-audit-fix.md`**: إزالة كلاسات الاتجاهات الثابتة $\rightarrow$ التحويل للخصائص المنطقية $\rightarrow$ تصحيح اتجاه الأيقونات $\rightarrow$ موازنة الخطوط.
-
----
-
-## 🌐 أطر العمل والبيئات المدعومة
-
-تتعرف المهارة تلقائياً على بنية مشروعك وتنفذ الكود بالمعايير الأصلية للبيئة:
-
-| إطار العمل المستهدف | محرك التنسيق (Styling) | معمارية المكونات | محرك الحركات والمؤثرات |
-|---|---|---|---|
-| **React / Next.js** (App Router & Pages) | Tailwind CSS v4 / v3 أو CSS Modules | Radix UI / shadcn/ui + CVA + `clsx` + `tailwind-merge` | Framer Motion (`framer-motion`) |
-| **PHP (TidyFactor / Flight / Medoo)** | Tailwind CSS أو متغيرات CSS Custom Properties | Semantic HTML5 Partials (Plates / Blade / PHP Views) | Alpine.js (`x-transition`) أو CSS Transitions |
-| **WordPress / Classic CMS** | Modern Theme CSS / Gutenberg Styles | قوالب PHP Template Parts ومكعبات الكتل | Native CSS Keyframes / Vanilla JS |
-| **Static HTML / CSS / JS** | Semantic CSS / Modern CSS Variables | كتل ومكعبات HTML5 القياسية | Vanilla JS / CSS Transitions |
-
----
-
-## 🇸🇦 منظومة دعم اللغة العربية والاتجاه (RTL) الأصيل
-
-تم بناء المهارة بواسطة مهندسي تصميم عرب، ولذلك فإن المحتوى العربي يعامل كأساس أصيل:
-
-- **معيار الخصائص المنطقية (Logical Properties)**: استبدال 100% لكلاسات الاتجاهات القديمة (`left`, `right`, `pl-*`, `mr-*`) بكلاسات منطقية حيادية الاتجاه (`ps-*`, `pe-*`, `ms-*`, `me-*`, `start-*`, `end-*`).
-- **معايرة الخطوط العربية**: الالتزام الصارم بقواعد الخطوط — العناوين تستخدم **El Messiri / Cairo / Rooyin**، والنصوص تستخدم **Tajawal / Cairo / Inter**. منع استخدام خط الأميري (Amiri) للعناوين التي تزيد عن 24px منعاً باتاً.
-- **ارتفاع السطر العربي (Line-Height)**: تطبيق مضاعف ارتفاع سطر $\ge 1.5\times$ لمنع تداخل الحروف وعلامات التشكيل.
-- **عكس الأيقونات الذكي**: عكس الأيقونات ذات الدلالة الاتجاهية فقط (الأسهم، أزرار التنقل، خطوات الترقيم)، مع تثبيت أيقونات الوسائط (التشغيل، الكاميرا، الصوت).
-
----
-
-## 🛡️ معايير مكافحة التصميم المبتذل (Anti-Slop) وجودة المخرجات
-
-لمنع مخرجات الذكاء الاصطناعي الرديئة والمكررة، يخضع كل كود لنظام **التقييم الذاتي القبلي على 6 محاور**:
-
-```
-[Pre-Emit Self-Critique]
-P (Purpose):       هل يحل هذا المكون الهدف الوظيفي الحقيقي المطلوب؟ (1-5)
-H (Hierarchy):     هل يوجد تسلسل هرمي بصري واضح وعنصر جاذب رئيسي؟ (1-5)
-E (Execution):     هل تم بناء كافة حالات التفاعل الثمانية بدقة؟ (1-5)
-S (Stack Native):  هل يطابق الكود تسميات ومكتبات المشروع الحالي تماماً؟ (1-5)
-R (RTL Ready):     هل التباعدات والأيقونات محايدة للاتجاه وصحيحة عربياً؟ (1-5)
-V (Visual Soul):   هل يخلو التصميم من التدرجات البنفسجية الرخيصة والأنماط المبتذلة؟ (1-5)
-المجموع الإجمالي: يجب أن يحقق 25/30 كحد أدنى قبل كتابة وتصدير الكود.
-```
-
----
-
-## 🚀 التثبيت والاستخدام
-
-### 1. عبر أداة NPX مباشرة:
+### 1. الحقن المباشر للمهارة في مشروعك
 
 ```bash
-# تثبيت مهارة tidyfactor-styler في مجلد مشروعك الحالي
+# إضافة المهارة مباشرة داخل مساحة عمل مشروعك الحالي
 npx @alwkala/tidyfactor-styler add-skill
 ```
 
-### 2. النسخ المباشر لمجلد مهارات الوكيل الذكي:
+### 2. مسارات التثبيت حسب بيئة الوكيل الذكي
 
-انسخ مجلد `tidyfactor-styler` إلى مجلد مهارات بيئة العمل الخاصة بك:
-- **Google Antigravity:** `.agents/skills/tidyfactor-styler/`
-- **Claude Code:** `.claude-skill/skills/tidyfactor-styler/`
-- **Cursor / Windsurf / Codex:** `.agents/skills/tidyfactor-styler/`
+| وكيل الذكاء الاصطناعي | مسار التثبيت في مساحة العمل |
+|---|---|
+| **Google Antigravity** | `.agents/skills/tidyfactor-styler/` أو الإعدادات العامة `~/.gemini/config/skills/` |
+| **Claude Code** | `.claude-skill/skills/tidyfactor-styler/` |
+| **Cursor / Codex / Windsurf** | `.agents/skills/tidyfactor-styler/` |
 
----
-
-## 🏛️ منهجية TidyFactor وحوكمة الامتثال (8/8 Pass)
-
-حققت مهارة `tidyfactor-styler` نسبة امتثال **100% (8/8 علامات)** وفق معايير **TidyFactor Skill Architect**:
-
-1. ✅ **انضباط التوجيه (Dispatcher Discipline)**: ملف `SKILL.md` يعمل كموجّه مسارات فقط بدون حشو.
-2. ✅ **مسار واحد لكل نتيجة (One Workflow = One Outcome)**: 7 مسارات عمل محددة تنتهي بقوائم فحص.
-3. ✅ **ذاكرة تشغيلية نقية (Operational Memory)**: نصوص تقنية وقواعد خالصة خالية من الإنشاء السردي.
-4. ✅ **انعدام الهياكل الفارغة (No Empty Structures)**: لا توجد مجلدات وهمية أو فارغة.
-5. ✅ **عزل الفلسفة عن الكود (Philosophy Isolation)**: فصل المعايير التشغيلية عن الخطابات الترويجية.
-6. ✅ **نمو مدفوع بالمحفزات (Trigger-Justified Growth)**: إضافة الملفات بناءً على محفزات وظيفية دقيقة.
-7. ✅ **حاجز مكافحة الابتذال (Anti-Slop Quality Bar)**: فحص ذاتي إلزامي عبر 6 محاور و 16 قاعدة جودة.
-8. ✅ **تطابق البيئات المتعددة (Cross-Platform Parity)**: توافق كامل بين Antigravity و Claude و Cursor و Codex.
+بمجرد التثبيت، اكتب `/brief` أو `/component` أو `/section` أو `/redesign` داخل نافذة المحادثة للبدء في هندسة الواجهات فوراً!
 
 ---
 
-## 👨‍💻 معلومات المطور والجهة المطورة
+## 🌟 القيمة المضافة: متى تستخدم Styler؟
 
-- **الجهة المطورة:** [وكالة الوكالة الرقمية — Alwkala](https://alwkala.com)
-- **المنظومة:** [منظومة TidyFactor للمعمارية والمهارات](https://tidyfactor.com)
-- **المهندس المعماري الرئيسي:** وائل الصديق — Wael S. ([@waels](https://github.com/alwkala))
-- **البريد الإلكتروني:** [hello@alwkala.com](mailto:hello@alwkala.com)
-- **الدعم والاستفسارات:** [https://alwkala.com](https://alwkala.com)
-
----
-
-## 📜 الترخيص وحوكمة المعايير
-
-المهارة منشورة تحت **رخصة MIT**. جميع الحقوق محفوظة © 2026 [Alwkala](https://alwkala.com) / منظومة TidyFactor.
-
-
----
-
-## 🏛️ معمارية منظومة TidyFactor
-
-**منظومة TidyFactor** هي بيئة معمارية برمجية مفتوحة وحزم مهارات لوكلاء الذكاء الاصطناعي قائمة على الفصل التام للمسؤوليات عبر دورة حياة المنتجات:
-
-```text
-منظمة TidyFactor الرسمية (github.com/TidyFactor)
-│
-├── مهارات الحوكمة والجودة (Governance)
-│   └── Skill-Architect ← الحوكمة والمنهجية      (محرك حوكمة وبناء وهندسة المهارات المعتمدة)
-│
-├── مهارات التصميم (Design Skills)
-│   ├── Cinematic       ← التجربة البصرية المبهرة / Experience (صفحات هبوط سينمائية تفاعلية)
-│   ├── Design          ← النماذج الأولية السريعة / Prototype  (محرك تصميم الواجهات التفاعلي)
-│   └── Styler          ← التصميم الإنتاجي / Production        (مهندس تصميم الواجهات وضبط RTL)
-│
-├── مهارات التوثيق والمعرفة (Documentation)
-│   └── Doc             ← التوثيق والأدلة المعتمدة / Docsify    (محرك بناء وتوليد التوثيق الشامل)
-│
-├── مهارات التطوير البرمجي (Development Skills)
-│   ├── Next            ← منصات الساس متعددة المستأجرين / Multi-Tenant (Next.js 16 + Postgres RLS)
-│   ├── HTML            ← المواقع الثابتة وسيو المحتوى / Static & SEO   (هياكل خفيفة وسريعة)
-│   ├── HTMX            ← الواجهات التفاعلية الخفيفة / Hypermedia        (تفاعلات بدون جافاسكريبت معقدة)
-│   ├── JS              ← تطبيقات الصفحة الواحدة بدون أطر / Vanilla SPA  (نماذج تفاعلية بـ ES Modules)
-│   └── PHP             ← المنظومات المخدمية الحديثة / Server-Rendered  (مكونات حديثة وتطبيقات PHP 8)
-│
-└── مهارات النمو والتسويق (Growth Skills)
-    └── Marketing       ← استراتيجيات النمو والمبيعات / Growth & SEO    (تسويق الاستجابة المباشرة)
+```mermaid
+graph TD
+    Intent{"ما الذي تريد بناءه؟"}
+    Intent -->|"نموذج أولي مستقل من الصفر"| D["🎨 tidyfactor-design<br/>(نموذج HTML تفاعلي بدون بناء)"]
+    Intent -->|"هيكل مشروع جديد كلياً"| S["🏗️ مسارات المعمارية<br/>(tidyfactor-next, tidyfactor-php, etc.)"]
+    Intent -->|"تطوير وتنسيق مشروع حقيقي قائم"| ST["💎 tidyfactor-styler<br/>(مكونات وأقسام وصفحات إنتاجية فعلية)"]
 ```
 
-### 💎 ثلاثي الواجهات الأمامية والتجربة (Frontend Triad)
+| لمطوري الواجهات (Frontend) | للشركات والفرق البرمجية | لوكلاء البرمجة الذكية (AI Agents) |
+|---|---|---|
+| **التوافق لا التنافس**: اعتماد نفس طريقة التسمية وإعدادات Tailwind دون إنشاء نظام CSS موازٍ. | **دعم شامل لكافة أطر العمل**: تنقل سلس بين Next.js و PHP و WordPress و HTML دون الحاجة لضبط يدوي للبرومبت. | **موجه فائق الخفة**: يستهلك موجه `SKILL.md` حوالي 350 توكن فقط عند البداية، ويستدعي الذاكرة عند الطلب. |
+| **دقة محكومة النطاق**: تعديل المكون يمس تعريف المكون واستخداماته المباشرة فقط دون التأثير على العناصر المجاورة. | **العربية والـ RTL كأولوية قصوى**: خصائص CSS المنطقية (`ms-*`, `pe-*`, `start-*`) وموازنة ارتفاع الأسطر للأحرف العربية. | **حظر العشوائية (Anti-Slop)**: نقد ذاتي سداسي المحاور يمنع التدرجات البنفسجية الرخيصة والتصاميم الرديئة. |
+| **مصفوفة تفاعل ثمانية الحالات**: ضمان تغطية كافة الحالات (الافتراضية، التحويم، التنشيط، التركيز، التعطيل، التحميل، الفارغة، والخطأ). | **التكامل مع هوية المشروع**: قراءة ملف `brand.json` تلقائياً وربط الألوان والرموز بمتغيرات المشروع. | **قوائم تحقق حتمية**: ينتهي كل مسار عمل بقائمة تحقق دقيقة قبل تسليم الكود. |
 
-```text
+---
+
+## ⚡ معمارية موجه الأوامر الـ 13
+
+توفر `tidyfactor-styler` **13 أمراً تخصصياً دقيقاً** مقسمة هيكلياً:
+
+```mermaid
+graph LR
+    SK["💎 SKILL.md<br/>(موجه الأوامر الرئيسي)"]
+    SK --> C0["الاستكشاف<br/>(brief)"]
+    SK --> C1["عمليات المكونات<br/>(component)"]
+    SK --> C2["عمليات الأسطح والصفحات<br/>(section, page, redesign)"]
+    SK --> C3["الهيكل والتخطيط<br/>(layout, nav-footer)"]
+    SK --> C4["نظام التصميم والهوية<br/>(typography, palette, assets, styles)"]
+    SK --> C5["الجودة الهندسية<br/>(rtl, motion)"]
+```
+
+| الأمر | نية واستخدام المطور | ما يتم تحميله في الذاكرة | المخرجات والقيمة |
+|---|---|---|---|
+| `brief` | "تثبيت موجز التصميم واختيارات المشروع" | `workflows/brief.md` + `memory/decision-points.md` | جلسة استكشافية سريعة لحفظ إطار العمل والمدرسة التصميمية. |
+| `component` | "إنشاء / إعادة تصميم هذا المكون" | `workflows/component-create.md` أو `component-redesign.md` + `component-anatomy.md` + `stacks/*.md` | مكون إنتاجي أصيل بلغة المشروع مع تغطية الحالات الـ 8 ومتغيرات CVA. |
+| `section` | "إنشاء / إعادة تنسيق هذا القسم" | `workflows/section-create.md` أو `section-redesign.md` + `layout-archetypes.md` + `nav-footer-catalog.md` | قسم متناسق مع إيقاع بصري متجاوب وتسلسل هرمي واضح. |
+| `page` | "بناء صفحة إنتاجية جديدة" | `workflows/page-create.md` + `layout-archetypes.md` + `nav-footer-catalog.md` + `stacks/*.md` | تجميع صفحة كاملة مع الالتزام باتفاقيات ملفات إطار العمل. |
+| `redesign` | "إعادة تصميم هذه الصفحة القائمة" | `workflows/page-redesign.md` + `layout-archetypes.md` + `nav-footer-catalog.md` + `quality-bar.md` | تجديد بصري شامل ومبهر دون كسر المنطق البرمجي أو الوظائف القائمة. |
+| `layout` | "اختيار النمط الهيكلي الكلي (Macrostructure)" | `memory/layout-archetypes.md` + `stacks/*.md` | مطابقة سياق المنتج مع 1 من 8 أنماط هيكلية أساسية. |
+| `nav-footer` | "اختيار نمط القوائم العلوية والتذييل" | `memory/nav-footer-catalog.md` + `typography-arabic.md` + `rtl-css-engineering.md` | الاختيار من أنماط القوائم N1–N9 والتذييلات Ft1–Ft8 مع محاذاة RTL. |
+| `typography` | "اختيار وتنسيق الخطوط (بما فيها العربية)" | `memory/typography-arabic.md` | تطبيق 7 أزواج خطوط متناسقة (Cairo, Tajawal, El Messiri, Inter, Outfit). |
+| `palette` | "استخراج لوحة الألوان وفحص التباين WCAG AA" | `memory/brand-tokens.md` + `memory/asset-tooling.md` | توليد موازين الألوان مع فحص آلي لنسب تباين الألوان وفق معايير WCAG 2.1 AA. |
+| `assets` | "تحسين وإدارة الصور والوسائط" | `memory/asset-tooling.md` + `memory/quality-bar.md` | ضغط الصور وفحص الأبعاد ومعالجة الأصول البصرية. |
+| `rtl` | "فحص وتصحيح التوافق مع اللغة العربية والـ RTL" | `workflows/rtl-audit-fix.md` + `memory/rtl-css-engineering.md` | تحويل CSS الاتجاهي لخصائص منطقية وتصحيح اتجاه الأيقونات. |
+| `motion` | "إضافة وضبط الحركات والتفاعلات" | `memory/motion-principles.md` | هندسة حركات Framer Motion أو Alpine مع مراعاة إمكانية الوصول `prefers-reduced-motion`. |
+| `styles` | "اختيار اتجاه ومدرسة التصميم" | `memory/design-styles.md` | توجيه الواجهة لمدرسة تصميم محددة (Modern SaaS، Editorial، Swiss، إلخ). |
+
+---
+
+## 🛠️ مسارات العمل الإنتاجية الـ 8
+
+يتبع كل مسار عمل خطوات صارمة تنتهي بقائمة تحقق حتمية:
+
+1. **`brief.md`**: استكشاف قرارات المشروع $\rightarrow$ تثبيت إطار العمل $\rightarrow$ ربط ألوان الهوية $\rightarrow$ حفظ ملف الكاش `.tidyfactor/styler-brief.md`.
+2. **`component-create.md`**: قراءة متطلبات التصميم $\rightarrow$ تخطيط الحالات والمتغيرات $\rightarrow$ التنفيذ الأصيل بلغة الإطار $\rightarrow$ النقد الذاتي $\rightarrow$ التحقق.
+3. **`component-redesign.md`**: فحص الحالة الراهنة $\rightarrow$ تحديد اتجاه التجديد $\rightarrow$ التعديل محكوم النطاق $\rightarrow$ التأكد من عدم كسر الوظائف.
+4. **`section-create.md`**: ضبط الهيكل العام $\rightarrow$ إيقاع نمط التخطيط $\rightarrow$ تجميع المكونات الداخلية $\rightarrow$ صقل التجاوب مع الجوال.
+5. **`section-redesign.md`**: عزل نطاق القسم $\rightarrow$ رفع التسلسل الهرمي $\rightarrow$ تجديد المرساة البصرية $\rightarrow$ تدقيق شبكة العرض.
+6. **`page-create.md`**: المخطط الهيكلي للصفحة $\rightarrow$ اختيار الهيدر والفوتر $\rightarrow$ تجميع الأقسام $\rightarrow$ حقن وسوم الـ SEO.
+7. **`page-redesign.md`**: التناسق البصري العام $\rightarrow$ تحسين مسار التحويل $\rightarrow$ تناغم الخطوط $\rightarrow$ ميزانية الأداء.
+8. **`rtl-audit-fix.md`**: إزالة التنسيقات الاتجاهية $\rightarrow$ التحويل للخصائص المنطقية $\rightarrow$ عكس الأيقونات الاتجاهية $\rightarrow$ ضبط أحجام الخطوط العربية.
+
+---
+
+## 🌐 أطر العمل الإنتاجية المدعومة
+
+تكتشف المهارة بيئة المشروع وترتبط تلقائياً بمعمارية الكود:
+
+| إطار العمل المستهدف | بنية التنسيق | بنية المكونات | محرك الحركة والتفاعل |
+|---|---|---|---|
+| **React / Next.js** (App Router و Pages) | Tailwind CSS v4 / v3 أو CSS Modules | Radix UI / shadcn/ui + CVA + `clsx` + `tailwind-merge` | Framer Motion (`framer-motion`) |
+| **PHP (TidyFactor / Flight / Medoo)** | Tailwind CSS أو متغيرات CSS الأصلية | قوالب HTML5 الدلالية (Plates / Blade / PHP Views) | Alpine.js (`x-transition`) أو CSS Transitions |
+| **WordPress / Classic CMS** | Modern Theme CSS / Gutenberg Styles | ملفات قوالب PHP / قوالب المكونات | Native CSS Keyframes / Vanilla JS |
+| **Static HTML / CSS / JS** | Semantic CSS / Modern CSS Variables | كتل المكونات المعيارية | Vanilla JS / CSS Transitions |
+
+---
+
+## 🇸🇦 هندسة اللغة العربية والتحويل الجراحي للـ RTL
+
+<p align="center">
+  <img src="assets/demo-rtl-pipeline.png" alt="Production UI Transformation Lifecycle" width="100%" />
+</p>
+
+### 1. فرض خصائص الـ CSS المنطقية القياسية
+تستبدل المهارة التنسيقات الاتجاهية القديمة (`margin-left`، `float: right`، `left: 0`) بخصائص الـ CSS المنطقية الحديثة:
+
+```css
+/* معمارية الخصائص المنطقية القياسية */
+.styler-card {
+  margin-inline-start: 1.5rem;    /* بديل margin-left / margin-right */
+  padding-inline-end: 1.25rem;    /* بديل padding-right / padding-left */
+  inset-inline-start: 0;          /* بديل left / right */
+  text-align: start;              /* بديل text-align: left */
+  border-start-start-radius: 8px; /* نصف قطر الزاوية المنطقي */
+}
+```
+
+### 2. موازنة الخطوط والطباعة العربية
+تتطلب الكتابة العربية تعويضاً خاصاً للمسافات وارتفاع الأسطر:
+- **منع استخدام المسافات السالبة بين الحروف (`letter-spacing`)** على النصوص العربية نهائياً (لأنها تقطع اتصالات الحروف المتصلة).
+- **زيادة ارتفاع السطر (`line-height`) بنسبة +15–20%** مقارنة بالخطوط اللاتينية لمراعاة علامات التشكيل وحروف المد.
+- **توليفات خطوط مدروسة حسب الانطباع**:
+  - *تطبيقات الساس الحديثة*: Cairo / Tajawal + Inter / Outfit
+  - *المؤسسات والمحتوى الموثوق*: IBM Plex Arabic + IBM Plex Sans
+  - *الفخامة والإبداع*: El Messiri (ممنوع تحت 24px) + Plus Jakarta Sans
+
+---
+
+## 🛡️ حوكمة مكافحة العشوائية (Anti-Slop) وحاجز الجودة
+
+### 1. مصفوفة النقد الذاتي سداسية المحاور (P, H, E, S, R, V)
+
+قبل إصدار الكود، يُجري الوكيل تقييماً ذاتياً عبر **مصفوفة مكافحة العشوائية** (`memory/quality-bar.md`):
+
+- **P — تناغم لوحة الألوان (0–10)**: توافق صارم مع WCAG 2.1 AA؛ ومنع التدرجات البنفسجية المبتذلة دون وجودها في الهوية.
+- **H — التسلسل الهرمي والإيقاع البصري (0–10)**: مرساة بصرية واضحة ومسافات متناغمة تعتمد شبكة 4px/8px.
+- **E — دقة التنفيذ (0–10)**: استخدام وسوم HTML5 الدلالية وتجنب حشو وسوم `<div>` الفارغة.
+- **S — اكتمال حالات التفاعل (0–10)**: تنفيذ حالات المكون الثمانية كاملة.
+- **R — صحة الـ RTL والعربية (0–10)**: استخدام 100% لخصائص CSS المنطقية وتصحيح اتجاه الأيقونات.
+- **V — التميز والفرادة (0–10)**: طابع تصميمي مميز بعيد عن قوالب بوتستراب الافتراضية.
+
+### 2. مصفوفة حالات التفاعل الثمانية للمكونات
+
+يجب أن يوفر كل مكون تفاعلي تغطية بصرية شاملة للحالات التالية:
+1. `default`: الحالة الافتراضية مع وضوح إمكانية النقر.
+2. `hover`: رفع بسيط أو تعزيز للتباين (في زمن $\le 150\text{ms}$).
+3. `active`: تأثير الضغط بالتحجيم الدقيق ($0.98$) أو العمق الداخلي.
+4. `focus-visible`: حلقة تركيز بمسافة 2px لسهولة الوصول بلوحة المفاتيح.
+5. `disabled`: تقليل الشفافية ($0.5$) ومنع أحداث المؤشر.
+6. `loading`: هيكل عظمي (Skeleton) أو مؤشر دوران يمنع اهتزاز الصفحة.
+7. `empty`: واجهة مرحبة بحالة البيانات الفارغة مع زر دعوة للإجراء (CTA).
+8. `error`: حالة الخطر الدلالية مع رسالة خطأ واضحة ومقروءة.
+
+---
+
+## ❓ الأسئلة الشائعة (FAQ)
+
+<details>
+<summary><b>ما الفرق بين Styler و <code>tidyfactor-design</code>؟</b></summary>
+<br/>
+تبني <code>tidyfactor-design</code> نماذج أولية تفاعلية مستقلة بدون بناء في مجلد تجريبي منفصل. بينما <b>تعمل <code>tidyfactor-styler</code> مباشرة داخل مستودع مشروعك الحقيقي</b> (Next.js، PHP، WordPress، HTML) لتعديل المكونات الحالية واحترام معمارية CSS النشطة لديك.
+</details>
+
+<details>
+<summary><b>هل ستغير المهارة إعدادات Tailwind الحالية في مشروعي؟</b></summary>
+<br/>
+<b>كلا على الإطلاق.</b> تلتزم المهارة بقاعدة "التوافق لا التنافس": حيث تفحص ملف <code>tailwind.config.js</code> أو ملفات الـ CSS وتستخدم كلاساتك ورموز ألوانك الحالية.
+</details>
+
+<details>
+<summary><b>ما هي بيئات وكلاء الذكاء الاصطناعي المدعومة؟</b></summary>
+<br/>
+<b>Google Antigravity و Claude Code و Cursor و OpenAI Codex و Windsurf</b>، وتعمل المهارة بنفس السلوك الحتمي عبر جميع هذه البيئات.
+</details>
+
+<details>
+<summary><b>كيف تتعامل المهارة مع دعم اللغة العربية وتنسيق RTL؟</b></summary>
+<br/>
+تستخدم المهارة خصائص CSS المنطقية (مثل <code>margin-inline-start</code> و <code>inset-inline-start</code> و <code>text-align: start</code>) وتدير عكس الأيقونات وتوسيع ارتفاع الأسطر وتوليف الخطوط العربية آلياً.
+</details>
+
+---
+
+## 🏛️ منظومة تايدي فاكتور الشاملة (TidyFactor Ecosystem)
+
+**TidyFactor** هي منظومة معمارية متكاملة لهندسة الويب ومهارات وكلاء الذكاء الاصطناعي:
+
+```
+TidyFactor Organization (github.com/TidyFactor)
+│
+├── مسارات التصميم (Design Skills)
+│   ├── Cinematic    → الإبهار والتجربة        (صفحات تفاعلية بأسلوب Apple × Cartier)
+│   ├── Design       → البناء والنماذج الأولية  (محرك تصميم الكود وبديل فيجما)
+│   └── Styler       → الإنتاج والشحن الفعلي   (محرك تنسيق أطر العمل ودعم الـ RTL)
+│
+├── مسارات التطوير البرمجي (Development Skills)
+│   ├── HTML         → المحتوى والمواقع الثابتة (محرك المواقع الثابتة مع SEO دلالي)
+│   ├── HTMX         → التفاعلية الخفيفة      (تفاعلية تعتمد على السيرفر)
+│   ├── JS           → تطبيقات SPA المستقلة     (تطبيقات رياكتيف بدون أطر عمل)
+│   ├── PHP          → المعمارية الموحدة       (معمارية PHP 8.x الحديثة)
+│   └── Next         → منصات الساس السحابية    (Next.js 16 و React 19 و Supabase RLS والأداء)
+│
+└── مسارات النمو والتسويق (Growth Skills)
+    └── Marketing    → المبيعات والنمو         (التسويق المباشر واستراتيجيات الـ SEO والمحتوى)
+```
+
+### 💎 ثلاثية التصميم (Frontend Triad)
+
+```
                 TidyFactor
                     │
           ┌─────────┼─────────┐
           │         │         │
       Cinematic   Design    Styler
           │         │         │
-       Experience Prototype Production
+      Experience Prototype Production
           │         │         │
-       "Wow"      "Build"   "Ship"
+        "Wow"      "Build"   "Ship"
 ```
 
-### 📦 مصفوفة التكامل الشامل للمجتمع (المهارات الـ 11 الرسمية)
+### 📦 حزم ومستودعات المجتمع المعتمدة
 
-| المسار البرمجي | الفئة | مستودع GitHub | مهارة الوكيل | حزمة NPM |
+| المسار | التصنيف | مستودع GitHub | مهارة الوكيل | حزمة NPM |
 | :--- | :--- | :--- | :--- | :--- |
-| **Skill-Architect** | الحوكمة | [`TidyFactor/Skill-Architect`](https://github.com/TidyFactor/Skill-Architect) | `tidyfactor-skill-architect` | [`@alwkala/tidyfactor-skill-architect`](https://www.npmjs.com/package/@alwkala/tidyfactor-skill-architect) |
-| **Cinematic** | التصميم | [`TidyFactor/Cinematic`](https://github.com/TidyFactor/Cinematic) | `tidyfactor-cinematic` | [`@alwkala/create-cinematic-kit`](https://www.npmjs.com/package/@alwkala/create-cinematic-kit) |
-| **Design** | التصميم | [`TidyFactor/Design`](https://github.com/TidyFactor/Design) | `tidyfactor-design` | [`@alwkala/tidyfactor-design`](https://www.npmjs.com/package/@alwkala/tidyfactor-design) |
-| **Styler** | التصميم | [`TidyFactor/Styler`](https://github.com/TidyFactor/Styler) | `tidyfactor-styler` | [`@alwkala/tidyfactor-styler`](https://www.npmjs.com/package/@alwkala/tidyfactor-styler) |
-| **Doc** | التوثيق | [`TidyFactor/Doc`](https://github.com/TidyFactor/Doc) | `tidyfactor-doc` | [`@alwkala/tidyfactor-doc`](https://www.npmjs.com/package/@alwkala/tidyfactor-doc) |
-| **Next** | التطوير | [`TidyFactor/Next`](https://github.com/TidyFactor/Next) | `tidyfactor-next` | [`@alwkala/tidyfactor-next`](https://www.npmjs.com/package/@alwkala/tidyfactor-next) |
-| **HTML** | التطوير | [`TidyFactor/HTML`](https://github.com/TidyFactor/HTML) | `tidyfactor-html` | [`@alwkala/tidyfactor-html`](https://www.npmjs.com/package/@alwkala/tidyfactor-html) |
-| **HTMX** | التطوير | [`TidyFactor/HTMX`](https://github.com/TidyFactor/HTMX) | `tidyfactor-htmx` | [`@alwkala/tidyfactor-htmx`](https://www.npmjs.com/package/@alwkala/tidyfactor-htmx) |
-| **JS** | التطوير | [`TidyFactor/JS`](https://github.com/TidyFactor/JS) | `tidyfactor-js` | [`@alwkala/tidyfactor-js`](https://www.npmjs.com/package/@alwkala/tidyfactor-js) |
-| **PHP** | التطوير | [`TidyFactor/PHP`](https://github.com/TidyFactor/PHP) | `tidyfactor-php` | [`@alwkala/tidyfactor-php`](https://www.npmjs.com/package/@alwkala/tidyfactor-php) |
-| **Marketing** | النمو | [`TidyFactor/Marketing`](https://github.com/TidyFactor/Marketing) | `tidyfactor-marketing` | [`@alwkala/tidyfactor-marketing`](https://www.npmjs.com/package/@alwkala/tidyfactor-marketing) |
+| **Styler** | Design | [`TidyFactor/Styler`](https://github.com/TidyFactor/Styler) | `tidyfactor-styler` | [`@alwkala/tidyfactor-styler`](https://www.npmjs.com/package/@alwkala/tidyfactor-styler) |
+| **Design** | Design | [`TidyFactor/Design`](https://github.com/TidyFactor/Design) | `tidyfactor-design` | [`@alwkala/tidyfactor-design`](https://www.npmjs.com/package/@alwkala/tidyfactor-design) |
+| **Cinematic** | Design | [`TidyFactor/Cinematic`](https://github.com/TidyFactor/Cinematic) | `tidyfactor-cinematic` | [`@alwkala/create-cinematic-kit`](https://www.npmjs.com/package/@alwkala/create-cinematic-kit) |
+| **Next** | Development | [`TidyFactor/Next`](https://github.com/TidyFactor/Next) | `tidyfactor-next` | [`@alwkala/tidyfactor-next`](https://www.npmjs.com/package/@alwkala/tidyfactor-next) |
+| **HTML** | Development | [`TidyFactor/HTML`](https://github.com/TidyFactor/HTML) | `tidyfactor-html` | [`@alwkala/tidyfactor-html`](https://www.npmjs.com/package/@alwkala/tidyfactor-html) |
+| **HTMX** | Development | [`TidyFactor/HTMX`](https://github.com/TidyFactor/HTMX) | `tidyfactor-htmx` | [`@alwkala/tidyfactor-htmx`](https://www.npmjs.com/package/@alwkala/tidyfactor-htmx) |
+| **JS** | Development | [`TidyFactor/JS`](https://github.com/TidyFactor/JS) | `tidyfactor-js` | [`@alwkala/tidyfactor-js`](https://www.npmjs.com/package/@alwkala/tidyfactor-js) |
+| **PHP** | Development | [`TidyFactor/PHP`](https://github.com/TidyFactor/PHP) | `tidyfactor-php` | [`@alwkala/tidyfactor-php`](https://www.npmjs.com/package/@alwkala/tidyfactor-php) |
+| **Marketing** | Growth | [`TidyFactor/Marketing`](https://github.com/TidyFactor/Marketing) | `tidyfactor-marketing` | [`@alwkala/tidyfactor-marketing`](https://www.npmjs.com/package/@alwkala/tidyfactor-marketing) |
 
 ---
 
-## 👨‍💻 المنظمة والتواصل والدعم
+## 🏛️ منهجية TidyFactor وحوكمة الامتثال
 
-- 🌐 **الموقع الرسمي للمنظومة:** [https://tidyfactor.com/](https://tidyfactor.com/)
-- 📚 **التوثيق الرسمي المعتمد:** [https://tidyfactor.com/documentation](https://tidyfactor.com/documentation)
-- 🤝 **الشريك التقني الرسمي:** [الوكالة الرقمية Alwkala](https://alwkala.com/)
+تلتزم `tidyfactor-styler` بجميع **القواعد الهيكلية الثماني** لمنظومة [`tidyfactor-skill-architect`](https://github.com/TidyFactor/Skill-Architect):
+
+1. ✅ **انضباط التوجيه (Dispatcher Discipline)**: ملف `SKILL.md` موجه أوامر خفيف يستهلك ~350 توكن فقط.
+2. ✅ **مسار عمل واحد = نتيجة واحدة**: كل مسار يمتلك مخرجاً واحداً وقائمة تحقق دقيقة.
+3. ✅ **ذاكرة تشغيلية نقية**: قوالب أنماط وتنسيقات مجردة دون حشو تسويقي.
+4. ✅ **بنية نظيفة**: لا توجد مجلدات فارغة أو أحادية الملف.
+5. ✅ **فصل الفلسفة**: عزل الفلسفة عن ملفات التنفيذ البرمجي التشغيلية.
+6. ✅ **نمو قائم على المحفزات**: إضافة الأوامر بناءً على مراحل هندسة الواجهات الحقيقية.
+7. ✅ **حاجز الجودة ومكافحة العشوائية**: نقد ذاتي آلي وتغطية شاملة لحالات التفاعل الـ 8.
+8. ✅ **توافق عبر المنصات**: أداء متطابق تماماً عبر Antigravity و Claude Code و Cursor و Codex.
+
+---
+
+## 🤝 المساهمة والتطوير المجتمعي
+
+نرحب بمساهمات المجتمع، ومحولات أطر العمل الإضافية، وتحسينات مسارات العمل!
+
+يرجى مراجعة `CONTRIBUTING.md` و `CODE_OF_CONDUCT.md` قبل فتح طلب سحب (Pull Request).
+
+---
+
+## 👨‍💻 قنوات الدعم والتواصل
+
+- 🌐 **الموقع الرسمي:** [tidyfactor.com](https://tidyfactor.com/)
+- 📚 **التوثيق البرمجي:** [tidyfactor.com/documentation](https://tidyfactor.com/documentation)
+- 🤝 **الشريك الاستراتيجي:** [وكالة الوكالة الرقمية (Alwkala Digital Agency)](https://alwkala.com/)
 - 🐙 **منظمة GitHub الرسمية:** [github.com/TidyFactor](https://github.com/TidyFactor)
-- 📧 **استفسارات الأعمال والشركات:** [hello@tidyfactor.com](mailto:hello@tidyfactor.com)
-- 📱 **واتساب:** [+20 101 665 6899](https://wa.me/201016656899)
-- 📞 **الهاتف:** +20 101 665 6899
-- 📍 **المقر:** القاهرة، جمهورية مصر العربية
+- 📧 **البريد الإلكتروني:** [hello@tidyfactor.com](mailto:hello@tidyfactor.com)
 
 ---
 
-## 📜 الترخيص والمجتمع
+## 📜 الترخيص
 
-مرخصة تحت رخصة **Apache License 2.0**. حقوق النشر محفوظة (c) 2026 لصالح [منظومة TidyFactor](https://tidyfactor.com) و[الوكالة الرقمية Alwkala](https://alwkala.com).
+مرخصة بموجب رخصة **Apache License 2.0**. جميع الحقوق محفوظة (c) 2026 [TidyFactor](https://tidyfactor.com) و [Alwkala](https://alwkala.com).

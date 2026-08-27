@@ -31,6 +31,7 @@ const ROOT_COPIES = [
   "scripts",
   "tools",
   "bin",
+  "assets",
   "brand.json",
   ".tidyfactor",
   "package.json",

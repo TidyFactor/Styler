@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TidyFactor Styler - Social Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      width: 1280px;
+      height: 640px;
+      background: #080B11;
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #F3F4F6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .glow-1 {
+      position: absolute;
+      top: -150px;
+      left: -100px;
+      width: 650px;
+      height: 650px;
+      background: radial-gradient(circle, rgba(2, 132, 199, 0.22) 0%, rgba(8, 11, 17, 0) 70%);
+      filter: blur(40px);
+      pointer-events: none;
+    }
+    .glow-2 {
+      position: absolute;
+      bottom: -150px;
+      right: -100px;
+      width: 750px;
+      height: 750px;
+      background: radial-gradient(circle, rgba(16, 185, 129, 0.22) 0%, rgba(8, 11, 17, 0) 70%);
+      filter: blur(50px);
+      pointer-events: none;
+    }
+    .glow-3 {
+      position: absolute;
+      top: 40%;
+      right: 25%;
+      width: 450px;
+      height: 450px;
+      background: radial-gradient(circle, rgba(168, 85, 247, 0.15) 0%, rgba(8, 11, 17, 0) 70%);
+      filter: blur(60px);
+      pointer-events: none;
+    }
+
+    .grid-bg {
+      position: absolute;
+      inset: 0;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+      background-size: 40px 40px;
+      mask-image: radial-gradient(circle at 50% 50%, black 50%, transparent 95%);
+      pointer-events: none;
+    }
+
+    .container {
+      width: 1160px;
+      height: 520px;
+      display: grid;
+      grid-template-columns: 1.18fr 0.82fr;
+      gap: 36px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .left-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .top-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      color: #9CA3AF;
+      text-transform: uppercase;
+    }
+
+    .brand-dot {
+      width: 8px;
+      height: 8px;
+      background: #0284C7;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #0284C7;
+    }
+
+    .version-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 10px;
+      background: rgba(2, 132, 199, 0.15);
+      border: 1px solid rgba(2, 132, 199, 0.35);
+      color: #38BDF8;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 6px;
+    }
+
+    .title-group {
+      margin-top: 14px;
+    }
+
+    .main-title {
+      font-size: 52px;
+      font-weight: 800;
+      letter-spacing: -1.5px;
+      line-height: 1.08;
+      color: #FFFFFF;
+    }
+
+    .main-title span {
+      background: linear-gradient(135deg, #38BDF8 0%, #34D399 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .tagline {
+      margin-top: 12px;
+      font-size: 18px;
+      line-height: 1.45;
+      color: #94A3B8;
+      font-weight: 500;
+      max-width: 580px;
+    }
+
+    .features-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .feature-tag {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: rgba(15, 23, 42, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #E2E8F0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .feature-tag svg {
+      width: 16px;
+      height: 16px;
+      color: #38BDF8;
+    }
+
+    .footer-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .agents-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 12px;
+      color: #64748B;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .agent-pill {
+      color: #CBD5E1;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 4px 10px;
+      border-radius: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .right-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card-stack {
+      position: relative;
+      width: 100%;
+    }
+
+    .code-card {
+      background: rgba(11, 15, 25, 0.9);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      border-radius: 14px;
+      box-shadow: 
+        0 20px 40px -15px rgba(0, 0, 0, 0.7),
+        0 0 30px rgba(56, 189, 248, 0.12);
+      backdrop-filter: blur(16px);
+      overflow: hidden;
+    }
+
+    .card-header {
+      padding: 12px 18px;
+      background: rgba(255, 255, 255, 0.03);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .dots { display: flex; gap: 6px; }
+    .dot { width: 10px; height: 10px; border-radius: 50%; }
+    .dot.red { background: #EF4444; }
+    .dot.yellow { background: #F59E0B; }
+    .dot.green { background: #10B981; }
+
+    .card-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: #94A3B8;
+      font-weight: 500;
+    }
+
+    .shield-badge {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 11px;
+      font-weight: 700;
+      color: #38BDF8;
+      background: rgba(2, 132, 199, 0.12);
+      border: 1px solid rgba(2, 132, 199, 0.25);
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    .code-body {
+      padding: 18px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      line-height: 1.6;
+      color: #E2E8F0;
+    }
+
+    .kwd { color: #F472B6; font-weight: 600; }
+    .prop { color: #38BDF8; font-weight: 600; }
+    .val { color: #34D399; }
+    .comment { color: #64748B; font-style: italic; }
+
+    .terminal-card {
+      margin-top: 14px;
+      background: rgba(15, 23, 42, 0.95);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+    }
+
+    .cmd-text {
+      color: #38BDF8;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .cmd-text span { color: #E2E8F0; }
+    .cmd-prompt { color: #34D399; font-weight: 700; }
+
+    .badge-13 {
+      background: linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(52, 211, 153, 0.25));
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      color: #F8FAFC;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="glow-1"></div>
+  <div class="glow-2"></div>
+  <div class="glow-3"></div>
+  <div class="grid-bg"></div>
+
+  <div class="container">
+    <div class="left-col">
+      <div>
+        <div class="top-meta">
+          <div class="brand-pill">
+            <span class="brand-dot"></span>
+            TidyFactor Ecosystem
+          </div>
+          <span class="version-badge">v1.1.1 RELEASE</span>
+        </div>
+
+        <div class="title-group">
+          <h1 class="main-title">TidyFactor <span>Styler</span></h1>
+          <p class="tagline">Production framework styler, surgical RTL redesign &amp; anti-slop UI engineering engine across React, PHP, WordPress &amp; HTML.</p>
+        </div>
+
+        <div class="features-list">
+          <div class="feature-tag">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
+            Conform, Don't Compete
+          </div>
+          <div class="feature-tag">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
+            Surgical RTL &amp; Arabic
+          </div>
+          <div class="feature-tag">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Anti-Slop Certified
+          </div>
+          <div class="feature-tag">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+            8-State Interaction Matrix
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bar">
+        <div class="agents-group">
+          <span>AI Agents:</span>
+          <span class="agent-pill">Antigravity</span>
+          <span class="agent-pill">Claude Code</span>
+          <span class="agent-pill">Cursor</span>
+          <span class="agent-pill">Codex</span>
+        </div>
+        <div class="badge-13">13 SLASH COMMANDS</div>
+      </div>
+    </div>
+
+    <div class="right-col">
+      <div class="card-stack">
+        <div class="code-card">
+          <div class="card-header">
+            <div class="dots">
+              <div class="dot red"></div>
+              <div class="dot yellow"></div>
+              <div class="dot green"></div>
+            </div>
+            <div class="card-title">rtl-logical-properties.css</div>
+            <div class="shield-badge">📐 LOGICAL RTL</div>
+          </div>
+          <div class="code-body">
+            <span class="comment">/* Direction-agnostic logical properties */</span><br/>
+            .<span class="kwd">styler-component</span> {<br/>
+            &nbsp;&nbsp;<span class="prop">margin-inline-start</span>: <span class="val">1.5rem</span>;<br/>
+            &nbsp;&nbsp;<span class="prop">padding-inline-end</span>: <span class="val">1.25rem</span>;<br/>
+            &nbsp;&nbsp;<span class="prop">inset-inline-start</span>: <span class="val">0</span>;<br/>
+            &nbsp;&nbsp;<span class="prop">text-align</span>: <span class="val">start</span>;<br/>
+            &nbsp;&nbsp;<span class="prop">border-start-start-radius</span>: <span class="val">0.75rem</span>;<br/>
+            }
+          </div>
+        </div>
+
+        <div class="terminal-card">
+          <div class="cmd-text">
+            <span class="cmd-prompt">$</span>
+            <span>npx @alwkala/tidyfactor-styler add-skill</span>
+          </div>
+          <div class="shield-badge">⚡ INSTANT INJECT</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

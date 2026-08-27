@@ -46,6 +46,7 @@
     "scripts",
     "tools",
     "bin",
+    "assets",
     "brand.json",
     ".tidyfactor",
     "AGENTS.md",

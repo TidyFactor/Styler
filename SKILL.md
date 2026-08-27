@@ -1,8 +1,7 @@
 ---
 name: tidyfactor-styler
-description: TidyFactor Styler — production-design skill working inside existing codebases across all frameworks (React/Next.js, PHP, WordPress, plain HTML/CSS/JS), with Contextual Decision Layer (CDL) for pre-flight design elicitation and deep Arabic/RTL UI expertise. Creates or redesigns components, sections, and pages matching target stack conventions. Trigger on "brief", "component", "section", "page", "redesign", "typography", "palette", "assets", "layout", "nav-footer", "rtl", "motion", "styles", "styler", "صمم مكون", "تعديل تصميم", "تحسين RTL", "خطوط عربية", "إصلاح الاتجاه", "تصميم صفحة", "تنسيق واجهة", "استخراج الألوان", "هيكل الصفحة", "نمط بصرية".
+description: "Production framework styler and surgical RTL UI polish engine with Contextual Decision Layer (CDL). Operates directly inside existing codebases across React/Next.js, PHP, WordPress, and Vanilla HTML/CSS/JS. Trigger on commands 'brief', 'component', 'section', 'page', 'redesign', 'typography', 'palette', 'layout', 'rtl', 'motion', 'styles', or requests for UI polishing and RTL refactoring."
 ---
-
 # TidyFactor Styler (Production Design — Any Stack)
 
 A command dispatcher for production-stage visual/interaction design work performed **inside a real, already-existing codebase**. Unlike `tidyfactor-design` (which builds a standalone, zero-build clickable prototype under its own locked `design-system/` folder), this skill never invents its own architecture — it reads the target stack's existing conventions and produces output that belongs there.

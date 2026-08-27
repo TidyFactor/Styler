@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TidyFactor Styler - Production Engineering Pipeline</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      width: 1280px;
+      height: 640px;
+      background: #080B11;
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #F8FAFC;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      position: relative;
+      overflow: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .ambient-glow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 900px;
+      height: 400px;
+      background: radial-gradient(ellipse, rgba(2, 132, 199, 0.15) 0%, rgba(52, 211, 153, 0.12) 50%, transparent 75%);
+      filter: blur(50px);
+      pointer-events: none;
+    }
+
+    .grid-bg {
+      position: absolute;
+      inset: 0;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1180px;
+      position: relative;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .header-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      background: rgba(2, 132, 199, 0.15);
+      border: 1px solid rgba(2, 132, 199, 0.35);
+      border-radius: 999px;
+      color: #38BDF8;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 10px;
+    }
+
+    .header-title {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      color: #FFFFFF;
+    }
+
+    .pipeline-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+      width: 100%;
+    }
+
+    .step-card {
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 22px 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .step-card.highlight {
+      border-color: rgba(56, 189, 248, 0.4);
+      background: rgba(11, 25, 35, 0.85);
+      box-shadow: 0 0 25px rgba(56, 189, 248, 0.15);
+    }
+
+    .step-num {
+      width: 26px;
+      height: 26px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      font-size: 12px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #94A3B8;
+      margin-bottom: 14px;
+    }
+
+    .step-card.highlight .step-num {
+      background: #0284C7;
+      color: #FFFFFF;
+    }
+
+    .step-icon-svg {
+      width: 32px;
+      height: 32px;
+      margin-bottom: 12px;
+      color: #38BDF8;
+    }
+
+    .step-card.highlight .step-icon-svg {
+      color: #34D399;
+    }
+
+    .step-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #F8FAFC;
+      margin-bottom: 8px;
+    }
+
+    .step-desc {
+      font-size: 12px;
+      color: #94A3B8;
+      line-height: 1.45;
+      font-family: 'JetBrains Mono', monospace;
+    }
+  </style>
+</head>
+<body>
+  <div class="ambient-glow"></div>
+  <div class="grid-bg"></div>
+
+  <div class="container">
+    <div class="header">
+      <div class="header-badge">🛡️ Zero Style Drift Guarantee</div>
+      <h2 class="header-title">Production UI Transformation Lifecycle</h2>
+    </div>
+
+    <div class="pipeline-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <svg class="step-icon-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        <div class="step-title">Stack Detection</div>
+        <div class="step-desc">Next.js / PHP / WP / HTML (Conform, Don't Compete)</div>
+      </div>
+
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <svg class="step-icon-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
+        <div class="step-title">Brand Tokens</div>
+        <div class="step-desc">brand.json → Native CSS Vars / Tailwind Config</div>
+      </div>
+
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <svg class="step-icon-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/></svg>
+        <div class="step-title">Scoped Redesign</div>
+        <div class="step-desc">8-State interaction matrix &amp; CVA variants</div>
+      </div>
+
+      <div class="step-card highlight">
+        <div class="step-num">4</div>
+        <svg class="step-icon-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
+        <div class="step-title">Logical RTL CSS</div>
+        <div class="step-desc">Direction-agnostic start/end &amp; Arabic typography</div>
+      </div>
+
+      <div class="step-card highlight">
+        <div class="step-num">5</div>
+        <svg class="step-icon-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <div class="step-title">Anti-Slop Audit</div>
+        <div class="step-desc">6-Axis pre-emit self-critique pass</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

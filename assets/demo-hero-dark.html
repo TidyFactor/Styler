@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TidyFactor Styler - Demo Hero</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      width: 1440px;
+      height: 900px;
+      background: #080B11;
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #F8FAFC;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 48px;
+      position: relative;
+      overflow: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .ambient-glow-top {
+      position: absolute;
+      top: -120px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 950px;
+      height: 450px;
+      background: radial-gradient(ellipse, rgba(2, 132, 199, 0.18) 0%, rgba(52, 211, 153, 0.14) 40%, rgba(8, 11, 17, 0) 70%);
+      filter: blur(50px);
+      pointer-events: none;
+    }
+
+    .grid-pattern {
+      position: absolute;
+      inset: 0;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: radial-gradient(circle at 50% 35%, black 55%, transparent 95%);
+      pointer-events: none;
+    }
+
+    .hero-container {
+      width: 100%;
+      max-width: 1220px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      z-index: 10;
+    }
+
+    .top-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 6px 20px;
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #94A3B8;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+      margin-bottom: 20px;
+    }
+    .top-pill .dot {
+      width: 8px;
+      height: 8px;
+      background: #0284C7;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #0284C7;
+    }
+    .top-pill b { color: #F8FAFC; }
+
+    .headline {
+      font-size: 48px;
+      font-weight: 800;
+      letter-spacing: -1.5px;
+      line-height: 1.15;
+      max-width: 1020px;
+      margin-bottom: 14px;
+    }
+    .headline .gradient-text {
+      background: linear-gradient(135deg, #38BDF8 0%, #34D399 60%, #A78BFA 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .description {
+      font-size: 17px;
+      line-height: 1.5;
+      color: #94A3B8;
+      max-width: 860px;
+      margin-bottom: 26px;
+    }
+
+    .button-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      border-radius: 9px;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .btn-primary {
+      background: #F8FAFC;
+      color: #080B11;
+      box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+    }
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.05);
+      color: #F1F5F9;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .terminal-box {
+      width: 100%;
+      max-width: 820px;
+      background: rgba(11, 15, 25, 0.95);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 12px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      margin-bottom: 24px;
+    }
+    .terminal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 16px;
+      background: rgba(255, 255, 255, 0.03);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .term-dots { display: flex; gap: 6px; }
+    .term-dot { width: 10px; height: 10px; border-radius: 50%; }
+    .term-dot.r { background: #EF4444; }
+    .term-dot.y { background: #F59E0B; }
+    .term-dot.g { background: #10B981; }
+    .term-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: #64748B;
+    }
+    .terminal-content {
+      padding: 14px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 14px;
+    }
+    .term-cmd { display: flex; align-items: center; gap: 12px; }
+    .term-prompt { color: #34D399; font-weight: 700; }
+    .term-code { color: #38BDF8; font-weight: 600; }
+    .copy-btn {
+      padding: 4px 10px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 5px;
+      color: #E2E8F0;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    .commands-card {
+      width: 100%;
+      max-width: 1120px;
+      background: rgba(15, 23, 42, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 14px;
+      padding: 20px 24px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(12px);
+    }
+    .commands-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+    }
+    .commands-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #CBD5E1;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .commands-title span { color: #38BDF8; }
+    .commands-count {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: #38BDF8;
+      background: rgba(2, 132, 199, 0.15);
+      border: 1px solid rgba(2, 132, 199, 0.3);
+      padding: 3px 8px;
+      border-radius: 5px;
+      font-weight: 700;
+    }
+    .commands-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+    }
+    .cmd-pill {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 10px;
+      background: rgba(11, 15, 25, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 7px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: #E2E8F0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .cmd-pill .name { color: #F8FAFC; font-weight: 600; }
+    .cmd-pill .prefix { color: #38BDF8; font-weight: 700; }
+    .cmd-pill .icon { color: #64748B; font-size: 10px; }
+  </style>
+</head>
+<body>
+  <div class="ambient-glow-top"></div>
+  <div class="grid-pattern"></div>
+
+  <div class="hero-container">
+    <div class="top-pill">
+      <span class="dot"></span>
+      <span>PRODUCTION FRAMEWORK STYLER • <b>SURGICAL RTL REDESIGN</b> • ZERO PER-PAGE CSS DRIFT</span>
+    </div>
+
+    <h1 class="headline">
+      TidyFactor Styler<br/>
+      <span class="gradient-text">Production UI Engineering For Any Web Framework</span>
+    </h1>
+
+    <p class="description">
+      Surgically restyle and build components, sections, and pages directly inside your live codebase (React, PHP, WordPress, HTML) with native Arabic RTL correctness.
+    </p>
+
+    <div class="button-group">
+      <div class="btn btn-primary">Production Styler Guide →</div>
+      <div class="btn btn-secondary">Download .skill Package</div>
+      <div class="btn btn-secondary">GitHub Repository ↗</div>
+      <div class="btn btn-secondary">NPM Package ↗</div>
+    </div>
+
+    <div class="terminal-box">
+      <div class="terminal-header">
+        <div class="term-dots">
+          <div class="term-dot r"></div>
+          <div class="term-dot y"></div>
+          <div class="term-dot g"></div>
+        </div>
+        <div class="term-title">bash — AI Agent Quick-Install Command</div>
+        <div></div>
+      </div>
+      <div class="terminal-content">
+        <div class="term-cmd">
+          <span class="term-prompt">$</span>
+          <span class="term-code">npx @alwkala/tidyfactor-styler add-skill</span>
+        </div>
+        <div class="copy-btn">Copy</div>
+      </div>
+    </div>
+
+    <div class="commands-card">
+      <div class="commands-header">
+        <div class="commands-title">
+          <span>&gt;_</span> Precision Styler Commands &amp; Workflows
+        </div>
+        <div class="commands-count">13 Operational Commands</div>
+      </div>
+
+      <div class="commands-grid">
+        <div class="cmd-pill"><span class="prefix">$/</span><span class="name">brief</span><span class="icon">CDL Brief</span></div>
+        <div class="cmd-pill"><span class="prefix">$/</span><span class="name">component</span><span class="icon">Component UI</span></div>
+        <div class="cmd-pill"><span class="prefix">$/</span><span class="name">section</span><span class="icon">Section UI</span></div>
+        <div class="cmd-pill"><span class="prefix">$/</span><span class="name">page</span><span class="icon">Page Assembly</span></div>
+        <div class="cmd-pill"><span class="prefix">$/</span><span class="name">redesign</span><span class="icon">Full Redesign</span></div>
+
+        <div class="cmd-pill"><span class="prefix">$/</span><span class="name">layout</span><span class="icon">8 Archetypes</span></div>
+        <div class="cmd-pill"><span class="prefix">$/</span><span class="name">nav-footer</span><span class="icon">N1-N9 &amp; Ft1-Ft8</span></div>
+        <div class="cmd-pill"><span class="prefix">$/</span><span class="name">typography</span><span class="icon">Arabic Pairings</span></div>
+        <div class="cmd-pill"><span class="prefix">$/</span><span class="name">palette</span><span class="icon">WCAG AA Tokens</span></div>
+        <div class="cmd-pill"><span class="prefix">$/</span><span class="name">assets</span><span class="icon">Image Tooling</span></div>
+
+        <div class="cmd-pill"><span class="prefix">$/</span><span class="name">rtl</span><span class="icon">RTL Audit &amp; Fix</span></div>
+        <div class="cmd-pill"><span class="prefix">$/</span><span class="name">motion</span><span class="icon">Interaction</span></div>
+        <div class="cmd-pill"><span class="prefix">$/</span><span class="name">styles</span><span class="icon">Design School</span></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

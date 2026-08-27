@@ -1,24 +1,84 @@
 <div align="center">
 
 # 🎨 TidyFactor Styler `v1.1.1`
-### Production Framework Styler, Surgical RTL Redesign & Contextual Decision Engine
+### The Production Framework Styler, Surgical RTL Redesign & Anti-Slop UI Engine for AI Coding Agents
 
-**The official production styling & UI transformation skill for the TidyFactor Ecosystem across all modern web frameworks.**
+Give **Google Antigravity, Claude Code, Cursor, OpenAI Codex, or Windsurf** a production-grade UI transformation engine that operates directly inside your live codebase — without inventing duplicate style layers, alien dependencies, or per-page CSS drift.
 
 [![npm version](https://img.shields.io/npm/v/@alwkala/tidyfactor-styler.svg?style=for-the-badge&color=0284C7)](https://www.npmjs.com/package/@alwkala/tidyfactor-styler)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg?style=for-the-badge)](LICENSE)
-[![RTL Ready](https://img.shields.io/badge/RTL-Native%20Arabic-emerald.svg?style=for-the-badge)](README.ar.md)
-[![Anti-Slop Certified](https://img.shields.io/badge/Anti--Slop-Certified-amber.svg?style=for-the-badge)](#-anti-slop-governance--quality-bar)
-[![Architect Score](https://img.shields.io/badge/Architect%20Score-8%2F8%20Pass%20(100%25)-green.svg?style=for-the-badge)](#-license--governance)
+[![RTL Native Arabic](https://img.shields.io/badge/RTL-Native%20Arabic-emerald.svg?style=for-the-badge)](#-native-arabic--surgical-rtl-engineering)
+[![Anti-Slop Certified](https://img.shields.io/badge/Anti--Slop-Certified-amber.svg?style=for-the-badge)](#%EF%B8%8F-anti-slop-governance--quality-bar)
+[![Architect Score](https://img.shields.io/badge/Architect%20Score-8%2F8%20Pass%20(100%25)-green.svg?style=for-the-badge)](#%EF%B8%8F-tidyfactor-skill-methodology--governance)
 
-[✨ Ecosystem Hub](https://alwkala.com) • [⚡ 13 Slash Commands](#-command-registry--architecture) • [🛠️ 8 Production Workflows](#%EF%B8%8F-the-7-production-workflows) • [🌐 Supported Stacks](#-supported-production-stacks) • [🇸🇦 Arabic & RTL Engineering](#-native-arabic--rtl-engineering) • [📖 بالعربية](README.ar.md)
+[🚀 Quick Start](#-quick-start) • [🎯 Why TidyFactor/Styler](#-why-tidyfactorstyler) • [⚡ 13 Commands](#-13-stage-command-dispatcher-architecture) • [🛠️ 8 Workflows](#%EF%B8%8F-the-8-production-workflows) • [🌐 Supported Stacks](#-supported-production-stacks) • [🇸🇦 Arabic & RTL](#-native-arabic--surgical-rtl-engineering) • [❓ FAQ](#-faq) • [📖 بالعربية](README.ar.md)
+
+<br/><br/>
+
+<p align="center">
+  <img src="assets/demo-hero-dark.png" alt="TidyFactor Styler Production UI Engineering Showcase" width="100%" />
+</p>
 
 </div>
 
 ---
 
-> [!NOTE]
-> **TidyFactor Styler** is an opinionated, production-grade AI Agent Skill and UI engineering engine designed for real, live codebases. Unlike standalone prototyping engines, **Styler operates directly inside existing production stacks** (*React/Next.js App Router, PHP Flight/Medoo, WordPress blocks, or vanilla HTML/CSS/JS*) without introducing duplicate style layers, alien dependencies, or per-page CSS drift.
+## 📚 Table of Contents
+
+- [🎯 Why TidyFactor/Styler](#-why-tidyfactorstyler)
+- [🚀 Quick Start](#-quick-start)
+- [🌟 Value Proposition: When to Use Styler?](#-value-proposition-when-to-use-styler)
+- [⚡ 13-Stage Command Dispatcher Architecture](#-13-stage-command-dispatcher-architecture)
+- [🛠️ The 8 Production Workflows](#%EF%B8%8F-the-8-production-workflows)
+- [🌐 Supported Production Stacks](#-supported-production-stacks)
+- [🇸🇦 Native Arabic & Surgical RTL Engineering](#-native-arabic--surgical-rtl-engineering)
+- [🛡️ Anti-Slop Governance & Quality Bar](#%EF%B8%8F-anti-slop-governance--quality-bar)
+  - [1. The 6-Axis Pre-Emit Self-Critique (P, H, E, S, R, V)](#1-the-6-axis-pre-emit-self-critique-p-h-e-s-r-v)
+  - [2. The 8-State Component Interaction Matrix](#2-the-8-state-component-interaction-matrix)
+- [❓ FAQ](#-faq)
+- [🏛️ The TidyFactor Ecosystem](#%EF%B8%8F-the-tidyfactor-ecosystem)
+- [🏛️ TidyFactor Skill Methodology & Governance](#%EF%B8%8F-tidyfactor-skill-methodology--governance)
+- [🤝 Contributing](#-contributing)
+- [👨‍💻 Support](#-support)
+- [📜 License](#-license)
+
+---
+
+## 🎯 Why TidyFactor/Styler
+
+Most AI UI prompts output generic HTML with inline styles, uncalibrated utility bloat, or alien libraries that clash with your existing repository. 
+
+**TidyFactor/Styler enforces a strict "Conform, Don't Compete" engineering contract:** it detects your project's active framework, inspects existing design tokens, and outputs stack-native components that look like your senior frontend architect wrote them.
+
+| Dimension | Generic AI Prompting / Prototypers | `tidyfactor-styler` |
+|---|---|---|
+| **Operating Environment** | Isolated demo files or new sandboxes | **Live, existing codebases** (React/Next.js, PHP, WordPress, HTML) |
+| **Styling Conformance** | Injects new alien CSS rules or duplicate Tailwind layers | **Adopts your active Tailwind config**, CSS variables, or class conventions |
+| **Scope Control** | Sloppy edits that accidentally break global layouts | **Strictly scoped refactoring** (component touches only component) |
+| **Arabic & RTL Support** | Literal flipping or broken directional margins (`mr-*`, `left-*`) | **Native Logical CSS** (`ms-*`, `pe-*`, `start-*`) + letterform font scaling |
+| **Anti-Slop Quality** | Generic purple AI gradients and missing interactive states | **6-Axis pre-emit self-critique** + mandatory 8-state interaction matrix |
+| **Context Consumption** | Giant unorganized design dumps (10k+ tokens) | **Context-efficient dispatcher** (~350 tokens at start, loads on demand) |
+
+---
+
+## 🚀 Quick Start
+
+### 1. Skill Injection via CLI
+
+```bash
+# Add Styler directly into your current project workspace
+npx @alwkala/tidyfactor-styler add-skill
+```
+
+### 2. Workspace Installation per AI Agent
+
+| AI Agent | Workspace Skill Path |
+|---|---|
+| **Google Antigravity** | `.agents/skills/tidyfactor-styler/` or global `~/.gemini/config/skills/` |
+| **Claude Code** | `.claude-skill/skills/tidyfactor-styler/` |
+| **Cursor / Codex / Windsurf** | `.agents/skills/tidyfactor-styler/` |
+
+Once installed, simply invoke `/brief`, `/component`, `/section`, or `/redesign` inside your AI agent chat to begin surgical UI engineering!
 
 ---
 
@@ -28,7 +88,7 @@
 graph TD
     Intent{"What are you building?"}
     Intent -->|"Standalone prototype from zero"| D["🎨 tidyfactor-design<br/>(Zero-build HTML prototype)"]
-    Intent -->|"New framework skeleton"| S["🏗️ Architecture Track<br/>(tidyfactor-php-micro, etc.)"]
+    Intent -->|"New framework skeleton"| S["🏗️ Architecture Track<br/>(tidyfactor-next, tidyfactor-php, etc.)"]
     Intent -->|"Real existing codebase UI work"| ST["💎 tidyfactor-styler<br/>(Production Component/Section/Page UI)"]
 ```
 
@@ -40,13 +100,14 @@ graph TD
 
 ---
 
-## ⚡ Command Registry & Architecture
+## ⚡ 13-Stage Command Dispatcher Architecture
 
-`tidyfactor-styler` exposes **12 precision slash commands** organized into a modular dispatch architecture:
+`tidyfactor-styler` exposes **13 precision slash commands** organized into a modular dispatch architecture:
 
 ```mermaid
 graph LR
     SK["💎 SKILL.md<br/>(Dispatcher Router)"]
+    SK --> C0["Discovery<br/>(brief)"]
     SK --> C1["Component Operations<br/>(component)"]
     SK --> C2["Surface Operations<br/>(section, page, redesign)"]
     SK --> C3["Architecture & Shell<br/>(layout, nav-footer)"]
@@ -56,6 +117,7 @@ graph LR
 
 | Command | User Intent | What It Loads | Output & Value |
 |---|---|---|---|
+| `brief` | "Establish design brief / project baseline" | `workflows/brief.md` + `memory/decision-points.md` | Pre-flight interview caching target framework and design school. |
 | `component` | "Create / Redesign this component" | `workflows/component-create.md` or `component-redesign.md` + `component-anatomy.md` + `stacks/*.md` | Production React/PHP/HTML component with 8-state coverage & CVA variants. |
 | `section` | "Create / Restyle this section" | `workflows/section-create.md` or `section-redesign.md` + `layout-archetypes.md` + `nav-footer-catalog.md` | Scoped section surface with responsive rhythm and clean visual hierarchy. |
 | `page` | "Build a new production page" | `workflows/page-create.md` + `layout-archetypes.md` + `nav-footer-catalog.md` + `stacks/*.md` | Complete page assembly strictly adhering to framework file conventions. |
@@ -64,24 +126,25 @@ graph LR
 | `nav-footer` | "Select navigation & footer archetypes" | `memory/nav-footer-catalog.md` + `typography-arabic.md` + `rtl-css-engineering.md` | Chooses from N1–N9 navigation and Ft1–Ft8 footer archetypes with RTL alignment. |
 | `typography` | "Pick/pair typography, incl. Arabic" | `memory/typography-arabic.md` | Applies 7 mood-routed font pairings (Cairo, Tajawal, El Messiri, Inter, Outfit). |
 | `palette` | "Extract color palette & WCAG AA contrast" | `memory/brand-tokens.md` + `memory/asset-tooling.md` | Generates semantic token scales with automated WCAG 2.1 AA contrast scores. |
-| `assets` | "Asset hygiene & image optimization" | `memory/asset-tooling.md` + `memory/quality-bar.md` | Compresses images, inspects dimensions, and removes backgrounds via Python tooling. |
+| `assets` | "Asset hygiene & image optimization" | `memory/asset-tooling.md` + `memory/quality-bar.md` | Compresses images, inspects dimensions, and processes image assets. |
 | `rtl` | "Audit & fix RTL / Arabic correctness" | `workflows/rtl-audit-fix.md` + `memory/rtl-css-engineering.md` | Converts directional CSS to logical properties and fixes icon flipping rules. |
 | `motion` | "Add / review motion and interaction" | `memory/motion-principles.md` | Orchestrates Framer Motion / Alpine transitions with `prefers-reduced-motion` a11y. |
 | `styles` | "Choose a design direction / style movement" | `memory/design-styles.md` | Directs UI to a specific aesthetic movement (Modern SaaS, Editorial, Swiss, etc.). |
 
 ---
 
-## 🛠️ The 7 Production Workflows
+## 🛠️ The 8 Production Workflows
 
 Every task follows a strict, single-outcome workflow ending in an automated validation checklist:
 
-1. **`component-create.md`**: Step 0 Design Read $\rightarrow$ Variant & State Mapping $\rightarrow$ Stack-Native Implementation $\rightarrow$ Pre-Emit Critique $\rightarrow$ Verification.
-2. **`component-redesign.md`**: Current State Audit $\rightarrow$ Intent & Direction Selection $\rightarrow$ Scoped Refactoring $\rightarrow$ Zero Regression Check.
-3. **`section-create.md`**: Macrostructure Alignment $\rightarrow$ Layout Archetype Rhythm $\rightarrow$ Inner Component Composition $\rightarrow$ Responsive Polish.
-4. **`section-redesign.md`**: Section Scope Isolation $\rightarrow$ Hierarchy Elevation $\rightarrow$ Visual Anchor Refresh $\rightarrow$ Mobile Grid Audit.
-5. **`page-create.md`**: Page Archetype Blueprint $\rightarrow$ Nav/Footer Selection $\rightarrow$ Section Assembly $\rightarrow$ SEO & Metadata Injection.
-6. **`page-redesign.md`**: Global Visual Cohesion $\rightarrow$ Conversion Path Optimization $\rightarrow$ Typography Harmony $\rightarrow$ Performance Budget.
-7. **`rtl-audit-fix.md`**: Directional CSS Elimination $\rightarrow$ Logical Properties Refactor $\rightarrow$ Bi-directional Icon Inversion $\rightarrow$ Font Hierarchy Tuning.
+1. **`brief.md`**: Pre-flight CDL Discovery $\rightarrow$ Framework Baseline Lock $\rightarrow$ Brand Token Mapping $\rightarrow$ `.tidyfactor/styler-brief.md` Cache.
+2. **`component-create.md`**: Design Read $\rightarrow$ Variant & State Mapping $\rightarrow$ Stack-Native Implementation $\rightarrow$ Pre-Emit Critique $\rightarrow$ Verification.
+3. **`component-redesign.md`**: Current State Audit $\rightarrow$ Intent & Direction Selection $\rightarrow$ Scoped Refactoring $\rightarrow$ Zero Regression Check.
+4. **`section-create.md`**: Macrostructure Alignment $\rightarrow$ Layout Archetype Rhythm $\rightarrow$ Inner Component Composition $\rightarrow$ Responsive Polish.
+5. **`section-redesign.md`**: Section Scope Isolation $\rightarrow$ Hierarchy Elevation $\rightarrow$ Visual Anchor Refresh $\rightarrow$ Mobile Grid Audit.
+6. **`page-create.md`**: Page Archetype Blueprint $\rightarrow$ Nav/Footer Selection $\rightarrow$ Section Assembly $\rightarrow$ SEO & Metadata Injection.
+7. **`page-redesign.md`**: Global Visual Cohesion $\rightarrow$ Conversion Path Optimization $\rightarrow$ Typography Harmony $\rightarrow$ Performance Budget.
+8. **`rtl-audit-fix.md`**: Directional CSS Elimination $\rightarrow$ Logical Properties Refactor $\rightarrow$ Bi-directional Icon Inversion $\rightarrow$ Font Hierarchy Tuning.
 
 ---
 
@@ -98,97 +161,113 @@ Every task follows a strict, single-outcome workflow ending in an automated vali
 
 ---
 
-## 🇸🇦 Native Arabic & RTL Engineering
+## 🇸🇦 Native Arabic & Surgical RTL Engineering
 
-Built by native Arabic design engineers, `tidyfactor-styler` treats Arabic as a first-class citizen, never as an afterthought:
+<p align="center">
+  <img src="assets/demo-rtl-pipeline.png" alt="Production UI Transformation Lifecycle" width="100%" />
+</p>
 
-- **Logical Properties Standard**: 100% replacement of directional CSS (`left`, `right`, `pl-*`, `mr-*`) with logical counterparts (`inline-start`, `inline-end`, `ps-*`, `pe-*`, `ms-*`, `me-*`).
-- **Letterform-Aware Typography**: Strict enforcement of typography rules—Arabic headings use **El Messiri / Cairo / Rooyin**, body copy uses **Tajawal / Cairo / Inter**. Amiri is strictly blocked for headings above 24px.
-- **Line-Height Multiplier**: Arabic copy automatically receives $\ge 1.5\times$ line-height to prevent ascender and descender clipping.
-- **Bi-directional Iconography**: Directional icons (arrows, chevrons, pagination) mirror automatically in RTL, while non-directional media icons (play, audio, camera) remain un-flipped.
+### 1. Logical CSS Properties Enforcement
+`tidyfactor-styler` eliminates legacy directional styles (`margin-left`, `float: right`, `left: 0`) in favor of modern logical CSS:
+
+```css
+/* Standard Logical Property Architecture */
+.styler-card {
+  margin-inline-start: 1.5rem;    /* Replaces margin-left / margin-right */
+  padding-inline-end: 1.25rem;    /* Replaces padding-right / padding-left */
+  inset-inline-start: 0;          /* Replaces left / right */
+  text-align: start;              /* Replaces text-align: left */
+  border-start-start-radius: 8px; /* Logical corner radius */
+}
+```
+
+### 2. Letterform-Aware Arabic Typography
+Arabic script requires specific line-height and letter-spacing compensation:
+- **Never use negative `letter-spacing` (tracking)** on Arabic text (it breaks cursive glyph connections).
+- **Increase `line-height` by +15–20%** compared to Latin typography to accommodate ascenders and descenders.
+- **Mood-Routed Font Pairings**:
+  - *Modern SaaS / Interface*: Cairo / Tajawal + Inter / Outfit
+  - *Editorial / High-Trust B2B*: IBM Plex Arabic + IBM Plex Sans
+  - *Luxury / Creative*: El Messiri (never below 24px) + Plus Jakarta Sans
 
 ---
 
 ## 🛡️ Anti-Slop Governance & Quality Bar
 
-To prevent generic, repetitive "AI-generated" UI artifacts, every output must satisfy the **6-Axis Pre-Emit Self-Critique**:
+### 1. The 6-Axis Pre-Emit Self-Critique (P, H, E, S, R, V)
 
-```
-[Pre-Emit Self-Critique]
-P (Purpose):       Is this component solving the specific domain goal? (1-5)
-H (Hierarchy):     Is there one obvious visual anchor with distinct levels? (1-5)
-E (Execution):     Are all 8 interactive states explicitly implemented? (1-5)
-S (Stack Native):  Does it match project naming, Tailwind config, and types? (1-5)
-R (RTL Ready):     Are all spacing, padding, and icons direction-agnostic? (1-5)
-V (Visual Soul):   Does it avoid generic purple hero gradients and generic AI tells? (1-5)
-Overall Score: Must be ≥ 25/30 before code emission.
-```
+Before emitting code, the agent evaluates output against the **6-Axis Anti-Slop Rubric** (`memory/quality-bar.md`):
 
----
+- **P — Palette Harmony (0–10)**: Strict WCAG 2.1 AA contrast; no generic AI purple/pink gradients without explicit brand mandate.
+- **H — Hierarchy & Rhythm (0–10)**: Clear visual anchor; intentional whitespace sizing using a 4px/8px baseline grid.
+- **E — Execution Fidelity (0–10)**: Full semantic HTML5; no empty `<div>` soup or misplaced wrappers.
+- **S — State Completeness (0–10)**: All 8 component states implemented.
+- **R — RTL Correctness (0–10)**: 100% logical CSS properties; proper icon inversion for directional arrows.
+- **V — Variety & Distinction (0–10)**: Distinct design school character; zero default Bootstrap-like look.
 
-## 🚀 Installation & Usage
+### 2. The 8-State Component Interaction Matrix
 
-### 1. Add Skill to Your Repository via NPX
-
-```bash
-# Install tidyfactor-styler into your current workspace
-npx @alwkala/tidyfactor-styler add-skill
-```
-
-### 2. Manual Copy into AI Agent Workspace
-
-Copy the `tidyfactor-styler` folder directly into your workspace agent directory:
-- **Google Antigravity:** `.agents/skills/tidyfactor-styler/`
-- **Claude Code:** `.claude-skill/skills/tidyfactor-styler/`
-- **Cursor / Windsurf / Codex:** `.agents/skills/tidyfactor-styler/`
+Every interactive component must provide complete visual coverage for:
+1. `default`: Baseline rest state with clear affordance.
+2. `hover`: Subdued lift or contrast elevation (transition $\le 150\text{ms}$).
+3. `active`: Pressed micro-scale ($0.98$) or inset depth.
+4. `focus-visible`: 2px offset focus ring for keyboard accessibility.
+5. `disabled`: Reduced opacity ($0.5$), `cursor: not-allowed`, pointer-events disabled.
+6. `loading`: Skeleton loader or accessible spinner preventing layout shifts.
+7. `empty`: Welcoming empty state illustration and actionable call to action.
+8. `error`: Semantic danger state with accessible error description.
 
 ---
 
-## 🏛️ TidyFactor Skill Methodology & 8/8 Governance
+## ❓ FAQ
 
-`tidyfactor-styler` achieves **100% Compliance (8/8 Pass)** under the **TidyFactor Skill Architect Specification**:
+<details>
+<summary><b>How is Styler different from <code>tidyfactor-design</code>?</b></summary>
+<br/>
+<code>tidyfactor-design</code> creates standalone, zero-build clickable HTML prototypes in a separate demo directory. <b><code>tidyfactor-styler</code> operates directly inside your real codebase</b> (Next.js, PHP, WordPress, HTML) modifying existing components and respecting your active CSS architecture.
+</details>
 
-1. ✅ **Dispatcher Discipline**: Lightweight `SKILL.md` routing table (~350 tokens).
-2. ✅ **One Workflow = One Outcome**: 7 deterministic workflows with validation checklists.
-3. ✅ **Operational Memory**: Zero narrative prose; pure actionable technical matrices.
-4. ✅ **No Empty Structures**: Zero empty placeholder folders.
-5. ✅ **Philosophy Isolation**: Technical execution separated from brand rationales.
-6. ✅ **Trigger-Justified Growth**: Modular files added strictly per verified triggers.
-7. ✅ **Anti-Slop Quality Bar**: Mandatory 6-axis pre-emit critique and 16 quality rules.
-8. ✅ **Cross-Platform Parity**: Identical execution across Antigravity, Claude Code, Cursor, and Codex.
+<details>
+<summary><b>Will Styler overwrite or mess up my existing Tailwind configuration?</b></summary>
+<br/>
+<b>Never.</b> Styler follows the "Conform, Don't Compete" rule: it inspects your <code>tailwind.config.js</code> or CSS files and uses your existing utility classes and token definitions.
+</details>
+
+<details>
+<summary><b>Which AI coding agents are supported?</b></summary>
+<br/>
+<b>Google Antigravity, Claude Code, Cursor, OpenAI Codex, and Windsurf</b> are all supported with 100% behavioral parity.
+</details>
+
+<details>
+<summary><b>How does Styler handle Arabic / RTL layouts?</b></summary>
+<br/>
+Styler uses CSS Logical Properties (e.g. <code>margin-inline-start</code>, <code>inset-inline-start</code>, <code>text-align: start</code>) and handles icon flipping, line-height expansion, and Arabic font pairing automatically.
+</details>
 
 ---
 
-
----
-
-## 🏛️ TidyFactor Ecosystem Architecture
+## 🏛️ The TidyFactor Ecosystem
 
 **TidyFactor** is a modular web architecture and AI coding agent skill ecosystem built on clear separation of concerns across the product lifecycle:
 
 ```
 TidyFactor Organization (github.com/TidyFactor)
 │
-├── Governance & Architecture
-│   └── Skill-Architect → Governance / "Rule"     (Master Skill Architecture & Quality Governance Engine)
-│
 ├── Design Skills
-│   ├── Cinematic       → Experience / "Wow"      (Apple × Cartier Scroll-Driven Landing Pages)
-│   ├── Design          → Prototype / "Build"     (Code-Native UI Design Engine & Figma Alternative)
-│   └── Styler          → Production / "Ship"     (Framework Styler & RTL Polish Engine)
-│
-├── Documentation & Knowledge
-│   └── Doc             → Knowledge / "Record"   (Codebase Documentation Builder & Docsify Engine)
+│   ├── Cinematic    → Experience / "Wow"     (Apple × Cartier Scroll-Driven Landing Pages)
+│   ├── Design       → Prototype / "Build"    (Code-Native UI Design Engine & Figma Alternative)
+│   └── Styler       → Production / "Ship"    (Framework Styler & RTL Polish Engine)
 │
 ├── Development Skills
-│   ├── Next            → Multi-Tenant SaaS       (Next.js 16, React 19, Supabase RLS & Dev-Perf)
-│   ├── HTML            → Content & Static        (Semantic SEO & Static Platform Starter)
-│   ├── HTMX            → Hypermedia              (Server-Driven Micro-Interactions)
-│   ├── JS              → Vanilla SPA             (Framework-Free Reactive ES Modules)
-│   └── PHP             → Server-Rendered         (Modern PHP 8.x Component UI & Architecture)
+│   ├── HTML         → Content & Static       (Semantic SEO & Static Platform Starter)
+│   ├── HTMX         → Hypermedia             (Server-Driven Micro-Interactions)
+│   ├── JS           → Vanilla SPA            (Framework-Free Reactive ES Modules)
+│   ├── PHP          → Server-Rendered        (Modern PHP 8.x Component UI & Architecture)
+│   └── Next         → Multi-Tenant SaaS      (Next.js 16, React 19, Supabase RLS & Dev-Perf)
 │
 └── Growth Skills
-    └── Marketing       → Growth / Revenue        (Direct Response, Pillar SEO & Content Lifecycles)
+    └── Marketing    → Growth / Revenue       (Direct Response, Pillar SEO & Content Lifecycles)
 ```
 
 ### 💎 Frontend Triad
@@ -202,18 +281,16 @@ TidyFactor Organization (github.com/TidyFactor)
           │         │         │
       Experience Prototype Production
           │         │         │
-       "Wow"      "Build"   "Ship"
+        "Wow"      "Build"   "Ship"
 ```
 
-### 📦 Community Package & Skill Parity (The 11 Official Skills)
+### 📦 Community Package & Skill Parity
 
 | Track | Category | GitHub Repository | Agent Skill | NPM Package |
 | :--- | :--- | :--- | :--- | :--- |
-| **Skill-Architect** | Governance | [`TidyFactor/Skill-Architect`](https://github.com/TidyFactor/Skill-Architect) | `tidyfactor-skill-architect` | [`@alwkala/tidyfactor-skill-architect`](https://www.npmjs.com/package/@alwkala/tidyfactor-skill-architect) |
-| **Cinematic** | Design | [`TidyFactor/Cinematic`](https://github.com/TidyFactor/Cinematic) | `tidyfactor-cinematic` | [`@alwkala/create-cinematic-kit`](https://www.npmjs.com/package/@alwkala/create-cinematic-kit) |
-| **Design** | Design | [`TidyFactor/Design`](https://github.com/TidyFactor/Design) | `tidyfactor-design` | [`@alwkala/tidyfactor-design`](https://www.npmjs.com/package/@alwkala/tidyfactor-design) |
 | **Styler** | Design | [`TidyFactor/Styler`](https://github.com/TidyFactor/Styler) | `tidyfactor-styler` | [`@alwkala/tidyfactor-styler`](https://www.npmjs.com/package/@alwkala/tidyfactor-styler) |
-| **Doc** | Documentation | [`TidyFactor/Doc`](https://github.com/TidyFactor/Doc) | `tidyfactor-doc` | [`@alwkala/tidyfactor-doc`](https://www.npmjs.com/package/@alwkala/tidyfactor-doc) |
+| **Design** | Design | [`TidyFactor/Design`](https://github.com/TidyFactor/Design) | `tidyfactor-design` | [`@alwkala/tidyfactor-design`](https://www.npmjs.com/package/@alwkala/tidyfactor-design) |
+| **Cinematic** | Design | [`TidyFactor/Cinematic`](https://github.com/TidyFactor/Cinematic) | `tidyfactor-cinematic` | [`@alwkala/create-cinematic-kit`](https://www.npmjs.com/package/@alwkala/create-cinematic-kit) |
 | **Next** | Development | [`TidyFactor/Next`](https://github.com/TidyFactor/Next) | `tidyfactor-next` | [`@alwkala/tidyfactor-next`](https://www.npmjs.com/package/@alwkala/tidyfactor-next) |
 | **HTML** | Development | [`TidyFactor/HTML`](https://github.com/TidyFactor/HTML) | `tidyfactor-html` | [`@alwkala/tidyfactor-html`](https://www.npmjs.com/package/@alwkala/tidyfactor-html) |
 | **HTMX** | Development | [`TidyFactor/HTMX`](https://github.com/TidyFactor/HTMX) | `tidyfactor-htmx` | [`@alwkala/tidyfactor-htmx`](https://www.npmjs.com/package/@alwkala/tidyfactor-htmx) |
@@ -223,16 +300,36 @@ TidyFactor Organization (github.com/TidyFactor)
 
 ---
 
-## 👨‍💻 Organization & Support
+## 🏛️ TidyFactor Skill Methodology & Governance
 
-- 🌐 **Official Website:** [https://tidyfactor.com/](https://tidyfactor.com/)
-- 📚 **Official Documentation:** [https://tidyfactor.com/documentation](https://tidyfactor.com/documentation)
-- 🤝 **Official Partner Website:** [Alwkala Digital Agency](https://alwkala.com/)
+`tidyfactor-styler` passes all **8 Architectural Governance Rules** under [`tidyfactor-skill-architect`](https://github.com/TidyFactor/Skill-Architect):
+
+1. ✅ **Dispatcher Discipline**: `SKILL.md` routes commands without executing tasks (~350 tokens).
+2. ✅ **One Workflow = One Outcome**: Every workflow has a single deliverable with an explicit validation checklist.
+3. ✅ **Operational Memory**: Pure design patterns, token schemas, and typography rules—zero narrative prose.
+4. ✅ **No Empty Structures**: Clean, flattened architecture without single-file folders.
+5. ✅ **Philosophy Isolation**: Technical execution separated from marketing commentary.
+6. ✅ **Trigger-Justified Growth**: Commands added per verifiable UI engineering lifecycle stages.
+7. ✅ **Security & Quality Bar**: Automated pre-emit self-critique rubric and 8-state interaction matrices.
+8. ✅ **Cross-Platform Parity**: 100% identical behavior across Antigravity, Claude Code, Cursor, and Codex.
+
+---
+
+## 🤝 Contributing
+
+We welcome community contributions, custom stack adapters, and workflow refinements!
+
+Please read our `CONTRIBUTING.md` and `CODE_OF_CONDUCT.md` before opening a Pull Request. All proposed workflows and memory extensions must satisfy the `tidyfactor-skill-architect` governance rules.
+
+---
+
+## 👨‍💻 Support
+
+- 🌐 **Website:** [tidyfactor.com](https://tidyfactor.com/)
+- 📚 **Documentation:** [tidyfactor.com/documentation](https://tidyfactor.com/documentation)
+- 🤝 **Commercial Partner:** [Alwkala Digital Agency](https://alwkala.com/)
 - 🐙 **GitHub Organization:** [github.com/TidyFactor](https://github.com/TidyFactor)
-- 📧 **Business Inquiries:** [hello@tidyfactor.com](mailto:hello@tidyfactor.com)
-- 📱 **WhatsApp:** [+20 101 665 6899](https://wa.me/201016656899)
-- 📞 **Phone:** +20 101 665 6899
-- 📍 **Location:** Cairo, Egypt
+- 📧 **Inquiries:** [hello@tidyfactor.com](mailto:hello@tidyfactor.com)
 
 ---
 
