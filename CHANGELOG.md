@@ -7,6 +7,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.2.0] - 2026-08-29
+
+### Added - Global Multi-Tier & Multi-Language Documentation Architecture
+- **Rule 13 Implementation**: Two-tier documentation separation between Canonical Technical Documentation (`README.md` SSOT) and First-Class Market Localizations.
+- **Universal Multi-Language Switcher**: Standardized 8-language switcher navigation bar across all documentation files (`EN`, `AR`, `FA`, `ES`, `PT`, `ZH`, `DE`, `FR`).
+- **First-Class Localized Developer Adoption Guides**:
+  - `README.es.md` (Spanish 🇪🇸): LATAM & Spain quickstart, commands, and component workflows.
+  - `README.pt.md` (Portuguese 🇧🇷): Brazil developer onboarding and practical styling recipes.
+  - `README.fa.md` (Persian 🇮🇷): Native RTL Persian guide for AI agents and UI engineering.
+  - `README.zh.md` (Simplified Chinese 🇨🇳): Asian web developer framework styling guide.
+  - `README.de.md` (German 🇩🇪): DACH enterprise design governance and precision UI polish.
+  - `README.fr.md` (French 🇫🇷): Francophone agency workflow automation and UI redesign.
+- **Packaging & Validation Upgrades**:
+  - Registered all localized READMEs in `package.json["files"]`.
+  - Updated `tools/build-skill.js` to automatically bundle all localized documentation.
+  - Added automated multi-language cross-link verification to `tools/validate_skill.py`.
+
+---
+
 ## [1.1.1] - 2026-08-25
 
 ### Fixed

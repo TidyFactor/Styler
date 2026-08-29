@@ -1,6 +1,6 @@
 {
   "name": "@alwkala/tidyfactor-styler",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "TidyFactor Styler — Production Framework Styler, Section Redesign & RTL Polish Engine",
   "main": "SKILL.md",
   "bin": {
@@ -52,6 +52,12 @@
     "AGENTS.md",
     "README.md",
     "README.ar.md",
+    "README.fa.md",
+    "README.es.md",
+    "README.pt.md",
+    "README.zh.md",
+    "README.de.md",
+    "README.fr.md",
     "LICENSE",
     "CHANGELOG.md"
   ],

@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎨 TidyFactor Styler `v1.1.1`
+# 🎨 TidyFactor Styler `v1.2.0`
 ### The Production Framework Styler, Surgical RTL Redesign & Anti-Slop UI Engine for AI Coding Agents
 
 Give **Google Antigravity, Claude Code, Cursor, OpenAI Codex, or Windsurf** a production-grade UI transformation engine that operates directly inside your live codebase — without inventing duplicate style layers, alien dependencies, or per-page CSS drift.
@@ -11,7 +11,7 @@ Give **Google Antigravity, Claude Code, Cursor, OpenAI Codex, or Windsurf** a pr
 [![Anti-Slop Certified](https://img.shields.io/badge/Anti--Slop-Certified-amber.svg?style=for-the-badge)](#%EF%B8%8F-anti-slop-governance--quality-bar)
 [![Architect Score](https://img.shields.io/badge/Architect%20Score-8%2F8%20Pass%20(100%25)-green.svg?style=for-the-badge)](#%EF%B8%8F-tidyfactor-skill-methodology--governance)
 
-[🚀 Quick Start](#-quick-start) • [🎯 Why TidyFactor/Styler](#-why-tidyfactorstyler) • [⚡ 13 Commands](#-13-stage-command-dispatcher-architecture) • [🛠️ 8 Workflows](#%EF%B8%8F-the-8-production-workflows) • [🌐 Supported Stacks](#-supported-production-stacks) • [🇸🇦 Arabic & RTL](#-native-arabic--surgical-rtl-engineering) • [❓ FAQ](#-faq) • [📖 بالعربية](README.ar.md)
+[ English ](README.md) • [ العربية ](README.ar.md) • [ فارسی ](README.fa.md) • [ Español ](README.es.md) • [ Português ](README.pt.md) • [ 简体中文 ](README.zh.md) • [ Deutsch ](README.de.md) • [ Français ](README.fr.md)
 
 <br/><br/>
 

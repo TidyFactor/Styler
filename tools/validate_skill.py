@@ -96,6 +96,20 @@ def validate():
                     rel = file_path.relative_to(ROOT)
                     failures.append(f"Leaked machine-specific absolute path found in {rel}")
 
+    # 5. Check Multi-Language Navigation Links
+    print("\n[5] Checking multi-language documentation consistency (Rule 13)...")
+    locales = ["README.md", "README.ar.md", "README.fa.md", "README.es.md", "README.pt.md", "README.zh.md", "README.de.md", "README.fr.md"]
+    for loc in locales:
+        loc_path = ROOT / loc
+        if loc_path.exists():
+            loc_text = loc_path.read_text(encoding="utf-8")
+            if "README.md" not in loc_text or "README.ar.md" not in loc_text:
+                failures.append(f"{loc} is missing cross-language switcher links.")
+            else:
+                print(f"  [OK] {loc} contains valid language switcher.")
+        else:
+            failures.append(f"Missing expected localized doc file: {loc}")
+
     print("\n" + "=" * 60)
     if failures:
         print(f"[FAIL] {len(failures)} validation error(s) found:")
