@@ -1,5 +1,5 @@
 {
-  "name": "@alwkala/tidyfactor-styler",
+  "name": "@tidyfactor/styler",
   "version": "1.2.0",
   "description": "TidyFactor Styler — Production Framework Styler, Section Redesign & RTL Polish Engine",
   "main": "SKILL.md",
@@ -28,7 +28,7 @@
     "claude-skill",
     "anti-slop"
   ],
-  "author": "TidyFactor & Alwkala <hello@tidyfactor.com> (https://alwkala.com)",
+  "author": "TidyFactor <hello@tidyfactor.com> (https://tidyfactor.com)",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/TidyFactor/Styler/issues"
