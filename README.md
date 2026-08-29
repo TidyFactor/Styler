@@ -341,6 +341,19 @@ Please read our `CONTRIBUTING.md` and `CODE_OF_CONDUCT.md` before opening a Pull
 
 ---
 
+## 👨‍💻 Organization & Support
+
+- 🌐 **Official Website:** [https://tidyfactor.com/](https://tidyfactor.com/)
+- 📚 **Official Documentation:** [https://tidyfactor.com/documentation](https://tidyfactor.com/documentation)
+- 🤝 **Official Partner Website:** [Alwkala Digital Agency](https://alwkala.com/)
+- 🐙 **GitHub Organization:** [github.com/TidyFactor](https://github.com/TidyFactor)
+- 📧 **Business Inquiries:** [hello@tidyfactor.com](mailto:hello@tidyfactor.com)
+- 📱 **WhatsApp:** [+20 101 665 6899](https://wa.me/201016656899)
+- 📞 **Phone:** +20 101 665 6899
+- 📍 **Location:** Cairo, Egypt
+
+---
+
 ## 📜 License
 
 Licensed under the **Apache License 2.0**. Copyright (c) 2026 [TidyFactor](https://tidyfactor.com) & [Alwkala](https://alwkala.com).
