@@ -1,6 +1,6 @@
 <div align="center" dir="rtl">
 
-# 🎨 مهارة تايتفكتور لتنسيق أطر العمل `TidyFactor Styler v1.1.1`
+# 🎨 مهارة تايتفكتور لتنسيق أطر العمل `TidyFactor Styler v1.2.0`
 ### مهارة هندسة الواجهات البرمجية وتنسيق أطر العمل والتحويل الجراحي للـ RTL لوكلاء الذكاء الاصطناعي
 
 امنح وكلاء البرمجة الذكية (**Google Antigravity و Claude Code و Cursor و OpenAI Codex و Windsurf**) محركاً هندسياً لتنسيق الواجهات يعمل مباشرة داخل مستودع مشروعك الفعلي — دون إنشاء طبقات أنماط مكررة، أو استيراد مكتبات غريبة، أو إحداث فوضى في ملفات الـ CSS.
@@ -11,7 +11,7 @@
 [![Anti-Slop Certified](https://img.shields.io/badge/Anti--Slop-Certified-amber.svg?style=for-the-badge)](#-حوكمة-مكافحة-العشوائية-anti-slop-وحاجز-الجودة)
 [![Architect Score](https://img.shields.io/badge/Architect%20Score-8%2F8%20Pass%20(100%25)-green.svg?style=for-the-badge)](#-منهجية-tidyfactor-وحوكمة-الامتثال)
 
-[🚀 البدء السريع](#-البدء-السريع) • [🎯 لماذا TidyFactor/Styler](#-لماذا-tidyfactorstyler) • [⚡ الأوامر الـ 13](#-معمارية-موجه-الأوامر-الـ-13) • [🛠️ مسارات العمل الـ 8](#%EF%B8%8F-مسارات-العمل-الإنتاجية-الـ-8) • [🌐 أطر العمل المدعومة](#-أطر-العمل-الإنتاجية-المدعومة) • [🇸🇦 هندسة الـ RTL](#-هندسة-اللغة-العربية-والتحويل-الجراحي-للـ-rtl) • [❓ الأسئلة الشائعة](#-الأسئلة-الشائعة-faq) • [📖 English Version](README.md)
+[ English ](README.md) • [ العربية ](README.ar.md) • [ فارسی ](README.fa.md) • [ Español ](README.es.md) • [ Português ](README.pt.md) • [ 简体中文 ](README.zh.md) • [ Deutsch ](README.de.md) • [ Français ](README.fr.md)
 
 <br/><br/>
 

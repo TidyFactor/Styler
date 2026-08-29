@@ -38,6 +38,12 @@ const ROOT_COPIES = [
   "AGENTS.md",
   "README.md",
   "README.ar.md",
+  "README.fa.md",
+  "README.es.md",
+  "README.pt.md",
+  "README.zh.md",
+  "README.de.md",
+  "README.fr.md",
   "LICENSE",
   "CHANGELOG.md",
 ];
