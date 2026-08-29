@@ -5,11 +5,13 @@
 
 Give **Google Antigravity, Claude Code, Cursor, OpenAI Codex, or Windsurf** a production-grade UI transformation engine that operates directly inside your live codebase — without inventing duplicate style layers, alien dependencies, or per-page CSS drift.
 
-[![npm version](https://img.shields.io/npm/v/@alwkala/tidyfactor-styler.svg?style=for-the-badge&color=0284C7)](https://www.npmjs.com/package/@alwkala/tidyfactor-styler)
+[![npm version](https://img.shields.io/npm/v/@alwkala/tidyfactor-styler.svg?style=for-the-badge&color=0284C7&logo=npm)](https://www.npmjs.com/package/@alwkala/tidyfactor-styler)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg?style=for-the-badge)](LICENSE)
-[![RTL Native Arabic](https://img.shields.io/badge/RTL-Native%20Arabic-emerald.svg?style=for-the-badge)](#-native-arabic--surgical-rtl-engineering)
-[![Anti-Slop Certified](https://img.shields.io/badge/Anti--Slop-Certified-amber.svg?style=for-the-badge)](#%EF%B8%8F-anti-slop-governance--quality-bar)
-[![Architect Score](https://img.shields.io/badge/Architect%20Score-8%2F8%20Pass%20(100%25)-green.svg?style=for-the-badge)](#%EF%B8%8F-tidyfactor-skill-methodology--governance)
+[![Ecosystem](https://img.shields.io/badge/TidyFactor-Skills--LAB-purple.svg?style=for-the-badge)](https://github.com/TidyFactor)
+[![Compatibility](https://img.shields.io/badge/Agents-Antigravity%20|%20Claude%20|%20Cursor%20|%20Codex-orange.svg?style=for-the-badge)](SKILL.md)
+[![RTL Native Arabic](https://img.shields.io/badge/RTL-Native%20Arabic-emerald.svg?style=for-the-badge)](README.ar.md)
+[![Architect Score](https://img.shields.io/badge/Architect%20Score-13%2F13%20Pass%20(100%25)-green.svg?style=for-the-badge)](#%EF%B8%8F-tidyfactor-skill-methodology--governance)
+[![AI Agents Compatible](https://img.shields.io/badge/AI%20Agents-Universal%20Compatibility-4285F4.svg?style=for-the-badge)](SKILL.md)
 
 [ English ](README.md) • [ العربية ](README.ar.md) • [ فارسی ](README.fa.md) • [ Español ](README.es.md) • [ Português ](README.pt.md) • [ 简体中文 ](README.zh.md) • [ Deutsch ](README.de.md) • [ Français ](README.fr.md)
 
@@ -302,7 +304,7 @@ TidyFactor Organization (github.com/TidyFactor)
 
 ## 🏛️ TidyFactor Skill Methodology & Governance
 
-`tidyfactor-styler` passes all **8 Architectural Governance Rules** under [`tidyfactor-skill-architect`](https://github.com/TidyFactor/Skill-Architect):
+`tidyfactor-styler` passes all **13 Architectural Governance Rules** under [`tidyfactor-skill-architect`](https://github.com/TidyFactor/Skill-Architect):
 
 1. ✅ **Dispatcher Discipline**: `SKILL.md` routes commands without executing tasks (~350 tokens).
 2. ✅ **One Workflow = One Outcome**: Every workflow has a single deliverable with an explicit validation checklist.
@@ -312,6 +314,12 @@ TidyFactor Organization (github.com/TidyFactor)
 6. ✅ **Trigger-Justified Growth**: Commands added per verifiable UI engineering lifecycle stages.
 7. ✅ **Security & Quality Bar**: Automated pre-emit self-critique rubric and 8-state interaction matrices.
 8. ✅ **Cross-Platform Parity**: 100% identical behavior across Antigravity, Claude Code, Cursor, and Codex.
+9. ✅ **Platform Compatibility**: Frontmatter double-quotes and valid YAML parsing.
+10. ✅ **Tool Permission Declaration**: Explicit scope for tools and mutations.
+11. ✅ **Memory Freshness**: Operational memory timestamps (`last-verified: YYYY-MM-DD`).
+12. ✅ **Skill vs MCP Boundary**: Knowledge in skills, live state in MCP/CLI.
+13. ✅ **Two-Tier Multi-Language Documentation**: Canonical technical documentation + 8-language localized guides.
+
 
 ---
 

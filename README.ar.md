@@ -5,11 +5,13 @@
 
 امنح وكلاء البرمجة الذكية (**Google Antigravity و Claude Code و Cursor و OpenAI Codex و Windsurf**) محركاً هندسياً لتنسيق الواجهات يعمل مباشرة داخل مستودع مشروعك الفعلي — دون إنشاء طبقات أنماط مكررة، أو استيراد مكتبات غريبة، أو إحداث فوضى في ملفات الـ CSS.
 
-[![npm version](https://img.shields.io/npm/v/@alwkala/tidyfactor-styler.svg?style=for-the-badge&color=0284C7)](https://www.npmjs.com/package/@alwkala/tidyfactor-styler)
+[![npm version](https://img.shields.io/npm/v/@alwkala/tidyfactor-styler.svg?style=for-the-badge&color=0284C7&logo=npm)](https://www.npmjs.com/package/@alwkala/tidyfactor-styler)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg?style=for-the-badge)](LICENSE)
-[![RTL Native Arabic](https://img.shields.io/badge/RTL-Native%20Arabic-emerald.svg?style=for-the-badge)](#-هندسة-اللغة-العربية-والتحويل-الجراحي-للـ-rtl)
-[![Anti-Slop Certified](https://img.shields.io/badge/Anti--Slop-Certified-amber.svg?style=for-the-badge)](#-حوكمة-مكافحة-العشوائية-anti-slop-وحاجز-الجودة)
-[![Architect Score](https://img.shields.io/badge/Architect%20Score-8%2F8%20Pass%20(100%25)-green.svg?style=for-the-badge)](#-منهجية-tidyfactor-وحوكمة-الامتثال)
+[![Ecosystem](https://img.shields.io/badge/TidyFactor-Skills--LAB-purple.svg?style=for-the-badge)](https://github.com/TidyFactor)
+[![Compatibility](https://img.shields.io/badge/Agents-Antigravity%20|%20Claude%20|%20Cursor%20|%20Codex-orange.svg?style=for-the-badge)](SKILL.md)
+[![RTL Native Arabic](https://img.shields.io/badge/RTL-Native%20Arabic-emerald.svg?style=for-the-badge)](README.ar.md)
+[![Architect Score](https://img.shields.io/badge/Architect%20Score-13%2F13%20Pass%20(100%25)-green.svg?style=for-the-badge)](#-منهجية-tidyfactor-وحوكمة-الامتثال)
+[![AI Agents Compatible](https://img.shields.io/badge/AI%20Agents-Universal%20Compatibility-4285F4.svg?style=for-the-badge)](SKILL.md)
 
 [ English ](README.md) • [ العربية ](README.ar.md) • [ فارسی ](README.fa.md) • [ Español ](README.es.md) • [ Português ](README.pt.md) • [ 简体中文 ](README.zh.md) • [ Deutsch ](README.de.md) • [ Français ](README.fr.md)
 
@@ -302,7 +304,7 @@ TidyFactor Organization (github.com/TidyFactor)
 
 ## 🏛️ منهجية TidyFactor وحوكمة الامتثال
 
-تلتزم `tidyfactor-styler` بجميع **القواعد الهيكلية الثماني** لمنظومة [`tidyfactor-skill-architect`](https://github.com/TidyFactor/Skill-Architect):
+تلتزم `tidyfactor-styler` بجميع **القواعد الهيكلية الـ 13** لمنظومة [`tidyfactor-skill-architect`](https://github.com/TidyFactor/Skill-Architect):
 
 1. ✅ **انضباط التوجيه (Dispatcher Discipline)**: ملف `SKILL.md` موجه أوامر خفيف يستهلك ~350 توكن فقط.
 2. ✅ **مسار عمل واحد = نتيجة واحدة**: كل مسار يمتلك مخرجاً واحداً وقائمة تحقق دقيقة.
@@ -312,6 +314,12 @@ TidyFactor Organization (github.com/TidyFactor)
 6. ✅ **نمو قائم على المحفزات**: إضافة الأوامر بناءً على مراحل هندسة الواجهات الحقيقية.
 7. ✅ **حاجز الجودة ومكافحة العشوائية**: نقد ذاتي آلي وتغطية شاملة لحالات التفاعل الـ 8.
 8. ✅ **توافق عبر المنصات**: أداء متطابق تماماً عبر Antigravity و Claude Code و Cursor و Codex.
+9. ✅ **التوافق التام مع المنصات**: هيكل YAML Frontmatter دقيق وأوصاف مقيدة بحدود المنصات.
+10. ✅ **إعلان صلاحيات الأدوات**: تحديد نطاق الأدوات واللغات المصرح بها بدقة.
+11. ✅ **حداثة الذاكرة التشغيلية**: طوابع زمنية موثقة للتحقق الدوري (≤ 180 يوماً).
+12. ✅ **الحدود الفاصلة بين المهارة والـ MCP**: المعرفة الساكنة في المهارة والحالة الديناميكية عبر MCP.
+13. ✅ **التوثيق ثنائي الطبقات متعدد اللغات**: توثيق تقني عالمي موحد + أدلة تبني محلية بـ 8 لغات عالمية.
+
 
 ---
 
