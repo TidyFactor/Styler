@@ -1,6 +1,6 @@
 # Contributing to TidyFactor Styler
 
-Thank you for your interest in contributing to **TidyFactor Styler** (`@alwkala/tidyfactor-styler`)!
+Thank you for your interest in contributing to **TidyFactor Styler** (`@tidyfactor/styler`)!
 
 This repository follows strict **TidyFactor Skill Methodology** guidelines to ensure deterministic workflows, anti-slop design execution, and cross-platform compatibility across AI Coding Agents (*Google Antigravity, Claude Code, Cursor, Codex, Windsurf*).
 

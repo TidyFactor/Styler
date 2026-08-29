@@ -10,7 +10,7 @@ body:
     id: version
     attributes:
       label: "Styler Version / Release"
-      description: "Which version of @alwkala/tidyfactor-styler are you using?"
+      description: "Which version of @tidyfactor/styler are you using?"
       placeholder: "v1.1.1"
     validations:
       required: true
