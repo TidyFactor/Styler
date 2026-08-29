@@ -1,0 +1,52 @@
+name: "🐛 Bug Report"
+description: "File a reproducible defect or styling issue in tidyfactor-styler"
+title: "[Bug]: "
+labels: ["type:bug", "status:triage"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thank you for reporting a problem in TidyFactor Styler. Please provide detailed reproduction steps."
+  - type: input
+    id: version
+    attributes:
+      label: "Styler Version / Release"
+      description: "Which version of @alwkala/tidyfactor-styler are you using?"
+      placeholder: "v1.1.1"
+    validations:
+      required: true
+  - type: dropdown
+    id: target_framework
+    attributes:
+      label: "Target Framework / Environment"
+      options:
+        - "Tailwind CSS v3 / v4"
+        - "Next.js (App Router / Pages Router)"
+        - "PHP (Blade / Plates / Vanilla)"
+        - "Vanilla HTML / CSS"
+        - "WordPress / Theme"
+        - "Other"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: "Steps to Reproduce"
+      description: "Step-by-step instructions or prompt executed."
+      placeholder: "1. Run command '/styler component'\n2. Pass layout '...'\n3. Observe RTL layout discrepancy"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected Behavior"
+      description: "What did you expect the styler output to look like?"
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Actual Behavior / Output Snippet"
+      description: "Paste the actual generated code or styling bug."
+      render: shell
+    validations:
+      required: true

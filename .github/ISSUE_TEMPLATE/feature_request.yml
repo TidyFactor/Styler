@@ -1,0 +1,30 @@
+name: "✨ Feature Request"
+description: "Suggest a new UI pattern, framework preset, or RTL enhancement"
+title: "[Feature]: "
+labels: ["type:feature", "status:triage"]
+body:
+  - type: markdown
+    attributes:
+      value: "Have an idea or design pattern you'd like TidyFactor Styler to support? Tell us about it!"
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Use Case / Missing Capability"
+      description: "What UI pattern, framework style, or RTL transformation are you trying to achieve?"
+      placeholder: "When working with..."
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: "Proposed Style Preset or Solution"
+      description: "Describe how the new styler workflow or component preset should look/behave."
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Alternatives Considered"
+      description: "Any alternative workarounds or designs you considered."
+    validations:
+      required: false
