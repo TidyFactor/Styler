@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎨 TidyFactor Styler `v1.2.0`
+# 🎨 TidyFactor Styler `v1.2.1`
 
 **Framework-Styler für Produktivumgebungen, chirurgisches RTL-Redesign & Anti-Slop UI-Engine für KI-Coding-Agenten**
 

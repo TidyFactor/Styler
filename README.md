@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎨 TidyFactor Styler `v1.2.0`
+# 🎨 TidyFactor Styler `v1.2.1`
 ### The Production Framework Styler, Surgical RTL Redesign & Anti-Slop UI Engine for AI Coding Agents
 
 Give **Google Antigravity, Claude Code, Cursor, OpenAI Codex, or Windsurf** a production-grade UI transformation engine that operates directly inside your live codebase — without inventing duplicate style layers, alien dependencies, or per-page CSS drift.
