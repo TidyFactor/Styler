@@ -1,4 +1,5 @@
 # Brand Tokens — `brand.json` Single Source of Truth
+<!-- last-verified: 2026-08-30 -->
 
 When a project contains a `brand.json` file at its root, it serves as the single source of truth for colors, typography, identity, voice, and visual tokens. `tidyfactor-styler` respects existing `brand.json` definitions over ad-hoc component styles.
 

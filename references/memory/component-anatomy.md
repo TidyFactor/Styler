@@ -1,4 +1,5 @@
 # Component Anatomy — Reference for `component`/`section`/`page`
+<!-- last-verified: 2026-08-30 -->
 
 ## Atomic hierarchy (Atomic Design, adapted)
 - **Atoms** — button, input, label, icon, badge. Smallest named unit, never composed of other named components.

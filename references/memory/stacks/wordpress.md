@@ -1,4 +1,5 @@
 # Stack: WordPress
+<!-- last-verified: 2026-08-30 -->
 
 ## Detect
 `wp-content/themes/` or `wp-content/plugins/` directory, `functions.php`, `style.css` with a WordPress theme header comment, or the user names a WordPress site/client directly. **Also check for a page builder before assuming classic/block theme conventions apply** — `wp-content/plugins/elementor/`, `wp-content/plugins/js_composer/` (WPBakery), or Divi's `et_` prefixed options are common on agency client sites and change the entire editing model below.

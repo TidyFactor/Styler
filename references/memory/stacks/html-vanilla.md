@@ -1,4 +1,5 @@
 # Stack: Plain HTML / CSS / JS (existing static sites)
+<!-- last-verified: 2026-08-30 -->
 
 ## Detect
 Flat `.html` files with linked `.css`/`.js`, no framework/build dependency in play, no `package.json` with a frontend framework — a site that already exists and ships as static files (as opposed to a brand-new static site being scaffolded, which is `tidyfactor-html`'s job, not this skill's).

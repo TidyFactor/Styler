@@ -48,7 +48,10 @@ Give **Google Antigravity, Claude Code, Cursor, OpenAI Codex, or Windsurf** a pr
 
 ## 🎯 Why TidyFactor/Styler
 
-Most AI UI prompts output generic HTML with inline styles, uncalibrated utility bloat, or alien libraries that clash with your existing repository. 
+> [!IMPORTANT]
+> **The Styler Manifesto: Why Raw AI Codegen Produces Bland UI**  
+> Raw LLMs default to the statistical mean: generic purple gradients, missing interactive micro-states, arbitrary inline styles, and broken directional CSS margins (`mr-*`, `ml-*`).  
+> **TidyFactor Styler is the surgical in-codebase antidote:** It enforces a zero-drift, framework-native contract that refactors live components, injects production-grade RTL ergonomics, and respects your existing design tokens without breaking upstream architecture.
 
 **TidyFactor/Styler enforces a strict "Conform, Don't Compete" engineering contract:** it detects your project's active framework, inspects existing design tokens, and outputs stack-native components that look like your senior frontend architect wrote them.
 
@@ -58,8 +61,31 @@ Most AI UI prompts output generic HTML with inline styles, uncalibrated utility 
 | **Styling Conformance** | Injects new alien CSS rules or duplicate Tailwind layers | **Adopts your active Tailwind config**, CSS variables, or class conventions |
 | **Scope Control** | Sloppy edits that accidentally break global layouts | **Strictly scoped refactoring** (component touches only component) |
 | **Arabic & RTL Support** | Literal flipping or broken directional margins (`mr-*`, `left-*`) | **Native Logical CSS** (`ms-*`, `pe-*`, `start-*`) + letterform font scaling |
-| **Anti-Slop Quality** | Generic purple AI gradients and missing interactive states | **6-Axis pre-emit self-critique** + mandatory 8-state interaction matrix |
+| **Anti-Slop Quality** | Generic purple AI gradients and missing interactive states | **7-Axis pre-emit self-critique (P, H, E, S, R, V, D)** + mandatory 8-state interaction matrix |
 | **Context Consumption** | Giant unorganized design dumps (10k+ tokens) | **Context-efficient dispatcher** (~350 tokens at start, loads on demand) |
+
+### ⚡ The Before & After Difference: Raw AI Prompting vs. Styler In-Codebase Polish
+
+````carousel
+```html
+<!-- ❌ RAW AI GENERATION (Generic, Fragile, LTR-Hardcoded) -->
+<button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded mr-3 shadow-lg flex items-center gap-2">
+  <span>Submit Order</span>
+  <svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24"><!-- hardcoded LTR arrow --></svg>
+</button>
+<!-- Flaws: Hardcoded mr/ml breaks RTL; Generic purple gradient; Missing focus-visible, active, disabled, and loading states; Ignores project design tokens -->
+```
+<!-- slide -->
+```html
+<!-- ✅ TIDYFACTOR STYLER POLISH (Production-Grade, Token-Aligned, Native RTL) -->
+<button class="btn-primary inline-flex items-center justify-center gap-2 font-medium transition-all duration-150 ease-out focus-visible:ring-2 focus-visible:ring-primary/40 focus-visible:outline-none disabled:opacity-50 disabled:pointer-events-none data-[state=loading]:cursor-wait data-[state=loading]:opacity-80 active:scale-[0.98] me-3">
+  <span>تأكيد الطلب / Submit Order</span>
+  <svg class="w-4 h-4 rtl:rotate-180 transition-transform" aria-hidden="true" viewBox="0 0 24 24"><!-- bidi-aware --></svg>
+</button>
+<!-- Strengths: Native logical properties (me-3); Bidi-safe icon rotation; Full 8-state interaction matrix; Strictly scoped to existing design tokens -->
+```
+````
+
 
 ---
 
@@ -196,9 +222,9 @@ Arabic script requires specific line-height and letter-spacing compensation:
 
 ## 🛡️ Anti-Slop Governance & Quality Bar
 
-### 1. The 6-Axis Pre-Emit Self-Critique (P, H, E, S, R, V)
+### 1. The 7-Axis Pre-Emit Self-Critique (P, H, E, S, R, V, D)
 
-Before emitting code, the agent evaluates output against the **6-Axis Anti-Slop Rubric** (`memory/quality-bar.md`):
+Before emitting code, the agent evaluates output against the **7-Axis Anti-Slop Rubric** (`memory/quality-bar.md` / `/* Pre-emit critique: P5 H5 E5 S5 R5 V5 D5 */`):
 
 - **P — Palette Harmony (0–10)**: Strict WCAG 2.1 AA contrast; no generic AI purple/pink gradients without explicit brand mandate.
 - **H — Hierarchy & Rhythm (0–10)**: Clear visual anchor; intentional whitespace sizing using a 4px/8px baseline grid.
@@ -206,6 +232,7 @@ Before emitting code, the agent evaluates output against the **6-Axis Anti-Slop 
 - **S — State Completeness (0–10)**: All 8 component states implemented.
 - **R — RTL Correctness (0–10)**: 100% logical CSS properties; proper icon inversion for directional arrows.
 - **V — Variety & Distinction (0–10)**: Distinct design school character; zero default Bootstrap-like look.
+- **D — Decision Alignment (0–10)**: Strict compliance with `.tidyfactor/styler-brief.md` architectural parameters.
 
 ### 2. The 8-State Component Interaction Matrix
 

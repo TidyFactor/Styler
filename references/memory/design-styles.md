@@ -1,4 +1,5 @@
 # Design Styles & Movements — Reference for `styles`
+<!-- last-verified: 2026-08-30 -->
 
 A working palette of directions, not an art-history survey. Each entry: what it looks like, when it fits, what to avoid. Stack-agnostic — the direction is a design decision; each `memory/stacks/*.md` file covers how to actually express it in that stack's idiom.
 

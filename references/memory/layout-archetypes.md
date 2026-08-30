@@ -1,4 +1,5 @@
 # 1. Layout Archetypes — Surface Blueprints for Production Codebases
+<!-- last-verified: 2026-08-30 -->
 
 When creating or redesigning pages and sections inside an existing codebase, select one of the 8 macrostructure layout archetypes to govern visual rhythm, container hierarchy, and surface grid structure.
 
