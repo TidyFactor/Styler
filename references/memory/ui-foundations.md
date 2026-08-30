@@ -1,4 +1,5 @@
 # UI Design Foundations — Reference for `component`/`section`/`page`/`redesign`
+<!-- last-verified: 2026-08-30 -->
 
 The layer beneath every decision this skill makes, in any language or stack. `component-anatomy.md` covers atomic structure and state; this file covers layout/system-level judgment.
 

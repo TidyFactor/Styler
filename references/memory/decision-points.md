@@ -1,4 +1,5 @@
 # Memory: Decision Points & Elicitation Protocol
+<!-- last-verified: 2026-08-30 -->
 
 Thin arbitration protocol for resolving high-impact design ambiguities BEFORE code generation. References existing memory catalogs as Single Source of Truth (SSOT).
 

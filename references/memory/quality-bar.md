@@ -1,4 +1,5 @@
 # Quality Bar — Reference for every command, checked before calling anything finished
+<!-- last-verified: 2026-08-30 -->
 
 ## Layout — viewport overflow & One-Page Fold View
 - **Zero Scroll on Single-View Panels & Hero Stages**: A standalone single-page view, mission control dashboard, or dedicated section fold MUST NOT require vertical scrolling on standard desktop viewports (1080p, 1440p, standard laptop resolutions). On narrow/mobile viewports (<768px), graceful linear vertical stacking is expected.

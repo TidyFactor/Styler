@@ -1,4 +1,5 @@
 # Asset Tooling & Python Automation Utilities
+<!-- last-verified: 2026-08-30 -->
 
 `tidyfactor-styler` provides Python scripts under `scripts/` to automate color palette extraction, WCAG 2.1 AA contrast calculations, image web optimization (WebP/AVIF conversion), asset minification, and budget audits.
 
@@ -27,3 +28,13 @@ Converts PNG/JPG images to WebP/AVIF, strips metadata, enforces max dimensions (
 ```bash
 python scripts/optimize_images.py public/images/ --quality 85
 ```
+
+## 3. Generative Asset & Visual Mockup Bridge (Rule 12 Compliance)
+
+When a live UI redesign requires novel generative imagery, 3D textures, or frame sequences:
+- **Zero In-Skill Execution Slop**: Do not bundle heavy generative models directly inside `styler`.
+- **Ecosystem Delegation (The Frontend Trinity)**:
+  - **Hero Films / Scrubbed Canvas**: Delegate to `tidyfactor-cinematic` (`/brief` / `/film`).
+  - **Full UI Prototyping & Mockups**: Delegate to `tidyfactor-design` (`/assets` / `/tokens`).
+  - **Live Image Generation**: Use environment MCP tools or AI Image Generators (e.g. `generate_image` tool) to produce the raw asset, then process through `scripts/optimize_images.py`.
+

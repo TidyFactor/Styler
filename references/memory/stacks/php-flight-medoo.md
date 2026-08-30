@@ -1,4 +1,5 @@
 # Stack: PHP (Flight / Medoo / Plates — TidyFactor PHP tracks)
+<!-- last-verified: 2026-08-30 -->
 
 ## Detect
 `composer.json` requiring `mikecao/flight` and/or `catfan/medoo`, `views/` or `templates/` directory of `.php` partials rendered via Plates, PocketOffice's `module.json` / `modules/` folder pattern, or Webletz's `website.json` Section/Component pattern.

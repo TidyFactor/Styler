@@ -1,4 +1,5 @@
 # Motion Principles — Reference for `motion`
+<!-- last-verified: 2026-08-30 -->
 
 Adapted from classic animation principles, applied to UI motion. Stack-agnostic — the target stack's own mechanism (see `memory/stacks/*.md`) is how these get implemented.
 

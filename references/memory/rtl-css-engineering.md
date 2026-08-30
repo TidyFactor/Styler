@@ -1,4 +1,5 @@
 # RTL CSS Engineering — Reference for `rtl`
+<!-- last-verified: 2026-08-30 -->
 
 Building a real RTL system, not sprinkling `direction: rtl` and hoping. The target: **direction-agnostic components** — written once, correct in both directions automatically — not separate LTR and separate RTL stylesheets maintained in parallel forever.
 

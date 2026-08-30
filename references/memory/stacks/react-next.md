@@ -1,4 +1,5 @@
 # Stack: React / Next.js
+<!-- last-verified: 2026-08-30 -->
 
 ## Detect
 `package.json` with `react`/`next` dependency, `.jsx`/`.tsx` files, `app/` or `pages/` directory (Next.js router).

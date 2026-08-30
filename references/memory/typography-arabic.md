@@ -1,4 +1,5 @@
 # Arabic Typography & Content — Reference for `typography` (and auto-loaded whenever content is Arabic/bilingual)
+<!-- last-verified: 2026-08-30 -->
 
 Latin pairing basics live at the end of this file. Everything else here is what makes Arabic UI work read as considered and premium instead of a mirrored English template — the actual differentiator this skill exists to deliver.
 
