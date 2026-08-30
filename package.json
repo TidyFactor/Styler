@@ -1,7 +1,7 @@
 {
   "name": "@tidyfactor/styler",
-  "version": "1.2.0",
-  "description": "TidyFactor Styler — Production Framework Styler, Section Redesign & RTL Polish Engine",
+  "version": "1.2.1",
+  "description": "TidyFactor Styler \u2014 Production Framework Styler, Section Redesign & RTL Polish Engine",
   "main": "SKILL.md",
   "bin": {
     "tidyfactor-styler": "bin/add-skill.js",

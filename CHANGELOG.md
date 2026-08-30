@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.2.1] - 2026-08-30
+
+### Added / Improved
+- **Docs & Manifesto**: Added anti-slop Manifesto hook, Before/After interactive comparison carousel, and live GitHub Stars badge across all 8 README localizations.
+- **Rule 11 Compliance**: Injected verified freshness timestamps across all 16 memory files.
+- **CDL Rubric**: Standardized 7-Axis Pre-Emit Critique (P5 H5 E5 S5 R5 V5 D5).
+- **Asset Bridge**: Enriched asset-tooling.md with generative cross-skill delegation rules (Rule 12).
+
+---
+
 ## [1.2.0] - 2026-08-29
 
 ### Added - Global Multi-Tier & Multi-Language Documentation Architecture

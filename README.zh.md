@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎨 TidyFactor Styler `v1.2.0`
+# 🎨 TidyFactor Styler `v1.2.1`
 
 **面向 AI 编码智能体的生产级框架样式调优、精准 RTL 重构与 Anti-Slop UI 引擎**
 
