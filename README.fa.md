@@ -5,6 +5,7 @@
 **موتور استایل‌دهی فریم‌ورک‌های واقعی، بازطراحی دقیق RTL و مهندسی رابط کاربری Anti-Slop برای ایجنت‌های هوش مصنوعی**
 
 [![npm version](https://img.shields.io/npm/v/@tidyfactor/styler.svg?style=for-the-badge&color=0284C7)](https://www.npmjs.com/package/@tidyfactor/styler)
+[![GitHub Stars](https://img.shields.io/github/stars/TidyFactor/Styler.svg?style=for-the-badge&color=EAB308&logo=github)](https://github.com/TidyFactor/Styler/stargazers)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg?style=for-the-badge)](LICENSE)
 
 [ English ](README.md) • [ العربية ](README.ar.md) • [ فارسی ](README.fa.md) • [ Español ](README.es.md) • [ Português ](README.pt.md) • [ 简体中文 ](README.zh.md) • [ Deutsch ](README.de.md) • [ Français ](README.fr.md)
