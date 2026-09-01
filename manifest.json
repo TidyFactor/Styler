@@ -1,0 +1,37 @@
+{
+  "manifest_schema_version": "1.0.0",
+  "skill_id": "tidyfactor-styler",
+  "skill_root_anchor": "self",
+  "tools": [
+    {
+      "name": "audit_rtl",
+      "description": "Audits CSS and HTML files for physical direction properties (left, right, margin-left) and validates CSS logical properties (inset-inline, margin-inline-start).",
+      "entrypoint": { "runtime": "python3", "script": "scripts/audit_rtl.py" },
+      "invocation": {
+        "cli_pattern": "{runtime} \"{skill_root}/{script}\" --target \"{target_path}\" {flags}",
+        "args": [
+          { "name": "target_path", "type": "path", "required": true, "description": "Absolute path to the project being audited for RTL compliance" },
+          { "name": "fix", "type": "boolean", "required": false, "default": false, "flag": "--fix", "description": "Auto-convert physical properties to logical properties where safe" }
+        ]
+      },
+      "output": { "format": "json", "channel": "stdout" },
+      "runtime_requirements": { "isolation_recommended": false, "dependencies": [] },
+      "invoked_by_commands": ["rtl", "audit", "polish"]
+    },
+    {
+      "name": "check_contrast",
+      "description": "Audits CSS color pairs and surface variables for WCAG 2.1 AA and AAA contrast compliance across light and dark themes.",
+      "entrypoint": { "runtime": "python3", "script": "scripts/check_contrast.py" },
+      "invocation": {
+        "cli_pattern": "{runtime} \"{skill_root}/{script}\" --target \"{target_path}\" {flags}",
+        "args": [
+          { "name": "target_path", "type": "path", "required": true, "description": "Absolute path to the project" },
+          { "name": "strict", "type": "boolean", "required": false, "default": false, "flag": "--strict", "description": "Enforce WCAG AAA 7:1 ratio instead of AA 4.5:1" }
+        ]
+      },
+      "output": { "format": "json", "channel": "stdout" },
+      "runtime_requirements": { "isolation_recommended": false, "dependencies": [] },
+      "invoked_by_commands": ["palette", "tokens", "audit"]
+    }
+  ]
+}

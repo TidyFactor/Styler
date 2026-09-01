@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.3.0] - 2026-09-01
+
+### Added - Runtime Tooling Manifest & Logical RTL Auditor
+- **Rule 10 Runtime Tooling Contract (`manifest.json`)**: Declared portable `audit_rtl` and `check_contrast` executable tooling with schema validation.
+- **Automated Logical Properties Auditor (`scripts/audit_rtl.py`)**: Standalone and MCP-compatible CLI engine scanning CSS and markup for legacy physical positioning (`margin-left`, `right`, `left`, `float`) and verifying CSS Logical Properties compliance (`margin-inline-start`, `inset-inline-start`).
+- **Progressive Enhancement Tooling Architecture**: Integrated seamless execution via standalone CLI and `tidyfactor-brain` MCP `run_skill_tool`.
+
+---
+
 ## [1.2.1] - 2026-08-30
 
 ### Added / Improved
