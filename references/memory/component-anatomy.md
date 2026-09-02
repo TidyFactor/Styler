@@ -8,6 +8,17 @@
 - **Templates** (`page`/`redesign` output) — organisms arranged into an actual page layout. The one level allowed to be page-specific — it's arrangement, not new styling.
 
 A new visual need almost always belongs at the atom/molecule/organism level, added once to the project's existing component library — not invented fresh at the template level.
+ 
+---
+
+## Navigation & Header Styling Invariants (Strict Quality Bar)
+1. **Zero Emoji Invariant**: Emojis are strictly banned from navigation menus, headers, and buttons. Use lightweight inline SVGs (`currentColor`, 1.5–2px stroke).
+2. **Single-Line Menu (`white-space: nowrap`)**: Navigation links must never wrap to multiple lines on desktop. Labels should be concise (1–2 words) or use stacked title + sub-descriptor.
+3. **Mobile-First Drawer Maintenance**: Seamlessly fold into an accessible drawer or bottom sheet on mobile screens with $\ge 44\times 44\text{px}$ touch targets and locked body scroll.
+4. **Submenu & Mega Menu Fallback**: When links exceed 5–6 items, escalate cleanly to structured submenus or a mega menu rather than crowding the header bar.
+5. **Action Controls Cap (Max 3)**: Limit header actions to 3 cohesive controls (e.g. Primary CTA + Lang Toggle + Theme Toggle).
+
+---
 
 ## The 8-State Interactive Component Matrix
 

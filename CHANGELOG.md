@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.4.0] - 2026-09-02
+
+### 🧭 Added — Navigation & Header Quality Bar & 5 Anti-Pattern Traps
+- **Strict Navigation Quality Bar (`references/memory/component-anatomy.md`)**: Codified zero-emoji invariant, single-line desktop menu constraint (`white-space: nowrap`), mobile drawer requirements, submenu escalation threshold (5–6 links), and 3-control cap on header actions.
+- **5 Navigation Anti-Pattern Auto-Rejection Traps (`references/memory/quality-bar.md`)**: Added deterministic rejection rules for vertical text wrapping in link pills, escaping action overflow, compound phrase congestion, duplicate CTA intent, and placeholder avatar/emoji traps.
+
+---
+
 ## [1.3.0] - 2026-09-01
 
 ### Added - Runtime Tooling Manifest & Logical RTL Auditor
