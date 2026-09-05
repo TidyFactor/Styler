@@ -57,6 +57,7 @@ Reject and revise any generated code that exhibits any of the following 16 AI an
 3. **Compound Title Congestion**: Cramming 6+ verbose compound phrases side-by-side (`المؤهلات والأكاديميا`, `المؤلفات والأبحاث`, `المسيرة المهنية`, `الأثر الميداني`, `المبادرات والتدريب`). When links exceed 5–6 items, mandatory escalation to Submenu/Mega Menu applies.
 4. **Duplicate Primary CTA Intent**: Duplicating the conversion action in both the menu links and the header button (e.g. having `حجز استشارة` in the nav links right next to `تواصل مباشر` on the CTA button). The CTA is the single primary conversion button.
 5. **Amateur Avatar & Emoji Trap**: Using plain circular placeholder avatars with raw single letters (e.g. a teal circle with a plain letter "ش") or emoji labels (`🌙 ليلي`). Always use authentic SVG royal emblems, cartouches, or clean linear SVG icons.
+6. **Motif & Watermark Overlap Trap**: Stacking two background watermarks, icons, PNGs, or SVGs on top of each other in the same coordinate space, or placing watermarks directly behind dense title/reading columns. Watermarks must strictly remain single-instance per section and isolated to peripheral margins.
 
 ---
 
@@ -68,9 +69,20 @@ Before outputting code, score the design from 1 to 5 on 7 axes. Any score < 3 tr
 2. **Hierarchy (`H`)**: Clear visual priority; exactly one primary action per viewport; logical contrast in type and color.
 3. **Execution (`E`)**: Clean, production-grade markup; proper responsive wrapping; fluid values (`clamp()`).
 4. **Specificity (`S`)**: Designed specifically for the target domain (SaaS vs. Editorial vs. Utility) with zero interchangeable generic parts.
-5. **Restraint (`R`)**: Controlled animations, minimal decoration, and purposeful whitespace — avoiding visual clutter.
-6. **Variety (`V`)**: Dynamic visual pacing across sections; avoiding repetitive uniform card stacks.
+5. **Restraint (`R`)**: Controlled animations, minimal decoration, and purposeful whitespace — avoiding visual clutter and motif collisions.
+6. **Variety (`V`)**: Dynamic visual pacing across sections; avoiding repetitive uniform card stacks; intentional component choices from `component-matrix-registry.md`.
 7. **Decision Alignment (`D`)**: 100% faithful to the confirmed choices in `.tidyfactor/design-brief.md` or explicit prompt override.
 
 ## Pre-delivery Check
-Before calling any `component`, `section`, `page`, or `redesign` output finished: measure actual rendered height against viewport at mobile and desktop widths, in every shipped language, and confirm against this file's checklist — not just "it looks fine." For `page`/`redesign` specifically, also confirm the Performance & production-readiness items above — a prototype-quality page that merely looks right is not the deliverable this skill exists to produce.
+Before calling any `component`, `section`, `page`, or `redesign` output finished: measure actual rendered height against viewport at mobile and desktop widths, in every shipped language, and confirm against this file's checklist — not just "it looks fine." For `page`/`redesign` specifically:
+- **Zero Motif Overlap**: Confirm no two watermarks, SVGs, or icons collide or stack on top of each other.
+- **Eyebrow Fitness**: Verify the eyebrow was selected intentionally from the 16 alternatives in `component-matrix-registry.md` matching brand voice.
+- **Hero Motion Rule**: Verify the hero adheres to the 3-motion rule (1 entrance, 1 scroll behavior, 1 ambient layer) per `component-matrix-registry.md`.
+- **Card Architecture**: Reject generic rounded white boxes with light gray borders; select from `component-matrix-registry.md`.
+- **CTA 8-State Completeness**: Ensure all interactive buttons define focus-visible, active/pressed, loading, and disabled states per `component-matrix-registry.md`.
+- **Frieze Continuity**: Confirm continuous dividers repeat seamlessly via SVG `<pattern>` across all screen widths per `component-matrix-registry.md`.
+- **Metric Typographic Precision**: Ensure numbers use tabular-nums, and currency/percent symbols use superscript ratios per `component-matrix-registry.md`.
+- **List Bullet Craft**: Reject plain green/blue checkmark circles; apply intentional list markers from `component-matrix-registry.md`.
+
+
+

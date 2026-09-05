@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎨 TidyFactor Styler `v1.3.0`
+# 🎨 TidyFactor Styler `v1.4.1`
 ### The Production Framework Styler, Surgical RTL Redesign & Anti-Slop UI Engine for AI Coding Agents
 
 Give **Google Antigravity, Claude Code, Cursor, OpenAI Codex, or Windsurf** a production-grade UI transformation engine that operates directly inside your live codebase — without inventing duplicate style layers, alien dependencies, or per-page CSS drift.
@@ -90,13 +90,30 @@ Give **Google Antigravity, Claude Code, Cursor, OpenAI Codex, or Windsurf** a pr
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Installation & Quick Start
 
-### 1. Skill Injection via CLI
+Choose your preferred installation method:
 
+### Option A: Via TidyFactor CLI (Recommended)
+Install directly using the official ecosystem package runner into your active workspace:
 ```bash
-# Add Styler directly into your current project workspace
-npx @tidyfactor/cli-styler add-skill
+npx @tidyfactor/cli add styler
+```
+*Or if you have the CLI installed globally (`npm i -g @tidyfactor/cli`):*
+```bash
+tidyfactor add styler
+```
+
+### Option B: Via Open Agent Skills Ecosystem (skills.sh / Vercel Labs)
+Install using the universal multi-agent standard across all supported IDEs (Cursor, Antigravity, Claude Code, Windsurf, Trae, Codex):
+```bash
+npx skills add tidyfactor/styler
+```
+
+### Option C: Standalone Zero-Dependency Runner (NPM Direct)
+Run the dedicated skill installer directly with automatic cache invalidation:
+```bash
+npx @tidyfactor/styler@latest
 ```
 
 ### 2. Workspace Installation per AI Agent

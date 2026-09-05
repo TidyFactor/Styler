@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.4.1] - 2026-09-05
+
+### 🎨 Added — Master Component Pattern Registry & Zero-Tolerance Motif Overlap Rule
+- **Component Matrix Registry (`references/memory/component-matrix-registry.md`)**: Operational quick-reference covering 7 core component families (eyebrows, hero motion rules, card architecture, 8-state CTAs, frieze continuity patterns, metric typography, and artisanal list bullets).
+- **Anti-Pattern Trap 6 (`references/memory/quality-bar.md`)**: Codified zero-tolerance rule against stacking background watermarks, SVGs, or icons, and against placing motifs directly behind dense reading columns.
+- **Pre-Delivery Verification**: Codified 7-point checklist for component and redesign deliverables before output signoff.
+
+---
+
 ## [1.4.0] - 2026-09-02
 
 ### 🧭 Added — Navigation & Header Quality Bar & 5 Anti-Pattern Traps

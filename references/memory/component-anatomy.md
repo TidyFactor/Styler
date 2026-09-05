@@ -43,3 +43,13 @@ If the only difference from an existing component is a token value (a different 
 
 ## Reuse-before-create is mandatory
 Before designing anything new for a `component`, `section`, or `page` task, inventory what the target project already has. Production work compounds inconsistency fast if every task quietly adds a near-duplicate component instead of extending the existing one.
+
+---
+
+## Master Component Pattern Registry (Production Quick-Reference)
+For operational tables, token selectors, and anti-cliché variants across all 7 core component families, consult:
+- [`component-matrix-registry.md`](file:///c:/wamp64/www/TidyFactor/Skills/Skills-LAB/tidyfactor-styler/references/memory/component-matrix-registry.md)
+
+*Architectural Single Source of Truth (SSOT)*: Full token schemas, deep SVG detailing, and design foundations are maintained authoritatively in `tidyfactor-design/references/memory/` (`21-` through `27-`).
+
+
